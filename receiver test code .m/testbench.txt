@@ -1,0 +1,118 @@
+
+--------------------------------------------------------------------------------
+-- Company: 
+-- Engineer:
+--
+-- Create Date:   22:47:02 03/09/2014
+-- Design Name:   Receiver
+-- Module Name:   C:/Xilinx/mike/tes2t.vhd
+-- Project Name:  mike
+-- Target Device:  
+-- Tool versions:  
+-- Description:   
+-- 
+-- VHDL Test Bench Created by ISE for module: Receiver
+--
+-- Dependencies:
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+--
+-- Notes: 
+-- This testbench has been automatically generated using types std_logic and
+-- std_logic_vector for the ports of the unit under test.  Xilinx recommends 
+-- that these types always be used for the top-level I/O of a design in order 
+-- to guarantee that the testbench will bind correctly to the post-implementation 
+-- simulation model.
+--------------------------------------------------------------------------------
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.ALL;
+
+ENTITY Test_vhd IS
+END Test_vhd;
+
+ARCHITECTURE behavior OF Test_vhd IS 
+
+	-- Component Declaration for the Unit Under Test (UUT)
+	COMPONENT Receiver
+	PORT(
+		RXD : IN std_logic;
+		CLK : IN std_logic;
+		RD : IN std_logic;
+		RST : IN std_logic;    
+		RDA : INOUT std_logic;      
+		DBOUT : OUT std_logic_vector(7 downto 0);
+		PE : OUT std_logic;
+		FE : OUT std_logic;
+		OE : OUT std_logic
+		);
+	END COMPONENT;
+
+	--Inputs
+	SIGNAL RXD :  std_logic:='0';
+	SIGNAL CLK :  std_logic := '0';
+	SIGNAL RD :  std_logic := '0';
+	SIGNAL RST :  std_logic := '0';
+
+	--BiDirs
+	SIGNAL RDA :  std_logic;
+
+	--Outputs
+	SIGNAL DBOUT :  std_logic_vector(7 downto 0);
+	SIGNAL PE :  std_logic;
+	SIGNAL FE :  std_logic;
+	SIGNAL OE :  std_logic;
+	constant Period: time:=250 ns;
+   constant BitPeriod: time:=104166 ns;
+
+BEGIN
+
+	-- Instantiate the Unit Under Test (UUT)
+	uut: Receiver PORT MAP(
+		RXD => RXD,
+		CLK => CLK,
+		DBOUT => DBOUT,
+		RDA => RDA,
+		RD => RD,
+		PE => PE,
+		FE => FE,
+		OE => OE,
+		RST => RST
+	);
+	process
+	begin
+	clk<='0';
+	wait for Period/2;
+	clk<='1';
+	wait for Period/2;
+	end process;
+	rst<='1','0' after Period/2;
+	
+
+	tb : PROCESS
+	variable v:std_logic;
+	variable cnt:integer:=0;
+	--data="00001111"
+	constant data:std_logic_vector(11 downto 0):="110000111101";  -- without error
+		--constant data:std_logic_vector(11 downto 0):="100000111101"; -- to check parity error
+		--constant data:std_logic_vector(11 downto 0):="010000111101"; --  to check frame error
+				--constant data:std_logic_vector(13 downto 0):="11000011110111"; --to check iddle condition
+					--constant data:std_logic_vector(23 downto 0):="110000111101111111000001"; -- overwrite error with data F0  & 0F 
+	
+	
+	BEGIN
+	if(cnt<12) then
+	rxd<=data(cnt);
+	wait for BitPeriod;
+	end if;
+	--wait until clk'event and clk='1';
+	--cnt:= cnt+1;
+	wait until clk'event and clk='1';
+	cnt:= cnt+1;
+	--v:=data(cnt);
+	--cnt:= cnt+1;
+	END PROCESS;
+END;

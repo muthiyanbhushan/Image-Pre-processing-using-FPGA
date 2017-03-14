@@ -1,0 +1,264 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Arial;}}
+{\*\generator Msftedit 5.41.15.1515;}\viewkind4\uc1\pard\f0\fs20 Imports System.IO\par
+Imports Microsoft.VisualBasic\par
+Imports System.Drawing\par
+Imports System.Drawing.Drawing2D\par
+Imports System.Windows.Forms\par
+\par
+\par
+Public Class Form\par
+    Dim bitmp As String\par
+    Dim pal(256) As Color\par
+    Dim path1 As String\par
+    Dim x1(9) As Char\par
+    Dim time_pro As Integer\par
+    Dim x2(2) As Byte\par
+    Dim x As Char\par
+    Dim aga As Integer\par
+    Dim g As System.Drawing.Graphics\par
+    Dim img1 As Image\par
+    Dim b(1000, 1000) As Char\par
+    Dim a(1000, 1000) As Char\par
+    Dim P(1024) As Char\par
+\par
+\par
+\par
+\par
+\par
+    Structure BITMAPFILEHEADER '14 bytes\par
+        Dim bfType As Short\par
+        Dim bfSize As Integer\par
+        Dim bfReserved1 As Short\par
+        Dim bfReserved2 As Short\par
+        Dim bfOffBits As Integer\par
+    End Structure\par
+\par
+    Structure BITMAPINFOHEADER '40 bytes\par
+        Dim biSize As Integer\par
+        Dim biWidth As Integer\par
+        Dim biHeight As Integer\par
+        Dim iplanes As Short\par
+        Dim biBitCount As Short\par
+        Dim biCompression As Integer\par
+        Dim biSizeImage As Integer\par
+        Dim biXPelsPerMeter As Integer\par
+        Dim biYPelsPerMeter As Integer\par
+        Dim biClrUsed As Integer\par
+        Dim biClrImportant As Integer\par
+    End Structure\par
+\par
+    'palette, 4 bytes * 256 = 1024\par
+    Structure BITMAPPalette\par
+        Dim lngBlue As Byte\par
+        Dim lngGreen As Byte\par
+        Dim lngRed As Byte\par
+        Dim lngReserved As Byte\par
+    End Structure\par
+\par
+    Structure BITMAPFILE\par
+        Dim bmfh As BITMAPFILEHEADER\par
+        Dim bmih As BITMAPINFOHEADER\par
+        Dim pal As BITMAPPalette\par
+    End Structure\par
+\par
+    Dim bitmap1, bitmap2 As BITMAPFILE\par
+    Dim headers As Integer\par
+    Dim hei, wid, kx, ky As Long\par
+\par
+\par
+\par
+    'Function describes actual processing\par
+    Private Sub process_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles process.Click\par
+        Dim i1, j1, i, j, k As Long\par
+        Dim var As Integer\par
+\par
+        COM32.Open()                        'Open COM port for serial Communication\par
+        COM32.ReadTimeout = 10\par
+        COM32.WriteTimeout = 10\par
+        COM32.Write(x)\par
+        'Send the data for processing and receive the processed data\par
+        For var = 0 To 1023\par
+            If (var Mod 4 = 3) Then\par
+                P(var) = ChrW(255)\par
+            Else\par
+                P(var) = ChrW(Convert.ToInt16(var / 4))\par
+            End If\par
+        Next\par
+\par
+        For var = 0 To 255\par
+            pal(var) = Color.FromArgb(255, var, var, var)\par
+        Next\par
+\par
+        For i1 = 1 To hei - 2\par
+            For j1 = 1 To wid - 2\par
+                x1 = a(i1, j1) & a(i1, j1 - 1) & a(i1, j1 + 1) & a(i1 - 1, j1) & a(i1 - 1, j1 - 1) & a(i1 - 1, j1 + 1) & a(i1 + 1, j1) & a(i1 + 1, j1 - 1) & a(i1 + 1, j1 + 1)\par
+                COM32.Write(x1)\par
+                If ((i1 = hei - 2) And (j1 = wid - 2)) Then\par
+                Else\par
+                    Try\par
+                        COM32.Read(x2, 1, 1)\par
+                        b(i1, j1) = ChrW(x2(1))\par
+                    Catch exp As TimeoutException\par
+                        b(i1, j1) = a(i1, j1)\par
+                    End Try\par
+                End If\par
+\par
+                If AscW(b(i1, j1)) = 63 Then\par
+                    b(i1, j1) = ChrW(255)\par
+                End If\par
+            Next j1\par
+        Next i1\par
+\par
+        COM32.Close()\par
+        FileClose(1)\par
+        MsgBox("PRO_complete")\par
+\par
+        For i = 0 To wid - 1\par
+            b(0, i) = a(0, i)\par
+        Next i\par
+\par
+        For i = 0 To hei - 1\par
+            b(i, 0) = (a(i, 0))\par
+        Next i\par
+\par
+        For i = 0 To wid - 1\par
+            b(hei - 1, i) = (a(hei - 1, i))\par
+        Next i\par
+\par
+        For i = 0 To hei - 1\par
+            b(i, wid - 1) = (a(i, wid - 1))\par
+        Next i\par
+\par
+        FileOpen(2, "result.bmp", OpenMode.Binary)\par
+\par
+        'FilePut(2, bitmp)\par
+        FilePut(2, bitmap1.bmfh)\par
+        FilePut(2, bitmap1.bmih)\par
+        FilePut(2, Convert.ToString(P))\par
+\par
+        Dim Res = New Bitmap(bitmap1.bmih.biWidth, bitmap1.bmih.biHeight, System.Drawing.Imaging.PixelFormat.Format24bppRgb)\par
+\par
+        For i = 0 To wid - 1\par
+            For j = 0 To hei - 1\par
+                FilePut(2, b(i, j))\par
+                Res.SetPixel(j, hei - i - 1, pal((Convert.ToUInt16(b(i, j)) And 255)))\par
+            Next j\par
+            If (wid Mod 4) > 0 Then\par
+                For k = 1 To (4 - wid Mod 4)\par
+                    FilePut(2, b(i, j))\par
+                    Res.SetPixel(j, hei - i - 1, pal(Convert.ToUInt16(b(i, j))))\par
+\par
+                Next k\par
+            End If\par
+        Next i\par
+        FileClose(2)\par
+        Res.Save("C:\\Users\\USER\\Desktop\\TEST_IMAGES\\Result.bmp")\par
+        img1 = Image.FromFile(path1)\par
+        PictureBox1.Image = (img1)\par
+\par
+        MsgBox("COMPLETE...!")\par
+\par
+        PictureBox2.Image = Res\par
+        'PictureBox2.Image = Image.FromFile("result.bmp")\par
+    End Sub\par
+\par
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged\par
+\par
+    End Sub\par
+\par
+    Sub Init()\par
+        FileOpen(1, path1, OpenMode.Binary)\par
+    End Sub\par
+\par
+\par
+    'Function for extracting Header and File Information\par
+    Function Read_header()\par
+        FileGet(1, bitmap1.bmfh)\par
+        FileGet(1, bitmap1.bmih)\par
+        headers = LOF(1) - bitmap1.bmih.biSizeImage    ' size of the part from the\par
+        Return 0\par
+    End Function\par
+\par
+    Function Next_init()\par
+        Dim i, j As Long\par
+        hei = bitmap1.bmih.biHeight\par
+        wid = bitmap1.bmih.biWidth\par
+        '--------------- get the height and width size\par
+        kx = wid\par
+        ky = hei\par
+        FileClose(1)\par
+        Init()\par
+        bitmp = Space(headers)\par
+        MsgBox("Read SuccessFul...!")\par
+        FileGet(1, bitmp) '------ read the part before data\par
+        For i = 0 To hei - 1\par
+            For j = 0 To wid - 1\par
+                FileGet(1, a(i, j))    'here we read data line by line\par
+            Next j\par
+\par
+            If (wid Mod 4 > 0) Then\par
+                For k = 1 To 4 - wid Mod 4\par
+                    FileGet(1, x)\par
+                Next k\par
+            End If\par
+        Next i\par
+        Return (0)\par
+    End Function\par
+\par
+    Function image_rd()\par
+        Init()\par
+        Read_header()\par
+        Next_init()\par
+        Return 0\par
+    End Function\par
+\par
+    Private Sub ExtractMetaData(ByVal e As PaintEventArgs)\par
+\par
+    End Sub\par
+\par
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load\par
+        'Form1.\par
+    End Sub\par
+\par
+    Private Sub Panel4_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs)\par
+\par
+    End Sub\par
+\par
+    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click\par
+\par
+    End Sub\par
+\par
+    Private Sub PictureBox2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox2.Click\par
+\par
+    End Sub\par
+\par
+\par
+    Private Sub ProgressBar1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)\par
+\par
+    End Sub\par
+\par
+    Private Sub Form1_Load_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load\par
+\par
+    End Sub\par
+\par
+    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click\par
+        Dim dialog As New OpenFileDialog()\par
+\par
+        If DialogResult.OK = dialog.ShowDialog Then\par
+            TextBox1.Text = dialog.FileName\par
+            path1 = dialog.FileName\par
+            image_rd()\par
+        End If\par
+\par
+    End Sub\par
+\par
+    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged\par
+\par
+    End Sub\par
+\par
+    Private Sub TextBox3_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox3.TextChanged\par
+\par
+    End Sub\par
+End Class\par
+}
+ 
