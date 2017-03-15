@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="5">
+<DesignStatistics TimeStamp="Tue Jan 28 15:35:31 2014"><group name="MiscellaneousStatistics">
+<item name="AVG_LUT_FAN_IN" rev="5">
+<attrib name="value" value="3.522800"/></item>
+<item name="AVG_SIG_FANOUT" rev="5">
+<attrib name="value" value="2.790000"/></item>
+<item name="FOUR_LOAD_SIG" rev="5">
+<attrib name="value" value="294"/></item>
+<item name="LUT" rev="5">
+<attrib name="value" value="2697"/></item>
+<item name="MAX_SIG_FANOUT" rev="5">
+<attrib name="value" value="24"/></item>
+<item name="PK_NUM_4_INPUT_LUTS" rev="5">
+<attrib name="value" value="2697"/></item>
+<item name="PK_NUM_BONDED_IOBS" rev="5">
+<attrib name="value" value="89"/></item>
+<item name="PK_NUM_CYINIT" rev="5">
+<attrib name="value" value="297"/></item>
+<item name="PK_NUM_CYMUX" rev="5">
+<attrib name="value" value="594"/></item>
+<item name="PK_NUM_EQUIV_GATES" rev="5">
+<attrib name="value" value="18"/></item>
+<item name="PK_NUM_JTAG_GATES" rev="5">
+<attrib name="value" value="89"/></item>
+<item name="PK_NUM_LUTLESS_SLICE_LATS" rev="5">
+<attrib name="value" value="8"/></item>
+<item name="PK_NUM_MUXF5" rev="5">
+<attrib name="value" value="103"/></item>
+<item name="PK_NUM_MUXFS" rev="5">
+<attrib name="value" value="103"/></item>
+<item name="PK_NUM_SLICELS" rev="5">
+<attrib name="value" value="1355"/></item>
+<item name="PK_NUM_SLICES" rev="5">
+<attrib name="value" value="1355"/></item>
+<item name="PK_NUM_SLICE_LATS" rev="5">
+<attrib name="value" value="8"/></item>
+<item name="SINGLE_LOAD_SIG" rev="5">
+<attrib name="value" value="1518"/></item>
+<item name="THREE_LOAD_SIG" rev="5">
+<attrib name="value" value="121"/></item>
+<item name="TWO_LOAD_SIG" rev="5">
+<attrib name="value" value="45"/></item>
+</group>
+</DesignStatistics>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

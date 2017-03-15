@@ -1,0 +1,179 @@
+Release 9.2i par J.36
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+AD::  Thu May 29 14:33:04 2014
+
+par -w -intstyle ise -ol std -t 1 average_map.ncd average.ncd average.pcf 
+
+
+Constraints file: average.pcf.
+Loading device for application Rf_Device from file '3s400.nph' in environment C:\Xilinx92i.
+   "average" is an NCD, version 3.1, device xc3s400, package pq208, speed -5
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. The PAR timing summary will list the performance achieved for each clock. Note: For
+   the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high". For a
+   balance between the fastest runtime and best performance, set the effort level to "med".
+
+Device speed data version:  "PRODUCTION 1.39 2007-04-13".
+
+
+Device Utilization Summary:
+
+   Number of BUFGMUXs                        1 out of 8      12%
+   Number of External IOBs                  34 out of 141    24%
+      Number of LOCed IOBs                  34 out of 34    100%
+
+   Number of Slices                          8 out of 3584    1%
+      Number of SLICEMs                      0 out of 1792    0%
+
+
+
+Overall effort level (-ol):   Standard 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard 
+
+WARNING:Par:288 - The signal Mat2<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mat0<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mat1<0>_IBUF has no load.  PAR will not attempt to route this signal.
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:9896ee) REAL time: 2 secs 
+
+Phase 2.7
+Phase 2.7 (Checksum:1312cfe) REAL time: 2 secs 
+
+Phase 3.31
+Phase 3.31 (Checksum:1c9c37d) REAL time: 2 secs 
+
+Phase 4.2
+.....
+.......
+Phase 4.2 (Checksum:990cbb) REAL time: 2 secs 
+
+Phase 5.8
+.
+.
+Phase 5.8 (Checksum:99b7f3) REAL time: 2 secs 
+
+Phase 6.5
+Phase 6.5 (Checksum:39386fa) REAL time: 2 secs 
+
+Phase 7.18
+Phase 7.18 (Checksum:42c1d79) REAL time: 2 secs 
+
+Phase 8.5
+Phase 8.5 (Checksum:4c4b3f8) REAL time: 2 secs 
+
+REAL time consumed by placer: 3 secs 
+CPU  time consumed by placer: 1 secs 
+Writing design to file average.ncd
+
+
+Total REAL time to Placer completion: 7 secs 
+Total CPU time to Placer completion: 2 secs 
+
+Starting Router
+
+Phase 1: 53 unrouted;       REAL time: 10 secs 
+
+Phase 2: 46 unrouted;       REAL time: 10 secs 
+
+Phase 3: 11 unrouted;       REAL time: 10 secs 
+
+Phase 4: 11 unrouted; (0)      REAL time: 10 secs 
+
+Phase 5: 11 unrouted; (0)      REAL time: 10 secs 
+
+Phase 6: 0 unrouted; (0)      REAL time: 10 secs 
+
+Phase 7: 0 unrouted; (0)      REAL time: 10 secs 
+
+
+Total REAL time to Router completion: 10 secs 
+Total CPU time to Router completion: 2 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|          valid_OBUF |      BUFGMUX7| No   |    7 |  0.000     |  0.919      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+
+   The Delay Summary Report
+
+
+The NUMBER OF SIGNALS NOT COMPLETELY ROUTED for this design is: 0
+
+   The AVERAGE CONNECTION DELAY for this design is:        1.301
+   The MAXIMUM PIN DELAY IS:                               3.299
+   The AVERAGE CONNECTION DELAY on the 10 WORST NETS is:   2.533
+
+   Listing Pin Delays by value: (nsec)
+
+    d < 1.00   < d < 2.00  < d < 3.00  < d < 4.00  < d < 5.00  d >= 5.00
+   ---------   ---------   ---------   ---------   ---------   ---------
+          18          22           7           2           0           0
+
+Timing Score: 0
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                | Requested  | Actual     | Logic  | Absolute   |Number of
+                                            |            |            | Levels | Slack      |errors   
+------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 3 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 11 secs 
+Total CPU time to PAR completion: 2 secs 
+
+Peak Memory Usage:  119 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 5
+Number of info messages: 1
+
+Writing design to file average.ncd
+
+
+
+PAR done!

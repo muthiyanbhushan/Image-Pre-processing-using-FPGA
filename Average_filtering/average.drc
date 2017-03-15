@@ -1,0 +1,7 @@
+WARNING:PhysDesignRules:367 - The signal <Mat2<0>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mat0<0>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mat1<0>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+DRC detected 0 errors and 3 warnings.

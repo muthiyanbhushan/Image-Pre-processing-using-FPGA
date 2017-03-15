@@ -1,0 +1,4 @@
+EN avg_tb NULL C:/Xilinx/Average_filtering/avg_tb.vhd sub00/vhpl02 1399134429
+EN average NULL C:/Xilinx/Average_filtering/average.vhd sub00/vhpl00 1399134427
+AR average behavioral_average C:/Xilinx/Average_filtering/average.vhd sub00/vhpl01 1399134428
+AR avg_tb behavior C:/Xilinx/Average_filtering/avg_tb.vhd sub00/vhpl03 1399134430

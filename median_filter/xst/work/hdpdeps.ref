@@ -1,0 +1,9 @@
+V3 4
+FL C:/Xilinx/bubblesort/bubblesort.vhd 2013/10/09.12:08:52 J.36
+FL C:/Xilinx/median/bubblesort.vhd 2013/10/09.12:08:52 J.36
+EN work/sort_1 1395462157 FL C:/Xilinx/median/bubblesort.vhd \
+      PB ieee/std_logic_1164 1177545575 PB ieee/std_logic_arith 1177545576 \
+      PB ieee/STD_LOGIC_UNSIGNED 1177545583 PB ieee/MATH_REAL 1177545585 \
+      PH ieee/NUMERIC_STD 1177545583
+AR work/sort_1/behavioural 1395462158 \
+      FL C:/Xilinx/median/bubblesort.vhd EN work/sort_1 1395462157

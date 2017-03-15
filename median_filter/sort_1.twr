@@ -1,0 +1,2834 @@
+--------------------------------------------------------------------------------
+Release 9.2i Trace 
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx92i\bin\nt\trce.exe -ise C:/Xilinx/median/bubblesort.ise -intstyle ise
+-e 3 -s 5 -xml sort_1 sort_1.ncd -o sort_1.twr sort_1.pcf
+
+Design file:              sort_1.ncd
+Physical constraint file: sort_1.pcf
+Device,package,speed:     xc3s400,pq208,-5 (PRODUCTION 1.39 2007-04-13)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Mat0<0>
+------------+------------+------------+-----------------------------+--------+
+            |  Setup to  |  Hold to   |                             | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s)            | Phase  |
+------------+------------+------------+-----------------------------+--------+
+Mat2<0>     |  128.007(R)|    1.749(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<1>     |  127.223(R)|    2.376(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<2>     |  128.066(R)|    1.702(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<3>     |  130.269(R)|    1.861(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<4>     |  128.498(R)|    1.958(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<5>     |  127.347(R)|    2.277(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<6>     |  127.199(R)|    2.396(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<7>     |  128.150(R)|    2.445(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<0>     |  123.218(R)|    1.384(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<1>     |  124.054(R)|    1.209(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<2>     |  122.895(R)|    1.643(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<3>     |  122.705(R)|    1.794(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<4>     |  122.017(R)|    2.344(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<5>     |  122.059(R)|    2.311(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<6>     |  123.236(R)|    1.369(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<7>     |  123.123(R)|    1.522(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<0>     |  117.276(R)|    1.529(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<1>     |  118.320(R)|    1.800(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<2>     |  118.551(R)|    1.782(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<3>     |  118.319(R)|    1.292(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<4>     |  117.240(R)|    1.558(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<5>     |  117.718(R)|    2.069(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<6>     |  117.484(R)|    2.250(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<7>     |  117.029(R)|    2.145(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<0>     |  114.229(R)|    0.600(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<1>     |  113.716(R)|    1.011(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<2>     |  112.812(R)|    1.734(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<3>     |  112.500(R)|    1.983(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<4>     |  112.432(R)|    2.038(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<5>     |  112.400(R)|    2.063(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<6>     |  113.027(R)|    1.562(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<7>     |  113.944(R)|    0.828(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<0>     |  106.355(R)|   -0.098(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<1>     |  106.252(R)|    1.179(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<2>     |  106.393(R)|    1.286(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<3>     |  105.717(R)|    1.473(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<4>     |  106.149(R)|    1.079(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<5>     |  106.530(R)|    1.431(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<6>     |  106.443(R)|    1.308(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<7>     |  106.074(R)|    1.441(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<0>     |  102.343(R)|    0.890(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<1>     |  102.769(R)|    0.370(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<2>     |  102.092(R)|    0.912(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<3>     |  101.822(R)|    1.128(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<4>     |  102.584(R)|    0.519(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<5>     |  102.294(R)|    0.751(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<6>     |  101.979(R)|    1.003(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<7>     |  102.264(R)|    0.775(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<0>     |   95.775(R)|    0.817(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<1>     |   95.043(R)|    0.288(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<2>     |   95.648(R)|   -0.558(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<3>     |   95.607(R)|   -0.295(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<4>     |   95.978(R)|   -0.283(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<5>     |   96.483(R)|   -0.475(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<6>     |   94.788(R)|    0.130(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<7>     |   94.902(R)|    0.347(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock Mat0<1>
+------------+------------+------------+-----------------------------+--------+
+            |  Setup to  |  Hold to   |                             | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s)            | Phase  |
+------------+------------+------------+-----------------------------+--------+
+Mat2<0>     |  127.894(R)|    1.917(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<1>     |  127.110(R)|    2.544(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<2>     |  127.953(R)|    1.870(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<3>     |  130.156(R)|    2.029(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<4>     |  128.385(R)|    2.126(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<5>     |  127.234(R)|    2.445(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<6>     |  127.086(R)|    2.564(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<7>     |  128.037(R)|    2.613(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<0>     |  123.105(R)|    1.552(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<1>     |  123.941(R)|    1.377(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<2>     |  122.782(R)|    1.811(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<3>     |  122.592(R)|    1.962(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<4>     |  121.904(R)|    2.512(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<5>     |  121.946(R)|    2.479(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<6>     |  123.123(R)|    1.537(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<7>     |  123.010(R)|    1.690(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<0>     |  117.163(R)|    1.697(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<1>     |  118.207(R)|    1.968(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<2>     |  118.438(R)|    1.950(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<3>     |  118.206(R)|    1.460(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<4>     |  117.127(R)|    1.726(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<5>     |  117.605(R)|    2.237(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<6>     |  117.371(R)|    2.418(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<7>     |  116.916(R)|    2.313(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<0>     |  114.116(R)|    0.768(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<1>     |  113.603(R)|    1.179(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<2>     |  112.699(R)|    1.902(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<3>     |  112.387(R)|    2.151(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<4>     |  112.319(R)|    2.206(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<5>     |  112.287(R)|    2.231(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<6>     |  112.914(R)|    1.730(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<7>     |  113.831(R)|    0.996(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<0>     |  106.242(R)|    0.070(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<1>     |  106.139(R)|    1.347(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<2>     |  106.280(R)|    1.454(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<3>     |  105.604(R)|    1.641(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<4>     |  106.036(R)|    1.247(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<5>     |  106.417(R)|    1.599(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<6>     |  106.330(R)|    1.476(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<7>     |  105.961(R)|    1.609(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<0>     |  102.230(R)|    1.058(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<1>     |  102.656(R)|    0.538(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<2>     |  101.979(R)|    1.080(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<3>     |  101.709(R)|    1.296(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<4>     |  102.471(R)|    0.687(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<5>     |  102.181(R)|    0.919(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<6>     |  101.866(R)|    1.171(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<7>     |  102.151(R)|    0.943(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<0>     |   95.662(R)|    0.985(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<1>     |   94.930(R)|    0.456(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<2>     |   95.535(R)|   -0.390(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<3>     |   95.494(R)|   -0.127(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<4>     |   95.865(R)|   -0.115(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<5>     |   96.370(R)|   -0.307(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<6>     |   94.675(R)|    0.298(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<7>     |   94.789(R)|    0.515(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock Mat0<2>
+------------+------------+------------+-----------------------------+--------+
+            |  Setup to  |  Hold to   |                             | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s)            | Phase  |
+------------+------------+------------+-----------------------------+--------+
+Mat2<0>     |  127.249(R)|    2.697(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<1>     |  126.465(R)|    3.324(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<2>     |  127.308(R)|    2.650(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<3>     |  129.511(R)|    2.809(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<4>     |  127.740(R)|    2.906(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<5>     |  126.589(R)|    3.225(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<6>     |  126.441(R)|    3.344(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<7>     |  127.392(R)|    3.393(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<0>     |  122.460(R)|    2.332(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<1>     |  123.296(R)|    2.157(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<2>     |  122.137(R)|    2.591(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<3>     |  121.947(R)|    2.742(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<4>     |  121.259(R)|    3.292(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<5>     |  121.301(R)|    3.259(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<6>     |  122.478(R)|    2.317(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<7>     |  122.365(R)|    2.470(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<0>     |  116.518(R)|    2.477(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<1>     |  117.562(R)|    2.748(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<2>     |  117.793(R)|    2.730(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<3>     |  117.561(R)|    2.240(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<4>     |  116.482(R)|    2.506(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<5>     |  116.960(R)|    3.017(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<6>     |  116.726(R)|    3.198(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<7>     |  116.271(R)|    3.093(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<0>     |  113.471(R)|    1.548(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<1>     |  112.958(R)|    1.959(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<2>     |  112.054(R)|    2.682(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<3>     |  111.742(R)|    2.931(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<4>     |  111.674(R)|    2.986(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<5>     |  111.642(R)|    3.011(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<6>     |  112.269(R)|    2.510(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<7>     |  113.186(R)|    1.776(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<0>     |  105.597(R)|    0.850(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<1>     |  105.494(R)|    2.127(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<2>     |  105.635(R)|    2.234(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<3>     |  104.959(R)|    2.421(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<4>     |  105.391(R)|    2.027(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<5>     |  105.772(R)|    2.379(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<6>     |  105.685(R)|    2.256(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<7>     |  105.316(R)|    2.389(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<0>     |  101.585(R)|    1.838(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<1>     |  102.011(R)|    1.318(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<2>     |  101.334(R)|    1.860(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<3>     |  101.064(R)|    2.076(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<4>     |  101.826(R)|    1.467(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<5>     |  101.536(R)|    1.699(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<6>     |  101.221(R)|    1.951(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<7>     |  101.506(R)|    1.723(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<0>     |   95.017(R)|    1.765(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<1>     |   94.285(R)|    1.236(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<2>     |   94.890(R)|    0.390(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<3>     |   94.849(R)|    0.653(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<4>     |   95.220(R)|    0.665(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<5>     |   95.725(R)|    0.473(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<6>     |   94.030(R)|    1.078(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<7>     |   94.144(R)|    1.295(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock Mat0<3>
+------------+------------+------------+-----------------------------+--------+
+            |  Setup to  |  Hold to   |                             | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s)            | Phase  |
+------------+------------+------------+-----------------------------+--------+
+Mat2<0>     |  127.236(R)|    2.739(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<1>     |  126.452(R)|    3.366(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<2>     |  127.295(R)|    2.692(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<3>     |  129.498(R)|    2.851(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<4>     |  127.727(R)|    2.948(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<5>     |  126.576(R)|    3.267(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<6>     |  126.428(R)|    3.386(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<7>     |  127.379(R)|    3.435(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<0>     |  122.447(R)|    2.374(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<1>     |  123.283(R)|    2.199(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<2>     |  122.124(R)|    2.633(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<3>     |  121.934(R)|    2.784(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<4>     |  121.246(R)|    3.334(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<5>     |  121.288(R)|    3.301(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<6>     |  122.465(R)|    2.359(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<7>     |  122.352(R)|    2.512(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<0>     |  116.505(R)|    2.519(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<1>     |  117.549(R)|    2.790(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<2>     |  117.780(R)|    2.772(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<3>     |  117.548(R)|    2.282(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<4>     |  116.469(R)|    2.548(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<5>     |  116.947(R)|    3.059(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<6>     |  116.713(R)|    3.240(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<7>     |  116.258(R)|    3.135(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<0>     |  113.458(R)|    1.590(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<1>     |  112.945(R)|    2.001(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<2>     |  112.041(R)|    2.724(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<3>     |  111.729(R)|    2.973(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<4>     |  111.661(R)|    3.028(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<5>     |  111.629(R)|    3.053(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<6>     |  112.256(R)|    2.552(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<7>     |  113.173(R)|    1.818(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<0>     |  105.584(R)|    0.892(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<1>     |  105.481(R)|    2.169(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<2>     |  105.622(R)|    2.276(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<3>     |  104.946(R)|    2.463(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<4>     |  105.378(R)|    2.069(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<5>     |  105.759(R)|    2.421(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<6>     |  105.672(R)|    2.298(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<7>     |  105.303(R)|    2.431(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<0>     |  101.572(R)|    1.880(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<1>     |  101.998(R)|    1.360(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<2>     |  101.321(R)|    1.902(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<3>     |  101.051(R)|    2.118(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<4>     |  101.813(R)|    1.509(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<5>     |  101.523(R)|    1.741(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<6>     |  101.208(R)|    1.993(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<7>     |  101.493(R)|    1.765(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<0>     |   95.004(R)|    1.807(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<1>     |   94.272(R)|    1.278(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<2>     |   94.877(R)|    0.432(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<3>     |   94.836(R)|    0.695(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<4>     |   95.207(R)|    0.707(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<5>     |   95.712(R)|    0.515(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<6>     |   94.017(R)|    1.120(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<7>     |   94.131(R)|    1.337(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock Mat0<4>
+------------+------------+------------+-----------------------------+--------+
+            |  Setup to  |  Hold to   |                             | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s)            | Phase  |
+------------+------------+------------+-----------------------------+--------+
+Mat2<0>     |  129.068(R)|    0.423(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<1>     |  128.284(R)|    1.050(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<2>     |  129.127(R)|    0.376(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<3>     |  131.330(R)|    0.535(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<4>     |  129.559(R)|    0.632(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<5>     |  128.408(R)|    0.951(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<6>     |  128.260(R)|    1.070(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<7>     |  129.211(R)|    1.119(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<0>     |  124.279(R)|    0.058(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<1>     |  125.115(R)|   -0.117(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<2>     |  123.956(R)|    0.317(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<3>     |  123.766(R)|    0.468(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<4>     |  123.078(R)|    1.018(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<5>     |  123.120(R)|    0.985(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<6>     |  124.297(R)|    0.043(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<7>     |  124.184(R)|    0.196(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<0>     |  118.337(R)|    0.203(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<1>     |  119.381(R)|    0.474(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<2>     |  119.612(R)|    0.456(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<3>     |  119.380(R)|   -0.034(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<4>     |  118.301(R)|    0.232(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<5>     |  118.779(R)|    0.743(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<6>     |  118.545(R)|    0.924(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<7>     |  118.090(R)|    0.819(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<0>     |  115.290(R)|   -0.726(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<1>     |  114.777(R)|   -0.315(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<2>     |  113.873(R)|    0.408(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<3>     |  113.561(R)|    0.657(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<4>     |  113.493(R)|    0.712(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<5>     |  113.461(R)|    0.737(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<6>     |  114.088(R)|    0.236(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<7>     |  115.005(R)|   -0.498(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<0>     |  107.416(R)|   -1.424(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<1>     |  107.313(R)|   -0.147(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<2>     |  107.454(R)|   -0.040(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<3>     |  106.778(R)|    0.147(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<4>     |  107.210(R)|   -0.247(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<5>     |  107.591(R)|    0.105(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<6>     |  107.504(R)|   -0.018(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<7>     |  107.135(R)|    0.115(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<0>     |  103.404(R)|   -0.436(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<1>     |  103.830(R)|   -0.956(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<2>     |  103.153(R)|   -0.414(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<3>     |  102.883(R)|   -0.198(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<4>     |  103.645(R)|   -0.807(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<5>     |  103.355(R)|   -0.575(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<6>     |  103.040(R)|   -0.323(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<7>     |  103.325(R)|   -0.551(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<0>     |   96.836(R)|   -0.509(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<1>     |   96.104(R)|   -1.038(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<2>     |   96.709(R)|   -1.884(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<3>     |   96.668(R)|   -1.621(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<4>     |   97.039(R)|   -1.609(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<5>     |   97.544(R)|   -1.801(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<6>     |   95.849(R)|   -1.196(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<7>     |   95.963(R)|   -0.979(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock Mat0<5>
+------------+------------+------------+-----------------------------+--------+
+            |  Setup to  |  Hold to   |                             | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s)            | Phase  |
+------------+------------+------------+-----------------------------+--------+
+Mat2<0>     |  127.825(R)|    2.004(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<1>     |  127.041(R)|    2.631(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<2>     |  127.884(R)|    1.957(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<3>     |  130.087(R)|    2.116(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<4>     |  128.316(R)|    2.213(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<5>     |  127.165(R)|    2.532(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<6>     |  127.017(R)|    2.651(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<7>     |  127.968(R)|    2.700(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<0>     |  123.036(R)|    1.639(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<1>     |  123.872(R)|    1.464(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<2>     |  122.713(R)|    1.898(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<3>     |  122.523(R)|    2.049(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<4>     |  121.835(R)|    2.599(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<5>     |  121.877(R)|    2.566(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<6>     |  123.054(R)|    1.624(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<7>     |  122.941(R)|    1.777(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<0>     |  117.094(R)|    1.784(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<1>     |  118.138(R)|    2.055(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<2>     |  118.369(R)|    2.037(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<3>     |  118.137(R)|    1.547(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<4>     |  117.058(R)|    1.813(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<5>     |  117.536(R)|    2.324(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<6>     |  117.302(R)|    2.505(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<7>     |  116.847(R)|    2.400(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<0>     |  114.047(R)|    0.855(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<1>     |  113.534(R)|    1.266(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<2>     |  112.630(R)|    1.989(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<3>     |  112.318(R)|    2.238(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<4>     |  112.250(R)|    2.293(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<5>     |  112.218(R)|    2.318(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<6>     |  112.845(R)|    1.817(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<7>     |  113.762(R)|    1.083(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<0>     |  106.173(R)|    0.157(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<1>     |  106.070(R)|    1.434(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<2>     |  106.211(R)|    1.541(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<3>     |  105.535(R)|    1.728(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<4>     |  105.967(R)|    1.334(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<5>     |  106.348(R)|    1.686(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<6>     |  106.261(R)|    1.563(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<7>     |  105.892(R)|    1.696(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<0>     |  102.161(R)|    1.145(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<1>     |  102.587(R)|    0.625(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<2>     |  101.910(R)|    1.167(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<3>     |  101.640(R)|    1.383(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<4>     |  102.402(R)|    0.774(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<5>     |  102.112(R)|    1.006(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<6>     |  101.797(R)|    1.258(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<7>     |  102.082(R)|    1.030(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<0>     |   95.593(R)|    1.072(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<1>     |   94.861(R)|    0.543(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<2>     |   95.466(R)|   -0.303(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<3>     |   95.425(R)|   -0.040(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<4>     |   95.796(R)|   -0.028(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<5>     |   96.301(R)|   -0.220(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<6>     |   94.606(R)|    0.385(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<7>     |   94.720(R)|    0.602(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock Mat0<6>
+------------+------------+------------+-----------------------------+--------+
+            |  Setup to  |  Hold to   |                             | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s)            | Phase  |
+------------+------------+------------+-----------------------------+--------+
+Mat2<0>     |  128.172(R)|    1.542(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<1>     |  127.388(R)|    2.169(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<2>     |  128.231(R)|    1.495(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<3>     |  130.434(R)|    1.654(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<4>     |  128.663(R)|    1.751(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<5>     |  127.512(R)|    2.070(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<6>     |  127.364(R)|    2.189(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<7>     |  128.315(R)|    2.238(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<0>     |  123.383(R)|    1.177(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<1>     |  124.219(R)|    1.002(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<2>     |  123.060(R)|    1.436(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<3>     |  122.870(R)|    1.587(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<4>     |  122.182(R)|    2.137(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<5>     |  122.224(R)|    2.104(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<6>     |  123.401(R)|    1.162(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<7>     |  123.288(R)|    1.315(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<0>     |  117.441(R)|    1.322(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<1>     |  118.485(R)|    1.593(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<2>     |  118.716(R)|    1.575(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<3>     |  118.484(R)|    1.085(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<4>     |  117.405(R)|    1.351(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<5>     |  117.883(R)|    1.862(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<6>     |  117.649(R)|    2.043(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<7>     |  117.194(R)|    1.938(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<0>     |  114.394(R)|    0.393(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<1>     |  113.881(R)|    0.804(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<2>     |  112.977(R)|    1.527(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<3>     |  112.665(R)|    1.776(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<4>     |  112.597(R)|    1.831(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<5>     |  112.565(R)|    1.856(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<6>     |  113.192(R)|    1.355(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<7>     |  114.109(R)|    0.621(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<0>     |  106.520(R)|   -0.305(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<1>     |  106.417(R)|    0.972(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<2>     |  106.558(R)|    1.079(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<3>     |  105.882(R)|    1.266(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<4>     |  106.314(R)|    0.872(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<5>     |  106.695(R)|    1.224(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<6>     |  106.608(R)|    1.101(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<7>     |  106.239(R)|    1.234(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<0>     |  102.508(R)|    0.683(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<1>     |  102.934(R)|    0.163(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<2>     |  102.257(R)|    0.705(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<3>     |  101.987(R)|    0.921(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<4>     |  102.749(R)|    0.312(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<5>     |  102.459(R)|    0.544(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<6>     |  102.144(R)|    0.796(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<7>     |  102.429(R)|    0.568(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<0>     |   95.940(R)|    0.610(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<1>     |   95.208(R)|    0.081(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<2>     |   95.813(R)|   -0.765(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<3>     |   95.772(R)|   -0.502(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<4>     |   96.143(R)|   -0.490(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<5>     |   96.648(R)|   -0.682(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<6>     |   94.953(R)|   -0.077(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<7>     |   95.067(R)|    0.140(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock Mat0<7>
+------------+------------+------------+-----------------------------+--------+
+            |  Setup to  |  Hold to   |                             | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s)            | Phase  |
+------------+------------+------------+-----------------------------+--------+
+Mat2<0>     |  127.826(R)|    2.004(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<1>     |  127.042(R)|    2.631(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<2>     |  127.885(R)|    1.957(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<3>     |  130.088(R)|    2.116(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<4>     |  128.317(R)|    2.213(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<5>     |  127.166(R)|    2.532(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<6>     |  127.018(R)|    2.651(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<7>     |  127.969(R)|    2.700(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<0>     |  123.037(R)|    1.639(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<1>     |  123.873(R)|    1.464(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<2>     |  122.714(R)|    1.898(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<3>     |  122.524(R)|    2.049(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<4>     |  121.836(R)|    2.599(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<5>     |  121.878(R)|    2.566(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<6>     |  123.055(R)|    1.624(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<7>     |  122.942(R)|    1.777(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<0>     |  117.095(R)|    1.784(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<1>     |  118.139(R)|    2.055(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<2>     |  118.370(R)|    2.037(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<3>     |  118.138(R)|    1.547(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<4>     |  117.059(R)|    1.813(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<5>     |  117.537(R)|    2.324(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<6>     |  117.303(R)|    2.505(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<7>     |  116.848(R)|    2.400(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<0>     |  114.048(R)|    0.855(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<1>     |  113.535(R)|    1.266(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<2>     |  112.631(R)|    1.989(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<3>     |  112.319(R)|    2.238(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<4>     |  112.251(R)|    2.293(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<5>     |  112.219(R)|    2.318(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<6>     |  112.846(R)|    1.817(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<7>     |  113.763(R)|    1.083(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<0>     |  106.174(R)|    0.157(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<1>     |  106.071(R)|    1.434(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<2>     |  106.212(R)|    1.541(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<3>     |  105.536(R)|    1.728(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<4>     |  105.968(R)|    1.334(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<5>     |  106.349(R)|    1.686(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<6>     |  106.262(R)|    1.563(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<7>     |  105.893(R)|    1.696(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<0>     |  102.162(R)|    1.145(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<1>     |  102.588(R)|    0.625(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<2>     |  101.911(R)|    1.167(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<3>     |  101.641(R)|    1.383(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<4>     |  102.403(R)|    0.774(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<5>     |  102.113(R)|    1.006(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<6>     |  101.798(R)|    1.258(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<7>     |  102.083(R)|    1.030(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<0>     |   95.594(R)|    1.072(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<1>     |   94.862(R)|    0.543(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<2>     |   95.467(R)|   -0.303(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<3>     |   95.426(R)|   -0.040(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<4>     |   95.797(R)|   -0.028(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<5>     |   96.302(R)|   -0.220(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<6>     |   94.607(R)|    0.385(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<7>     |   94.721(R)|    0.602(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock Mat1<0>
+------------+------------+------------+-----------------------------+--------+
+            |  Setup to  |  Hold to   |                             | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s)            | Phase  |
+------------+------------+------------+-----------------------------+--------+
+Mat2<0>     |  128.675(R)|    0.811(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<1>     |  127.891(R)|    1.438(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<2>     |  128.734(R)|    0.764(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<3>     |  130.937(R)|    0.923(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<4>     |  129.166(R)|    1.020(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<5>     |  128.015(R)|    1.339(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<6>     |  127.867(R)|    1.458(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<7>     |  128.818(R)|    1.507(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<0>     |  123.886(R)|    0.446(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<1>     |  124.722(R)|    0.271(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<2>     |  123.563(R)|    0.705(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<3>     |  123.373(R)|    0.856(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<4>     |  122.685(R)|    1.406(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<5>     |  122.727(R)|    1.373(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<6>     |  123.904(R)|    0.431(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<7>     |  123.791(R)|    0.584(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<0>     |  117.944(R)|    0.591(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<1>     |  118.988(R)|    0.862(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<2>     |  119.219(R)|    0.844(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<3>     |  118.987(R)|    0.354(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<4>     |  117.908(R)|    0.620(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<5>     |  118.386(R)|    1.131(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<6>     |  118.152(R)|    1.312(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<7>     |  117.697(R)|    1.207(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<0>     |  114.897(R)|   -0.338(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<1>     |  114.384(R)|    0.073(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<2>     |  113.480(R)|    0.796(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<3>     |  113.168(R)|    1.045(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<4>     |  113.100(R)|    1.100(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<5>     |  113.068(R)|    1.125(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<6>     |  113.695(R)|    0.624(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<7>     |  114.612(R)|   -0.110(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<0>     |  107.023(R)|   -1.036(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<1>     |  106.920(R)|    0.241(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<2>     |  107.061(R)|    0.348(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<3>     |  106.385(R)|    0.535(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<4>     |  106.817(R)|    0.141(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<5>     |  107.198(R)|    0.493(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<6>     |  107.111(R)|    0.370(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<7>     |  106.742(R)|    0.503(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<0>     |  103.011(R)|   -0.048(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<1>     |  103.437(R)|   -0.568(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<2>     |  102.760(R)|   -0.026(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<3>     |  102.490(R)|    0.190(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<4>     |  103.252(R)|   -0.419(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<5>     |  102.962(R)|   -0.187(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<6>     |  102.647(R)|    0.065(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<7>     |  102.932(R)|   -0.163(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<0>     |   96.443(R)|   -0.121(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<1>     |   95.711(R)|   -0.650(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<2>     |   96.316(R)|   -1.496(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<3>     |   96.275(R)|   -1.233(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<4>     |   96.646(R)|   -1.221(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<5>     |   97.151(R)|   -1.413(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<6>     |   95.456(R)|   -0.808(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<7>     |   95.570(R)|   -0.591(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock Mat1<1>
+------------+------------+------------+-----------------------------+--------+
+            |  Setup to  |  Hold to   |                             | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s)            | Phase  |
+------------+------------+------------+-----------------------------+--------+
+Mat2<0>     |  128.997(R)|    0.408(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<1>     |  128.213(R)|    1.035(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<2>     |  129.056(R)|    0.361(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<3>     |  131.259(R)|    0.520(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<4>     |  129.488(R)|    0.617(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<5>     |  128.337(R)|    0.936(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<6>     |  128.189(R)|    1.055(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<7>     |  129.140(R)|    1.104(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<0>     |  124.208(R)|    0.043(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<1>     |  125.044(R)|   -0.132(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<2>     |  123.885(R)|    0.302(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<3>     |  123.695(R)|    0.453(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<4>     |  123.007(R)|    1.003(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<5>     |  123.049(R)|    0.970(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<6>     |  124.226(R)|    0.028(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<7>     |  124.113(R)|    0.181(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<0>     |  118.266(R)|    0.188(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<1>     |  119.310(R)|    0.459(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<2>     |  119.541(R)|    0.441(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<3>     |  119.309(R)|   -0.049(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<4>     |  118.230(R)|    0.217(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<5>     |  118.708(R)|    0.728(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<6>     |  118.474(R)|    0.909(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<7>     |  118.019(R)|    0.804(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<0>     |  115.219(R)|   -0.741(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<1>     |  114.706(R)|   -0.330(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<2>     |  113.802(R)|    0.393(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<3>     |  113.490(R)|    0.642(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<4>     |  113.422(R)|    0.697(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<5>     |  113.390(R)|    0.722(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<6>     |  114.017(R)|    0.221(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<7>     |  114.934(R)|   -0.513(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<0>     |  107.345(R)|   -1.439(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<1>     |  107.242(R)|   -0.162(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<2>     |  107.383(R)|   -0.055(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<3>     |  106.707(R)|    0.132(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<4>     |  107.139(R)|   -0.262(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<5>     |  107.520(R)|    0.090(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<6>     |  107.433(R)|   -0.033(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<7>     |  107.064(R)|    0.100(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<0>     |  103.333(R)|   -0.451(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<1>     |  103.759(R)|   -0.971(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<2>     |  103.082(R)|   -0.429(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<3>     |  102.812(R)|   -0.213(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<4>     |  103.574(R)|   -0.822(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<5>     |  103.284(R)|   -0.590(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<6>     |  102.969(R)|   -0.338(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<7>     |  103.254(R)|   -0.566(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<0>     |   96.765(R)|   -0.524(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<1>     |   96.033(R)|   -1.053(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<2>     |   96.638(R)|   -1.899(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<3>     |   96.597(R)|   -1.636(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<4>     |   96.968(R)|   -1.624(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<5>     |   97.473(R)|   -1.816(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<6>     |   95.778(R)|   -1.211(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<7>     |   95.892(R)|   -0.994(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock Mat1<2>
+------------+------------+------------+-----------------------------+--------+
+            |  Setup to  |  Hold to   |                             | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s)            | Phase  |
+------------+------------+------------+-----------------------------+--------+
+Mat2<0>     |  129.052(R)|    0.341(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<1>     |  128.268(R)|    0.968(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<2>     |  129.111(R)|    0.294(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<3>     |  131.314(R)|    0.453(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<4>     |  129.543(R)|    0.550(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<5>     |  128.392(R)|    0.869(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<6>     |  128.244(R)|    0.988(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<7>     |  129.195(R)|    1.037(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<0>     |  124.263(R)|   -0.024(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<1>     |  125.099(R)|   -0.199(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<2>     |  123.940(R)|    0.235(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<3>     |  123.750(R)|    0.386(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<4>     |  123.062(R)|    0.936(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<5>     |  123.104(R)|    0.903(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<6>     |  124.281(R)|   -0.039(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<7>     |  124.168(R)|    0.114(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<0>     |  118.321(R)|    0.121(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<1>     |  119.365(R)|    0.392(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<2>     |  119.596(R)|    0.374(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<3>     |  119.364(R)|   -0.116(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<4>     |  118.285(R)|    0.150(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<5>     |  118.763(R)|    0.661(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<6>     |  118.529(R)|    0.842(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<7>     |  118.074(R)|    0.737(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<0>     |  115.274(R)|   -0.808(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<1>     |  114.761(R)|   -0.397(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<2>     |  113.857(R)|    0.326(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<3>     |  113.545(R)|    0.575(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<4>     |  113.477(R)|    0.630(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<5>     |  113.445(R)|    0.655(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<6>     |  114.072(R)|    0.154(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<7>     |  114.989(R)|   -0.580(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<0>     |  107.400(R)|   -1.506(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<1>     |  107.297(R)|   -0.229(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<2>     |  107.438(R)|   -0.122(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<3>     |  106.762(R)|    0.065(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<4>     |  107.194(R)|   -0.329(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<5>     |  107.575(R)|    0.023(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<6>     |  107.488(R)|   -0.100(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<7>     |  107.119(R)|    0.033(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<0>     |  103.388(R)|   -0.518(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<1>     |  103.814(R)|   -1.038(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<2>     |  103.137(R)|   -0.496(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<3>     |  102.867(R)|   -0.280(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<4>     |  103.629(R)|   -0.889(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<5>     |  103.339(R)|   -0.657(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<6>     |  103.024(R)|   -0.405(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<7>     |  103.309(R)|   -0.633(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<0>     |   96.820(R)|   -0.591(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<1>     |   96.088(R)|   -1.120(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<2>     |   96.693(R)|   -1.966(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<3>     |   96.652(R)|   -1.703(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<4>     |   97.023(R)|   -1.691(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<5>     |   97.528(R)|   -1.883(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<6>     |   95.833(R)|   -1.278(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<7>     |   95.947(R)|   -1.061(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock Mat1<3>
+------------+------------+------------+-----------------------------+--------+
+            |  Setup to  |  Hold to   |                             | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s)            | Phase  |
+------------+------------+------------+-----------------------------+--------+
+Mat2<0>     |  128.681(R)|    0.804(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<1>     |  127.897(R)|    1.431(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<2>     |  128.740(R)|    0.757(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<3>     |  130.943(R)|    0.916(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<4>     |  129.172(R)|    1.013(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<5>     |  128.021(R)|    1.332(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<6>     |  127.873(R)|    1.451(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<7>     |  128.824(R)|    1.500(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<0>     |  123.892(R)|    0.439(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<1>     |  124.728(R)|    0.264(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<2>     |  123.569(R)|    0.698(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<3>     |  123.379(R)|    0.849(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<4>     |  122.691(R)|    1.399(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<5>     |  122.733(R)|    1.366(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<6>     |  123.910(R)|    0.424(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<7>     |  123.797(R)|    0.577(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<0>     |  117.950(R)|    0.584(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<1>     |  118.994(R)|    0.855(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<2>     |  119.225(R)|    0.837(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<3>     |  118.993(R)|    0.347(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<4>     |  117.914(R)|    0.613(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<5>     |  118.392(R)|    1.124(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<6>     |  118.158(R)|    1.305(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<7>     |  117.703(R)|    1.200(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<0>     |  114.903(R)|   -0.345(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<1>     |  114.390(R)|    0.066(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<2>     |  113.486(R)|    0.789(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<3>     |  113.174(R)|    1.038(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<4>     |  113.106(R)|    1.093(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<5>     |  113.074(R)|    1.118(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<6>     |  113.701(R)|    0.617(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<7>     |  114.618(R)|   -0.117(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<0>     |  107.029(R)|   -1.043(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<1>     |  106.926(R)|    0.234(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<2>     |  107.067(R)|    0.341(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<3>     |  106.391(R)|    0.528(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<4>     |  106.823(R)|    0.134(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<5>     |  107.204(R)|    0.486(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<6>     |  107.117(R)|    0.363(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<7>     |  106.748(R)|    0.496(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<0>     |  103.017(R)|   -0.055(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<1>     |  103.443(R)|   -0.575(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<2>     |  102.766(R)|   -0.033(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<3>     |  102.496(R)|    0.183(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<4>     |  103.258(R)|   -0.426(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<5>     |  102.968(R)|   -0.194(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<6>     |  102.653(R)|    0.058(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<7>     |  102.938(R)|   -0.170(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<0>     |   96.449(R)|   -0.128(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<1>     |   95.717(R)|   -0.657(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<2>     |   96.322(R)|   -1.503(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<3>     |   96.281(R)|   -1.240(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<4>     |   96.652(R)|   -1.228(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<5>     |   97.157(R)|   -1.420(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<6>     |   95.462(R)|   -0.815(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<7>     |   95.576(R)|   -0.598(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock Mat1<4>
+------------+------------+------------+-----------------------------+--------+
+            |  Setup to  |  Hold to   |                             | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s)            | Phase  |
+------------+------------+------------+-----------------------------+--------+
+Mat2<0>     |  129.120(R)|    0.256(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<1>     |  128.336(R)|    0.883(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<2>     |  129.179(R)|    0.209(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<3>     |  131.382(R)|    0.368(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<4>     |  129.611(R)|    0.465(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<5>     |  128.460(R)|    0.784(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<6>     |  128.312(R)|    0.903(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<7>     |  129.263(R)|    0.952(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<0>     |  124.331(R)|   -0.109(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<1>     |  125.167(R)|   -0.284(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<2>     |  124.008(R)|    0.150(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<3>     |  123.818(R)|    0.301(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<4>     |  123.130(R)|    0.851(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<5>     |  123.172(R)|    0.818(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<6>     |  124.349(R)|   -0.124(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<7>     |  124.236(R)|    0.029(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<0>     |  118.389(R)|    0.036(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<1>     |  119.433(R)|    0.307(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<2>     |  119.664(R)|    0.289(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<3>     |  119.432(R)|   -0.201(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<4>     |  118.353(R)|    0.065(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<5>     |  118.831(R)|    0.576(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<6>     |  118.597(R)|    0.757(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<7>     |  118.142(R)|    0.652(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<0>     |  115.342(R)|   -0.893(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<1>     |  114.829(R)|   -0.482(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<2>     |  113.925(R)|    0.241(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<3>     |  113.613(R)|    0.490(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<4>     |  113.545(R)|    0.545(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<5>     |  113.513(R)|    0.570(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<6>     |  114.140(R)|    0.069(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<7>     |  115.057(R)|   -0.665(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<0>     |  107.468(R)|   -1.591(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<1>     |  107.365(R)|   -0.314(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<2>     |  107.506(R)|   -0.207(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<3>     |  106.830(R)|   -0.020(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<4>     |  107.262(R)|   -0.414(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<5>     |  107.643(R)|   -0.062(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<6>     |  107.556(R)|   -0.185(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<7>     |  107.187(R)|   -0.052(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<0>     |  103.456(R)|   -0.603(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<1>     |  103.882(R)|   -1.123(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<2>     |  103.205(R)|   -0.581(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<3>     |  102.935(R)|   -0.365(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<4>     |  103.697(R)|   -0.974(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<5>     |  103.407(R)|   -0.742(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<6>     |  103.092(R)|   -0.490(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<7>     |  103.377(R)|   -0.718(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<0>     |   96.888(R)|   -0.676(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<1>     |   96.156(R)|   -1.205(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<2>     |   96.761(R)|   -2.051(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<3>     |   96.720(R)|   -1.788(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<4>     |   97.091(R)|   -1.776(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<5>     |   97.596(R)|   -1.968(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<6>     |   95.901(R)|   -1.363(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<7>     |   96.015(R)|   -1.146(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock Mat1<5>
+------------+------------+------------+-----------------------------+--------+
+            |  Setup to  |  Hold to   |                             | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s)            | Phase  |
+------------+------------+------------+-----------------------------+--------+
+Mat2<0>     |  128.916(R)|    0.510(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<1>     |  128.132(R)|    1.137(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<2>     |  128.975(R)|    0.463(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<3>     |  131.178(R)|    0.622(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<4>     |  129.407(R)|    0.719(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<5>     |  128.256(R)|    1.038(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<6>     |  128.108(R)|    1.157(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<7>     |  129.059(R)|    1.206(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<0>     |  124.127(R)|    0.145(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<1>     |  124.963(R)|   -0.030(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<2>     |  123.804(R)|    0.404(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<3>     |  123.614(R)|    0.555(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<4>     |  122.926(R)|    1.105(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<5>     |  122.968(R)|    1.072(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<6>     |  124.145(R)|    0.130(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<7>     |  124.032(R)|    0.283(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<0>     |  118.185(R)|    0.290(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<1>     |  119.229(R)|    0.561(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<2>     |  119.460(R)|    0.543(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<3>     |  119.228(R)|    0.053(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<4>     |  118.149(R)|    0.319(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<5>     |  118.627(R)|    0.830(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<6>     |  118.393(R)|    1.011(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<7>     |  117.938(R)|    0.906(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<0>     |  115.138(R)|   -0.639(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<1>     |  114.625(R)|   -0.228(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<2>     |  113.721(R)|    0.495(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<3>     |  113.409(R)|    0.744(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<4>     |  113.341(R)|    0.799(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<5>     |  113.309(R)|    0.824(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<6>     |  113.936(R)|    0.323(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<7>     |  114.853(R)|   -0.411(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<0>     |  107.264(R)|   -1.337(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<1>     |  107.161(R)|   -0.060(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<2>     |  107.302(R)|    0.047(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<3>     |  106.626(R)|    0.234(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<4>     |  107.058(R)|   -0.160(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<5>     |  107.439(R)|    0.192(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<6>     |  107.352(R)|    0.069(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<7>     |  106.983(R)|    0.202(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<0>     |  103.252(R)|   -0.349(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<1>     |  103.678(R)|   -0.869(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<2>     |  103.001(R)|   -0.327(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<3>     |  102.731(R)|   -0.111(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<4>     |  103.493(R)|   -0.720(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<5>     |  103.203(R)|   -0.488(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<6>     |  102.888(R)|   -0.236(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<7>     |  103.173(R)|   -0.464(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<0>     |   96.684(R)|   -0.422(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<1>     |   95.952(R)|   -0.951(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<2>     |   96.557(R)|   -1.797(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<3>     |   96.516(R)|   -1.534(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<4>     |   96.887(R)|   -1.522(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<5>     |   97.392(R)|   -1.714(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<6>     |   95.697(R)|   -1.109(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<7>     |   95.811(R)|   -0.892(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock Mat1<6>
+------------+------------+------------+-----------------------------+--------+
+            |  Setup to  |  Hold to   |                             | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s)            | Phase  |
+------------+------------+------------+-----------------------------+--------+
+Mat2<0>     |  128.920(R)|    0.505(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<1>     |  128.136(R)|    1.132(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<2>     |  128.979(R)|    0.458(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<3>     |  131.182(R)|    0.617(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<4>     |  129.411(R)|    0.714(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<5>     |  128.260(R)|    1.033(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<6>     |  128.112(R)|    1.152(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<7>     |  129.063(R)|    1.201(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<0>     |  124.131(R)|    0.140(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<1>     |  124.967(R)|   -0.035(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<2>     |  123.808(R)|    0.399(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<3>     |  123.618(R)|    0.550(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<4>     |  122.930(R)|    1.100(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<5>     |  122.972(R)|    1.067(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<6>     |  124.149(R)|    0.125(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<7>     |  124.036(R)|    0.278(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<0>     |  118.189(R)|    0.285(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<1>     |  119.233(R)|    0.556(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<2>     |  119.464(R)|    0.538(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<3>     |  119.232(R)|    0.048(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<4>     |  118.153(R)|    0.314(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<5>     |  118.631(R)|    0.825(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<6>     |  118.397(R)|    1.006(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<7>     |  117.942(R)|    0.901(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<0>     |  115.142(R)|   -0.644(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<1>     |  114.629(R)|   -0.233(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<2>     |  113.725(R)|    0.490(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<3>     |  113.413(R)|    0.739(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<4>     |  113.345(R)|    0.794(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<5>     |  113.313(R)|    0.819(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<6>     |  113.940(R)|    0.318(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<7>     |  114.857(R)|   -0.416(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<0>     |  107.268(R)|   -1.342(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<1>     |  107.165(R)|   -0.065(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<2>     |  107.306(R)|    0.042(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<3>     |  106.630(R)|    0.229(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<4>     |  107.062(R)|   -0.165(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<5>     |  107.443(R)|    0.187(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<6>     |  107.356(R)|    0.064(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<7>     |  106.987(R)|    0.197(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<0>     |  103.256(R)|   -0.354(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<1>     |  103.682(R)|   -0.874(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<2>     |  103.005(R)|   -0.332(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<3>     |  102.735(R)|   -0.116(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<4>     |  103.497(R)|   -0.725(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<5>     |  103.207(R)|   -0.493(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<6>     |  102.892(R)|   -0.241(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<7>     |  103.177(R)|   -0.469(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<0>     |   96.688(R)|   -0.427(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<1>     |   95.956(R)|   -0.956(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<2>     |   96.561(R)|   -1.802(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<3>     |   96.520(R)|   -1.539(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<4>     |   96.891(R)|   -1.527(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<5>     |   97.396(R)|   -1.719(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<6>     |   95.701(R)|   -1.114(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<7>     |   95.815(R)|   -0.897(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock Mat1<7>
+------------+------------+------------+-----------------------------+--------+
+            |  Setup to  |  Hold to   |                             | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s)            | Phase  |
+------------+------------+------------+-----------------------------+--------+
+Mat2<0>     |  128.650(R)|    0.843(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<1>     |  127.866(R)|    1.470(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<2>     |  128.709(R)|    0.796(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<3>     |  130.912(R)|    0.955(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<4>     |  129.141(R)|    1.052(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<5>     |  127.990(R)|    1.371(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<6>     |  127.842(R)|    1.490(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat2<7>     |  128.793(R)|    1.539(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<0>     |  123.861(R)|    0.478(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<1>     |  124.697(R)|    0.303(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<2>     |  123.538(R)|    0.737(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<3>     |  123.348(R)|    0.888(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<4>     |  122.660(R)|    1.438(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<5>     |  122.702(R)|    1.405(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<6>     |  123.879(R)|    0.463(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat3<7>     |  123.766(R)|    0.616(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<0>     |  117.919(R)|    0.623(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<1>     |  118.963(R)|    0.894(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<2>     |  119.194(R)|    0.876(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<3>     |  118.962(R)|    0.386(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<4>     |  117.883(R)|    0.652(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<5>     |  118.361(R)|    1.163(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<6>     |  118.127(R)|    1.344(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat4<7>     |  117.672(R)|    1.239(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<0>     |  114.872(R)|   -0.306(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<1>     |  114.359(R)|    0.105(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<2>     |  113.455(R)|    0.828(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<3>     |  113.143(R)|    1.077(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<4>     |  113.075(R)|    1.132(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<5>     |  113.043(R)|    1.157(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<6>     |  113.670(R)|    0.656(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat5<7>     |  114.587(R)|   -0.078(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<0>     |  106.998(R)|   -1.004(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<1>     |  106.895(R)|    0.273(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<2>     |  107.036(R)|    0.380(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<3>     |  106.360(R)|    0.567(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<4>     |  106.792(R)|    0.173(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<5>     |  107.173(R)|    0.525(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<6>     |  107.086(R)|    0.402(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat6<7>     |  106.717(R)|    0.535(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<0>     |  102.986(R)|   -0.016(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<1>     |  103.412(R)|   -0.536(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<2>     |  102.735(R)|    0.006(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<3>     |  102.465(R)|    0.222(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<4>     |  103.227(R)|   -0.387(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<5>     |  102.937(R)|   -0.155(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<6>     |  102.622(R)|    0.097(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat7<7>     |  102.907(R)|   -0.131(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<0>     |   96.418(R)|   -0.089(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<1>     |   95.686(R)|   -0.618(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<2>     |   96.291(R)|   -1.464(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<3>     |   96.250(R)|   -1.201(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<4>     |   96.621(R)|   -1.189(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<5>     |   97.126(R)|   -1.381(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<6>     |   95.431(R)|   -0.776(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+Mat8<7>     |   95.545(R)|   -0.559(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+------------+-----------------------------+--------+
+
+Clock Mat0<0> to Pad
+------------+------------+-----------------------------+--------+
+            | clk (edge) |                             | Clock  |
+Destination |   to PAD   |Internal Clock(s)            | Phase  |
+------------+------------+-----------------------------+--------+
+temp1<0>    |   58.111(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<1>    |   60.816(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<2>    |   59.026(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<3>    |   55.569(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<4>    |   57.158(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<5>    |   57.294(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<6>    |   54.695(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<7>    |   56.160(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+-----------------------------+--------+
+
+Clock Mat0<1> to Pad
+------------+------------+-----------------------------+--------+
+            | clk (edge) |                             | Clock  |
+Destination |   to PAD   |Internal Clock(s)            | Phase  |
+------------+------------+-----------------------------+--------+
+temp1<0>    |   58.279(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<1>    |   60.984(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<2>    |   59.194(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<3>    |   55.737(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<4>    |   57.326(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<5>    |   57.462(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<6>    |   54.863(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<7>    |   56.328(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+-----------------------------+--------+
+
+Clock Mat0<2> to Pad
+------------+------------+-----------------------------+--------+
+            | clk (edge) |                             | Clock  |
+Destination |   to PAD   |Internal Clock(s)            | Phase  |
+------------+------------+-----------------------------+--------+
+temp1<0>    |   59.059(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<1>    |   61.764(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<2>    |   59.974(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<3>    |   56.517(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<4>    |   58.106(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<5>    |   58.242(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<6>    |   55.643(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<7>    |   57.108(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+-----------------------------+--------+
+
+Clock Mat0<3> to Pad
+------------+------------+-----------------------------+--------+
+            | clk (edge) |                             | Clock  |
+Destination |   to PAD   |Internal Clock(s)            | Phase  |
+------------+------------+-----------------------------+--------+
+temp1<0>    |   59.101(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<1>    |   61.806(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<2>    |   60.016(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<3>    |   56.559(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<4>    |   58.148(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<5>    |   58.284(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<6>    |   55.685(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<7>    |   57.150(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+-----------------------------+--------+
+
+Clock Mat0<4> to Pad
+------------+------------+-----------------------------+--------+
+            | clk (edge) |                             | Clock  |
+Destination |   to PAD   |Internal Clock(s)            | Phase  |
+------------+------------+-----------------------------+--------+
+temp1<0>    |   56.785(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<1>    |   59.490(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<2>    |   57.700(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<3>    |   54.243(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<4>    |   55.832(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<5>    |   55.968(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<6>    |   53.369(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<7>    |   54.834(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+-----------------------------+--------+
+
+Clock Mat0<5> to Pad
+------------+------------+-----------------------------+--------+
+            | clk (edge) |                             | Clock  |
+Destination |   to PAD   |Internal Clock(s)            | Phase  |
+------------+------------+-----------------------------+--------+
+temp1<0>    |   58.366(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<1>    |   61.071(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<2>    |   59.281(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<3>    |   55.824(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<4>    |   57.413(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<5>    |   57.549(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<6>    |   54.950(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<7>    |   56.415(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+-----------------------------+--------+
+
+Clock Mat0<6> to Pad
+------------+------------+-----------------------------+--------+
+            | clk (edge) |                             | Clock  |
+Destination |   to PAD   |Internal Clock(s)            | Phase  |
+------------+------------+-----------------------------+--------+
+temp1<0>    |   57.904(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<1>    |   60.609(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<2>    |   58.819(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<3>    |   55.362(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<4>    |   56.951(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<5>    |   57.087(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<6>    |   54.488(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<7>    |   55.953(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+-----------------------------+--------+
+
+Clock Mat0<7> to Pad
+------------+------------+-----------------------------+--------+
+            | clk (edge) |                             | Clock  |
+Destination |   to PAD   |Internal Clock(s)            | Phase  |
+------------+------------+-----------------------------+--------+
+temp1<0>    |   58.366(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<1>    |   61.071(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<2>    |   59.281(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<3>    |   55.824(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<4>    |   57.413(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<5>    |   57.549(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<6>    |   54.950(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<7>    |   56.415(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+-----------------------------+--------+
+
+Clock Mat1<0> to Pad
+------------+------------+-----------------------------+--------+
+            | clk (edge) |                             | Clock  |
+Destination |   to PAD   |Internal Clock(s)            | Phase  |
+------------+------------+-----------------------------+--------+
+temp1<0>    |   57.173(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<1>    |   59.878(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<2>    |   58.088(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<3>    |   54.631(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<4>    |   56.220(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<5>    |   56.356(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<6>    |   53.757(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<7>    |   55.222(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+-----------------------------+--------+
+
+Clock Mat1<1> to Pad
+------------+------------+-----------------------------+--------+
+            | clk (edge) |                             | Clock  |
+Destination |   to PAD   |Internal Clock(s)            | Phase  |
+------------+------------+-----------------------------+--------+
+temp1<0>    |   56.770(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<1>    |   59.475(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<2>    |   57.685(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<3>    |   54.228(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<4>    |   55.817(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<5>    |   55.953(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<6>    |   53.354(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<7>    |   54.819(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+-----------------------------+--------+
+
+Clock Mat1<2> to Pad
+------------+------------+-----------------------------+--------+
+            | clk (edge) |                             | Clock  |
+Destination |   to PAD   |Internal Clock(s)            | Phase  |
+------------+------------+-----------------------------+--------+
+temp1<0>    |   56.703(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<1>    |   59.408(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<2>    |   57.618(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<3>    |   54.161(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<4>    |   55.750(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<5>    |   55.886(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<6>    |   53.287(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<7>    |   54.752(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+-----------------------------+--------+
+
+Clock Mat1<3> to Pad
+------------+------------+-----------------------------+--------+
+            | clk (edge) |                             | Clock  |
+Destination |   to PAD   |Internal Clock(s)            | Phase  |
+------------+------------+-----------------------------+--------+
+temp1<0>    |   57.166(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<1>    |   59.871(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<2>    |   58.081(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<3>    |   54.624(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<4>    |   56.213(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<5>    |   56.349(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<6>    |   53.750(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<7>    |   55.215(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+-----------------------------+--------+
+
+Clock Mat1<4> to Pad
+------------+------------+-----------------------------+--------+
+            | clk (edge) |                             | Clock  |
+Destination |   to PAD   |Internal Clock(s)            | Phase  |
+------------+------------+-----------------------------+--------+
+temp1<0>    |   56.618(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<1>    |   59.323(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<2>    |   57.533(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<3>    |   54.076(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<4>    |   55.665(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<5>    |   55.801(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<6>    |   53.202(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<7>    |   54.667(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+-----------------------------+--------+
+
+Clock Mat1<5> to Pad
+------------+------------+-----------------------------+--------+
+            | clk (edge) |                             | Clock  |
+Destination |   to PAD   |Internal Clock(s)            | Phase  |
+------------+------------+-----------------------------+--------+
+temp1<0>    |   56.872(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<1>    |   59.577(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<2>    |   57.787(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<3>    |   54.330(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<4>    |   55.919(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<5>    |   56.055(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<6>    |   53.456(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<7>    |   54.921(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+-----------------------------+--------+
+
+Clock Mat1<6> to Pad
+------------+------------+-----------------------------+--------+
+            | clk (edge) |                             | Clock  |
+Destination |   to PAD   |Internal Clock(s)            | Phase  |
+------------+------------+-----------------------------+--------+
+temp1<0>    |   56.867(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<1>    |   59.572(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<2>    |   57.782(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<3>    |   54.325(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<4>    |   55.914(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<5>    |   56.050(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<6>    |   53.451(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<7>    |   54.916(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+-----------------------------+--------+
+
+Clock Mat1<7> to Pad
+------------+------------+-----------------------------+--------+
+            | clk (edge) |                             | Clock  |
+Destination |   to PAD   |Internal Clock(s)            | Phase  |
+------------+------------+-----------------------------+--------+
+temp1<0>    |   57.205(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<1>    |   59.910(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<2>    |   58.120(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<3>    |   54.663(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<4>    |   56.252(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<5>    |   56.388(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<6>    |   53.789(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+temp1<7>    |   55.254(R)|Mcompar_temp_cmp_gt0000_cy<7>|   0.000|
+------------+------------+-----------------------------+--------+
+
+Clock to Setup on destination clock Mat0<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Mat0<0>        |  134.191|  134.191|         |         |
+Mat0<1>        |  134.359|  134.359|         |         |
+Mat0<2>        |  135.139|  135.139|         |         |
+Mat0<3>        |  135.181|  135.181|         |         |
+Mat0<4>        |  132.865|  132.865|         |         |
+Mat0<5>        |  134.446|  134.446|         |         |
+Mat0<6>        |  133.984|  133.984|         |         |
+Mat0<7>        |  134.446|  134.446|         |         |
+Mat1<0>        |  133.253|  133.253|         |         |
+Mat1<1>        |  132.850|  132.850|         |         |
+Mat1<2>        |  132.783|  132.783|         |         |
+Mat1<3>        |  133.246|  133.246|         |         |
+Mat1<4>        |  132.698|  132.698|         |         |
+Mat1<5>        |  132.952|  132.952|         |         |
+Mat1<6>        |  132.947|  132.947|         |         |
+Mat1<7>        |  133.285|  133.285|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mat0<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Mat0<0>        |  134.078|  134.078|         |         |
+Mat0<1>        |  134.246|  134.246|         |         |
+Mat0<2>        |  135.026|  135.026|         |         |
+Mat0<3>        |  135.068|  135.068|         |         |
+Mat0<4>        |  132.752|  132.752|         |         |
+Mat0<5>        |  134.333|  134.333|         |         |
+Mat0<6>        |  133.871|  133.871|         |         |
+Mat0<7>        |  134.333|  134.333|         |         |
+Mat1<0>        |  133.140|  133.140|         |         |
+Mat1<1>        |  132.737|  132.737|         |         |
+Mat1<2>        |  132.670|  132.670|         |         |
+Mat1<3>        |  133.133|  133.133|         |         |
+Mat1<4>        |  132.585|  132.585|         |         |
+Mat1<5>        |  132.839|  132.839|         |         |
+Mat1<6>        |  132.834|  132.834|         |         |
+Mat1<7>        |  133.172|  133.172|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mat0<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Mat0<0>        |  133.433|  133.433|         |         |
+Mat0<1>        |  133.601|  133.601|         |         |
+Mat0<2>        |  134.381|  134.381|         |         |
+Mat0<3>        |  134.423|  134.423|         |         |
+Mat0<4>        |  132.107|  132.107|         |         |
+Mat0<5>        |  133.688|  133.688|         |         |
+Mat0<6>        |  133.226|  133.226|         |         |
+Mat0<7>        |  133.688|  133.688|         |         |
+Mat1<0>        |  132.495|  132.495|         |         |
+Mat1<1>        |  132.092|  132.092|         |         |
+Mat1<2>        |  132.025|  132.025|         |         |
+Mat1<3>        |  132.488|  132.488|         |         |
+Mat1<4>        |  131.940|  131.940|         |         |
+Mat1<5>        |  132.194|  132.194|         |         |
+Mat1<6>        |  132.189|  132.189|         |         |
+Mat1<7>        |  132.527|  132.527|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mat0<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Mat0<0>        |  133.420|  133.420|         |         |
+Mat0<1>        |  133.588|  133.588|         |         |
+Mat0<2>        |  134.368|  134.368|         |         |
+Mat0<3>        |  134.410|  134.410|         |         |
+Mat0<4>        |  132.094|  132.094|         |         |
+Mat0<5>        |  133.675|  133.675|         |         |
+Mat0<6>        |  133.213|  133.213|         |         |
+Mat0<7>        |  133.675|  133.675|         |         |
+Mat1<0>        |  132.482|  132.482|         |         |
+Mat1<1>        |  132.079|  132.079|         |         |
+Mat1<2>        |  132.012|  132.012|         |         |
+Mat1<3>        |  132.475|  132.475|         |         |
+Mat1<4>        |  131.927|  131.927|         |         |
+Mat1<5>        |  132.181|  132.181|         |         |
+Mat1<6>        |  132.176|  132.176|         |         |
+Mat1<7>        |  132.514|  132.514|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mat0<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Mat0<0>        |  135.252|  135.252|         |         |
+Mat0<1>        |  135.420|  135.420|         |         |
+Mat0<2>        |  136.200|  136.200|         |         |
+Mat0<3>        |  136.242|  136.242|         |         |
+Mat0<4>        |  133.926|  133.926|         |         |
+Mat0<5>        |  135.507|  135.507|         |         |
+Mat0<6>        |  135.045|  135.045|         |         |
+Mat0<7>        |  135.507|  135.507|         |         |
+Mat1<0>        |  134.314|  134.314|         |         |
+Mat1<1>        |  133.911|  133.911|         |         |
+Mat1<2>        |  133.844|  133.844|         |         |
+Mat1<3>        |  134.307|  134.307|         |         |
+Mat1<4>        |  133.759|  133.759|         |         |
+Mat1<5>        |  134.013|  134.013|         |         |
+Mat1<6>        |  134.008|  134.008|         |         |
+Mat1<7>        |  134.346|  134.346|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mat0<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Mat0<0>        |  134.009|  134.009|         |         |
+Mat0<1>        |  134.177|  134.177|         |         |
+Mat0<2>        |  134.957|  134.957|         |         |
+Mat0<3>        |  134.999|  134.999|         |         |
+Mat0<4>        |  132.683|  132.683|         |         |
+Mat0<5>        |  134.264|  134.264|         |         |
+Mat0<6>        |  133.802|  133.802|         |         |
+Mat0<7>        |  134.264|  134.264|         |         |
+Mat1<0>        |  133.071|  133.071|         |         |
+Mat1<1>        |  132.668|  132.668|         |         |
+Mat1<2>        |  132.601|  132.601|         |         |
+Mat1<3>        |  133.064|  133.064|         |         |
+Mat1<4>        |  132.516|  132.516|         |         |
+Mat1<5>        |  132.770|  132.770|         |         |
+Mat1<6>        |  132.765|  132.765|         |         |
+Mat1<7>        |  133.103|  133.103|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mat0<6>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Mat0<0>        |  134.356|  134.356|         |         |
+Mat0<1>        |  134.524|  134.524|         |         |
+Mat0<2>        |  135.304|  135.304|         |         |
+Mat0<3>        |  135.346|  135.346|         |         |
+Mat0<4>        |  133.030|  133.030|         |         |
+Mat0<5>        |  134.611|  134.611|         |         |
+Mat0<6>        |  134.149|  134.149|         |         |
+Mat0<7>        |  134.611|  134.611|         |         |
+Mat1<0>        |  133.418|  133.418|         |         |
+Mat1<1>        |  133.015|  133.015|         |         |
+Mat1<2>        |  132.948|  132.948|         |         |
+Mat1<3>        |  133.411|  133.411|         |         |
+Mat1<4>        |  132.863|  132.863|         |         |
+Mat1<5>        |  133.117|  133.117|         |         |
+Mat1<6>        |  133.112|  133.112|         |         |
+Mat1<7>        |  133.450|  133.450|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mat0<7>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Mat0<0>        |  134.010|  134.010|         |         |
+Mat0<1>        |  134.178|  134.178|         |         |
+Mat0<2>        |  134.958|  134.958|         |         |
+Mat0<3>        |  135.000|  135.000|         |         |
+Mat0<4>        |  132.684|  132.684|         |         |
+Mat0<5>        |  134.265|  134.265|         |         |
+Mat0<6>        |  133.803|  133.803|         |         |
+Mat0<7>        |  134.265|  134.265|         |         |
+Mat1<0>        |  133.072|  133.072|         |         |
+Mat1<1>        |  132.669|  132.669|         |         |
+Mat1<2>        |  132.602|  132.602|         |         |
+Mat1<3>        |  133.065|  133.065|         |         |
+Mat1<4>        |  132.517|  132.517|         |         |
+Mat1<5>        |  132.771|  132.771|         |         |
+Mat1<6>        |  132.766|  132.766|         |         |
+Mat1<7>        |  133.104|  133.104|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mat1<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Mat0<0>        |  134.859|  134.859|         |         |
+Mat0<1>        |  135.027|  135.027|         |         |
+Mat0<2>        |  135.807|  135.807|         |         |
+Mat0<3>        |  135.849|  135.849|         |         |
+Mat0<4>        |  133.533|  133.533|         |         |
+Mat0<5>        |  135.114|  135.114|         |         |
+Mat0<6>        |  134.652|  134.652|         |         |
+Mat0<7>        |  135.114|  135.114|         |         |
+Mat1<0>        |  133.921|  133.921|         |         |
+Mat1<1>        |  133.518|  133.518|         |         |
+Mat1<2>        |  133.451|  133.451|         |         |
+Mat1<3>        |  133.914|  133.914|         |         |
+Mat1<4>        |  133.366|  133.366|         |         |
+Mat1<5>        |  133.620|  133.620|         |         |
+Mat1<6>        |  133.615|  133.615|         |         |
+Mat1<7>        |  133.953|  133.953|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mat1<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Mat0<0>        |  135.181|  135.181|         |         |
+Mat0<1>        |  135.349|  135.349|         |         |
+Mat0<2>        |  136.129|  136.129|         |         |
+Mat0<3>        |  136.171|  136.171|         |         |
+Mat0<4>        |  133.855|  133.855|         |         |
+Mat0<5>        |  135.436|  135.436|         |         |
+Mat0<6>        |  134.974|  134.974|         |         |
+Mat0<7>        |  135.436|  135.436|         |         |
+Mat1<0>        |  134.243|  134.243|         |         |
+Mat1<1>        |  133.840|  133.840|         |         |
+Mat1<2>        |  133.773|  133.773|         |         |
+Mat1<3>        |  134.236|  134.236|         |         |
+Mat1<4>        |  133.688|  133.688|         |         |
+Mat1<5>        |  133.942|  133.942|         |         |
+Mat1<6>        |  133.937|  133.937|         |         |
+Mat1<7>        |  134.275|  134.275|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mat1<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Mat0<0>        |  135.236|  135.236|         |         |
+Mat0<1>        |  135.404|  135.404|         |         |
+Mat0<2>        |  136.184|  136.184|         |         |
+Mat0<3>        |  136.226|  136.226|         |         |
+Mat0<4>        |  133.910|  133.910|         |         |
+Mat0<5>        |  135.491|  135.491|         |         |
+Mat0<6>        |  135.029|  135.029|         |         |
+Mat0<7>        |  135.491|  135.491|         |         |
+Mat1<0>        |  134.298|  134.298|         |         |
+Mat1<1>        |  133.895|  133.895|         |         |
+Mat1<2>        |  133.828|  133.828|         |         |
+Mat1<3>        |  134.291|  134.291|         |         |
+Mat1<4>        |  133.743|  133.743|         |         |
+Mat1<5>        |  133.997|  133.997|         |         |
+Mat1<6>        |  133.992|  133.992|         |         |
+Mat1<7>        |  134.330|  134.330|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mat1<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Mat0<0>        |  134.865|  134.865|         |         |
+Mat0<1>        |  135.033|  135.033|         |         |
+Mat0<2>        |  135.813|  135.813|         |         |
+Mat0<3>        |  135.855|  135.855|         |         |
+Mat0<4>        |  133.539|  133.539|         |         |
+Mat0<5>        |  135.120|  135.120|         |         |
+Mat0<6>        |  134.658|  134.658|         |         |
+Mat0<7>        |  135.120|  135.120|         |         |
+Mat1<0>        |  133.927|  133.927|         |         |
+Mat1<1>        |  133.524|  133.524|         |         |
+Mat1<2>        |  133.457|  133.457|         |         |
+Mat1<3>        |  133.920|  133.920|         |         |
+Mat1<4>        |  133.372|  133.372|         |         |
+Mat1<5>        |  133.626|  133.626|         |         |
+Mat1<6>        |  133.621|  133.621|         |         |
+Mat1<7>        |  133.959|  133.959|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mat1<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Mat0<0>        |  135.304|  135.304|         |         |
+Mat0<1>        |  135.472|  135.472|         |         |
+Mat0<2>        |  136.252|  136.252|         |         |
+Mat0<3>        |  136.294|  136.294|         |         |
+Mat0<4>        |  133.978|  133.978|         |         |
+Mat0<5>        |  135.559|  135.559|         |         |
+Mat0<6>        |  135.097|  135.097|         |         |
+Mat0<7>        |  135.559|  135.559|         |         |
+Mat1<0>        |  134.366|  134.366|         |         |
+Mat1<1>        |  133.963|  133.963|         |         |
+Mat1<2>        |  133.896|  133.896|         |         |
+Mat1<3>        |  134.359|  134.359|         |         |
+Mat1<4>        |  133.811|  133.811|         |         |
+Mat1<5>        |  134.065|  134.065|         |         |
+Mat1<6>        |  134.060|  134.060|         |         |
+Mat1<7>        |  134.398|  134.398|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mat1<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Mat0<0>        |  135.100|  135.100|         |         |
+Mat0<1>        |  135.268|  135.268|         |         |
+Mat0<2>        |  136.048|  136.048|         |         |
+Mat0<3>        |  136.090|  136.090|         |         |
+Mat0<4>        |  133.774|  133.774|         |         |
+Mat0<5>        |  135.355|  135.355|         |         |
+Mat0<6>        |  134.893|  134.893|         |         |
+Mat0<7>        |  135.355|  135.355|         |         |
+Mat1<0>        |  134.162|  134.162|         |         |
+Mat1<1>        |  133.759|  133.759|         |         |
+Mat1<2>        |  133.692|  133.692|         |         |
+Mat1<3>        |  134.155|  134.155|         |         |
+Mat1<4>        |  133.607|  133.607|         |         |
+Mat1<5>        |  133.861|  133.861|         |         |
+Mat1<6>        |  133.856|  133.856|         |         |
+Mat1<7>        |  134.194|  134.194|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mat1<6>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Mat0<0>        |  135.104|  135.104|         |         |
+Mat0<1>        |  135.272|  135.272|         |         |
+Mat0<2>        |  136.052|  136.052|         |         |
+Mat0<3>        |  136.094|  136.094|         |         |
+Mat0<4>        |  133.778|  133.778|         |         |
+Mat0<5>        |  135.359|  135.359|         |         |
+Mat0<6>        |  134.897|  134.897|         |         |
+Mat0<7>        |  135.359|  135.359|         |         |
+Mat1<0>        |  134.166|  134.166|         |         |
+Mat1<1>        |  133.763|  133.763|         |         |
+Mat1<2>        |  133.696|  133.696|         |         |
+Mat1<3>        |  134.159|  134.159|         |         |
+Mat1<4>        |  133.611|  133.611|         |         |
+Mat1<5>        |  133.865|  133.865|         |         |
+Mat1<6>        |  133.860|  133.860|         |         |
+Mat1<7>        |  134.198|  134.198|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mat1<7>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Mat0<0>        |  134.834|  134.834|         |         |
+Mat0<1>        |  135.002|  135.002|         |         |
+Mat0<2>        |  135.782|  135.782|         |         |
+Mat0<3>        |  135.824|  135.824|         |         |
+Mat0<4>        |  133.508|  133.508|         |         |
+Mat0<5>        |  135.089|  135.089|         |         |
+Mat0<6>        |  134.627|  134.627|         |         |
+Mat0<7>        |  135.089|  135.089|         |         |
+Mat1<0>        |  133.896|  133.896|         |         |
+Mat1<1>        |  133.493|  133.493|         |         |
+Mat1<2>        |  133.426|  133.426|         |         |
+Mat1<3>        |  133.889|  133.889|         |         |
+Mat1<4>        |  133.341|  133.341|         |         |
+Mat1<5>        |  133.595|  133.595|         |         |
+Mat1<6>        |  133.590|  133.590|         |         |
+Mat1<7>        |  133.928|  133.928|         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Mat0<0>        |out_pixel<0>   |  122.205|
+Mat0<0>        |out_pixel<1>   |  122.301|
+Mat0<0>        |out_pixel<2>   |  122.852|
+Mat0<0>        |out_pixel<3>   |  123.274|
+Mat0<0>        |out_pixel<4>   |  123.554|
+Mat0<0>        |out_pixel<5>   |  122.673|
+Mat0<0>        |out_pixel<6>   |  123.081|
+Mat0<0>        |out_pixel<7>   |  124.064|
+Mat0<0>        |temp1<0>       |  141.909|
+Mat0<0>        |temp1<1>       |  142.567|
+Mat0<0>        |temp1<2>       |  143.221|
+Mat0<0>        |temp1<3>       |  143.947|
+Mat0<0>        |temp1<4>       |  143.880|
+Mat0<0>        |temp1<5>       |  144.457|
+Mat0<0>        |temp1<6>       |  142.487|
+Mat0<0>        |temp1<7>       |  142.934|
+Mat0<1>        |out_pixel<0>   |  122.373|
+Mat0<1>        |out_pixel<1>   |  122.469|
+Mat0<1>        |out_pixel<2>   |  123.020|
+Mat0<1>        |out_pixel<3>   |  123.442|
+Mat0<1>        |out_pixel<4>   |  123.722|
+Mat0<1>        |out_pixel<5>   |  122.841|
+Mat0<1>        |out_pixel<6>   |  123.249|
+Mat0<1>        |out_pixel<7>   |  124.232|
+Mat0<1>        |temp1<0>       |  142.077|
+Mat0<1>        |temp1<1>       |  142.735|
+Mat0<1>        |temp1<2>       |  143.389|
+Mat0<1>        |temp1<3>       |  144.115|
+Mat0<1>        |temp1<4>       |  144.048|
+Mat0<1>        |temp1<5>       |  144.625|
+Mat0<1>        |temp1<6>       |  142.655|
+Mat0<1>        |temp1<7>       |  143.102|
+Mat0<2>        |out_pixel<0>   |  123.153|
+Mat0<2>        |out_pixel<1>   |  123.249|
+Mat0<2>        |out_pixel<2>   |  123.800|
+Mat0<2>        |out_pixel<3>   |  124.222|
+Mat0<2>        |out_pixel<4>   |  124.502|
+Mat0<2>        |out_pixel<5>   |  123.621|
+Mat0<2>        |out_pixel<6>   |  124.029|
+Mat0<2>        |out_pixel<7>   |  125.012|
+Mat0<2>        |temp1<0>       |  142.857|
+Mat0<2>        |temp1<1>       |  143.515|
+Mat0<2>        |temp1<2>       |  144.169|
+Mat0<2>        |temp1<3>       |  144.895|
+Mat0<2>        |temp1<4>       |  144.828|
+Mat0<2>        |temp1<5>       |  145.405|
+Mat0<2>        |temp1<6>       |  143.435|
+Mat0<2>        |temp1<7>       |  143.882|
+Mat0<3>        |out_pixel<0>   |  123.195|
+Mat0<3>        |out_pixel<1>   |  123.291|
+Mat0<3>        |out_pixel<2>   |  123.842|
+Mat0<3>        |out_pixel<3>   |  124.264|
+Mat0<3>        |out_pixel<4>   |  124.544|
+Mat0<3>        |out_pixel<5>   |  123.663|
+Mat0<3>        |out_pixel<6>   |  124.071|
+Mat0<3>        |out_pixel<7>   |  125.054|
+Mat0<3>        |temp1<0>       |  142.899|
+Mat0<3>        |temp1<1>       |  143.557|
+Mat0<3>        |temp1<2>       |  144.211|
+Mat0<3>        |temp1<3>       |  144.937|
+Mat0<3>        |temp1<4>       |  144.870|
+Mat0<3>        |temp1<5>       |  145.447|
+Mat0<3>        |temp1<6>       |  143.477|
+Mat0<3>        |temp1<7>       |  143.924|
+Mat0<4>        |out_pixel<0>   |  120.879|
+Mat0<4>        |out_pixel<1>   |  120.975|
+Mat0<4>        |out_pixel<2>   |  121.526|
+Mat0<4>        |out_pixel<3>   |  121.948|
+Mat0<4>        |out_pixel<4>   |  122.228|
+Mat0<4>        |out_pixel<5>   |  121.347|
+Mat0<4>        |out_pixel<6>   |  121.755|
+Mat0<4>        |out_pixel<7>   |  122.738|
+Mat0<4>        |temp1<0>       |  140.583|
+Mat0<4>        |temp1<1>       |  141.241|
+Mat0<4>        |temp1<2>       |  141.895|
+Mat0<4>        |temp1<3>       |  142.621|
+Mat0<4>        |temp1<4>       |  142.554|
+Mat0<4>        |temp1<5>       |  143.131|
+Mat0<4>        |temp1<6>       |  141.161|
+Mat0<4>        |temp1<7>       |  141.608|
+Mat0<5>        |out_pixel<0>   |  122.460|
+Mat0<5>        |out_pixel<1>   |  122.556|
+Mat0<5>        |out_pixel<2>   |  123.107|
+Mat0<5>        |out_pixel<3>   |  123.529|
+Mat0<5>        |out_pixel<4>   |  123.809|
+Mat0<5>        |out_pixel<5>   |  122.928|
+Mat0<5>        |out_pixel<6>   |  123.336|
+Mat0<5>        |out_pixel<7>   |  124.319|
+Mat0<5>        |temp1<0>       |  142.164|
+Mat0<5>        |temp1<1>       |  142.822|
+Mat0<5>        |temp1<2>       |  143.476|
+Mat0<5>        |temp1<3>       |  144.202|
+Mat0<5>        |temp1<4>       |  144.135|
+Mat0<5>        |temp1<5>       |  144.712|
+Mat0<5>        |temp1<6>       |  142.742|
+Mat0<5>        |temp1<7>       |  143.189|
+Mat0<6>        |out_pixel<0>   |  121.998|
+Mat0<6>        |out_pixel<1>   |  122.094|
+Mat0<6>        |out_pixel<2>   |  122.645|
+Mat0<6>        |out_pixel<3>   |  123.067|
+Mat0<6>        |out_pixel<4>   |  123.347|
+Mat0<6>        |out_pixel<5>   |  122.466|
+Mat0<6>        |out_pixel<6>   |  122.874|
+Mat0<6>        |out_pixel<7>   |  123.857|
+Mat0<6>        |temp1<0>       |  141.702|
+Mat0<6>        |temp1<1>       |  142.360|
+Mat0<6>        |temp1<2>       |  143.014|
+Mat0<6>        |temp1<3>       |  143.740|
+Mat0<6>        |temp1<4>       |  143.673|
+Mat0<6>        |temp1<5>       |  144.250|
+Mat0<6>        |temp1<6>       |  142.280|
+Mat0<6>        |temp1<7>       |  142.727|
+Mat0<7>        |out_pixel<0>   |  122.460|
+Mat0<7>        |out_pixel<1>   |  122.556|
+Mat0<7>        |out_pixel<2>   |  123.107|
+Mat0<7>        |out_pixel<3>   |  123.529|
+Mat0<7>        |out_pixel<4>   |  123.809|
+Mat0<7>        |out_pixel<5>   |  122.928|
+Mat0<7>        |out_pixel<6>   |  123.336|
+Mat0<7>        |out_pixel<7>   |  124.319|
+Mat0<7>        |temp1<0>       |  142.164|
+Mat0<7>        |temp1<1>       |  142.822|
+Mat0<7>        |temp1<2>       |  143.476|
+Mat0<7>        |temp1<3>       |  144.202|
+Mat0<7>        |temp1<4>       |  144.135|
+Mat0<7>        |temp1<5>       |  144.712|
+Mat0<7>        |temp1<6>       |  142.742|
+Mat0<7>        |temp1<7>       |  143.189|
+Mat1<0>        |out_pixel<0>   |  121.267|
+Mat1<0>        |out_pixel<1>   |  121.363|
+Mat1<0>        |out_pixel<2>   |  121.914|
+Mat1<0>        |out_pixel<3>   |  122.336|
+Mat1<0>        |out_pixel<4>   |  122.616|
+Mat1<0>        |out_pixel<5>   |  121.735|
+Mat1<0>        |out_pixel<6>   |  122.143|
+Mat1<0>        |out_pixel<7>   |  123.126|
+Mat1<0>        |temp1<0>       |  140.971|
+Mat1<0>        |temp1<1>       |  141.629|
+Mat1<0>        |temp1<2>       |  142.283|
+Mat1<0>        |temp1<3>       |  143.009|
+Mat1<0>        |temp1<4>       |  142.942|
+Mat1<0>        |temp1<5>       |  143.519|
+Mat1<0>        |temp1<6>       |  141.549|
+Mat1<0>        |temp1<7>       |  141.996|
+Mat1<1>        |out_pixel<0>   |  120.864|
+Mat1<1>        |out_pixel<1>   |  120.960|
+Mat1<1>        |out_pixel<2>   |  121.511|
+Mat1<1>        |out_pixel<3>   |  121.933|
+Mat1<1>        |out_pixel<4>   |  122.213|
+Mat1<1>        |out_pixel<5>   |  121.332|
+Mat1<1>        |out_pixel<6>   |  121.740|
+Mat1<1>        |out_pixel<7>   |  122.723|
+Mat1<1>        |temp1<0>       |  140.568|
+Mat1<1>        |temp1<1>       |  141.226|
+Mat1<1>        |temp1<2>       |  141.880|
+Mat1<1>        |temp1<3>       |  142.606|
+Mat1<1>        |temp1<4>       |  142.539|
+Mat1<1>        |temp1<5>       |  143.116|
+Mat1<1>        |temp1<6>       |  141.146|
+Mat1<1>        |temp1<7>       |  141.593|
+Mat1<2>        |out_pixel<0>   |  120.797|
+Mat1<2>        |out_pixel<1>   |  120.893|
+Mat1<2>        |out_pixel<2>   |  121.444|
+Mat1<2>        |out_pixel<3>   |  121.866|
+Mat1<2>        |out_pixel<4>   |  122.146|
+Mat1<2>        |out_pixel<5>   |  121.265|
+Mat1<2>        |out_pixel<6>   |  121.673|
+Mat1<2>        |out_pixel<7>   |  122.656|
+Mat1<2>        |temp1<0>       |  140.501|
+Mat1<2>        |temp1<1>       |  141.159|
+Mat1<2>        |temp1<2>       |  141.813|
+Mat1<2>        |temp1<3>       |  142.539|
+Mat1<2>        |temp1<4>       |  142.472|
+Mat1<2>        |temp1<5>       |  143.049|
+Mat1<2>        |temp1<6>       |  141.079|
+Mat1<2>        |temp1<7>       |  141.526|
+Mat1<3>        |out_pixel<0>   |  121.260|
+Mat1<3>        |out_pixel<1>   |  121.356|
+Mat1<3>        |out_pixel<2>   |  121.907|
+Mat1<3>        |out_pixel<3>   |  122.329|
+Mat1<3>        |out_pixel<4>   |  122.609|
+Mat1<3>        |out_pixel<5>   |  121.728|
+Mat1<3>        |out_pixel<6>   |  122.136|
+Mat1<3>        |out_pixel<7>   |  123.119|
+Mat1<3>        |temp1<0>       |  140.964|
+Mat1<3>        |temp1<1>       |  141.622|
+Mat1<3>        |temp1<2>       |  142.276|
+Mat1<3>        |temp1<3>       |  143.002|
+Mat1<3>        |temp1<4>       |  142.935|
+Mat1<3>        |temp1<5>       |  143.512|
+Mat1<3>        |temp1<6>       |  141.542|
+Mat1<3>        |temp1<7>       |  141.989|
+Mat1<4>        |out_pixel<0>   |  120.712|
+Mat1<4>        |out_pixel<1>   |  120.808|
+Mat1<4>        |out_pixel<2>   |  121.359|
+Mat1<4>        |out_pixel<3>   |  121.781|
+Mat1<4>        |out_pixel<4>   |  122.061|
+Mat1<4>        |out_pixel<5>   |  121.180|
+Mat1<4>        |out_pixel<6>   |  121.588|
+Mat1<4>        |out_pixel<7>   |  122.571|
+Mat1<4>        |temp1<0>       |  140.416|
+Mat1<4>        |temp1<1>       |  141.074|
+Mat1<4>        |temp1<2>       |  141.728|
+Mat1<4>        |temp1<3>       |  142.454|
+Mat1<4>        |temp1<4>       |  142.387|
+Mat1<4>        |temp1<5>       |  142.964|
+Mat1<4>        |temp1<6>       |  140.994|
+Mat1<4>        |temp1<7>       |  141.441|
+Mat1<5>        |out_pixel<0>   |  120.966|
+Mat1<5>        |out_pixel<1>   |  121.062|
+Mat1<5>        |out_pixel<2>   |  121.613|
+Mat1<5>        |out_pixel<3>   |  122.035|
+Mat1<5>        |out_pixel<4>   |  122.315|
+Mat1<5>        |out_pixel<5>   |  121.434|
+Mat1<5>        |out_pixel<6>   |  121.842|
+Mat1<5>        |out_pixel<7>   |  122.825|
+Mat1<5>        |temp1<0>       |  140.670|
+Mat1<5>        |temp1<1>       |  141.328|
+Mat1<5>        |temp1<2>       |  141.982|
+Mat1<5>        |temp1<3>       |  142.708|
+Mat1<5>        |temp1<4>       |  142.641|
+Mat1<5>        |temp1<5>       |  143.218|
+Mat1<5>        |temp1<6>       |  141.248|
+Mat1<5>        |temp1<7>       |  141.695|
+Mat1<6>        |out_pixel<0>   |  120.961|
+Mat1<6>        |out_pixel<1>   |  121.057|
+Mat1<6>        |out_pixel<2>   |  121.608|
+Mat1<6>        |out_pixel<3>   |  122.030|
+Mat1<6>        |out_pixel<4>   |  122.310|
+Mat1<6>        |out_pixel<5>   |  121.429|
+Mat1<6>        |out_pixel<6>   |  121.837|
+Mat1<6>        |out_pixel<7>   |  122.820|
+Mat1<6>        |temp1<0>       |  140.665|
+Mat1<6>        |temp1<1>       |  141.323|
+Mat1<6>        |temp1<2>       |  141.977|
+Mat1<6>        |temp1<3>       |  142.703|
+Mat1<6>        |temp1<4>       |  142.636|
+Mat1<6>        |temp1<5>       |  143.213|
+Mat1<6>        |temp1<6>       |  141.243|
+Mat1<6>        |temp1<7>       |  141.690|
+Mat1<7>        |out_pixel<0>   |  121.299|
+Mat1<7>        |out_pixel<1>   |  121.395|
+Mat1<7>        |out_pixel<2>   |  121.946|
+Mat1<7>        |out_pixel<3>   |  122.368|
+Mat1<7>        |out_pixel<4>   |  122.648|
+Mat1<7>        |out_pixel<5>   |  121.767|
+Mat1<7>        |out_pixel<6>   |  122.175|
+Mat1<7>        |out_pixel<7>   |  123.158|
+Mat1<7>        |temp1<0>       |  141.003|
+Mat1<7>        |temp1<1>       |  141.661|
+Mat1<7>        |temp1<2>       |  142.315|
+Mat1<7>        |temp1<3>       |  143.041|
+Mat1<7>        |temp1<4>       |  142.974|
+Mat1<7>        |temp1<5>       |  143.551|
+Mat1<7>        |temp1<6>       |  141.581|
+Mat1<7>        |temp1<7>       |  142.028|
+Mat2<0>        |out_pixel<0>   |  116.021|
+Mat2<0>        |out_pixel<1>   |  116.117|
+Mat2<0>        |out_pixel<2>   |  116.668|
+Mat2<0>        |out_pixel<3>   |  117.090|
+Mat2<0>        |out_pixel<4>   |  117.370|
+Mat2<0>        |out_pixel<5>   |  116.489|
+Mat2<0>        |out_pixel<6>   |  116.897|
+Mat2<0>        |out_pixel<7>   |  117.880|
+Mat2<0>        |temp1<0>       |  135.725|
+Mat2<0>        |temp1<1>       |  136.383|
+Mat2<0>        |temp1<2>       |  137.037|
+Mat2<0>        |temp1<3>       |  137.763|
+Mat2<0>        |temp1<4>       |  137.696|
+Mat2<0>        |temp1<5>       |  138.273|
+Mat2<0>        |temp1<6>       |  136.303|
+Mat2<0>        |temp1<7>       |  136.750|
+Mat2<1>        |out_pixel<0>   |  115.237|
+Mat2<1>        |out_pixel<1>   |  115.333|
+Mat2<1>        |out_pixel<2>   |  115.884|
+Mat2<1>        |out_pixel<3>   |  116.306|
+Mat2<1>        |out_pixel<4>   |  116.586|
+Mat2<1>        |out_pixel<5>   |  115.705|
+Mat2<1>        |out_pixel<6>   |  116.113|
+Mat2<1>        |out_pixel<7>   |  117.096|
+Mat2<1>        |temp1<0>       |  134.941|
+Mat2<1>        |temp1<1>       |  135.599|
+Mat2<1>        |temp1<2>       |  136.253|
+Mat2<1>        |temp1<3>       |  136.979|
+Mat2<1>        |temp1<4>       |  136.912|
+Mat2<1>        |temp1<5>       |  137.489|
+Mat2<1>        |temp1<6>       |  135.519|
+Mat2<1>        |temp1<7>       |  135.966|
+Mat2<2>        |out_pixel<0>   |  116.080|
+Mat2<2>        |out_pixel<1>   |  116.176|
+Mat2<2>        |out_pixel<2>   |  116.727|
+Mat2<2>        |out_pixel<3>   |  117.149|
+Mat2<2>        |out_pixel<4>   |  117.429|
+Mat2<2>        |out_pixel<5>   |  116.548|
+Mat2<2>        |out_pixel<6>   |  116.956|
+Mat2<2>        |out_pixel<7>   |  117.939|
+Mat2<2>        |temp1<0>       |  135.784|
+Mat2<2>        |temp1<1>       |  136.442|
+Mat2<2>        |temp1<2>       |  137.096|
+Mat2<2>        |temp1<3>       |  137.822|
+Mat2<2>        |temp1<4>       |  137.755|
+Mat2<2>        |temp1<5>       |  138.332|
+Mat2<2>        |temp1<6>       |  136.362|
+Mat2<2>        |temp1<7>       |  136.809|
+Mat2<3>        |out_pixel<0>   |  118.283|
+Mat2<3>        |out_pixel<1>   |  118.379|
+Mat2<3>        |out_pixel<2>   |  118.930|
+Mat2<3>        |out_pixel<3>   |  119.352|
+Mat2<3>        |out_pixel<4>   |  119.632|
+Mat2<3>        |out_pixel<5>   |  118.751|
+Mat2<3>        |out_pixel<6>   |  119.159|
+Mat2<3>        |out_pixel<7>   |  120.142|
+Mat2<3>        |temp1<0>       |  137.987|
+Mat2<3>        |temp1<1>       |  138.645|
+Mat2<3>        |temp1<2>       |  139.299|
+Mat2<3>        |temp1<3>       |  140.025|
+Mat2<3>        |temp1<4>       |  139.958|
+Mat2<3>        |temp1<5>       |  140.535|
+Mat2<3>        |temp1<6>       |  138.565|
+Mat2<3>        |temp1<7>       |  139.012|
+Mat2<4>        |out_pixel<0>   |  116.512|
+Mat2<4>        |out_pixel<1>   |  116.608|
+Mat2<4>        |out_pixel<2>   |  117.159|
+Mat2<4>        |out_pixel<3>   |  117.581|
+Mat2<4>        |out_pixel<4>   |  117.861|
+Mat2<4>        |out_pixel<5>   |  116.980|
+Mat2<4>        |out_pixel<6>   |  117.388|
+Mat2<4>        |out_pixel<7>   |  118.371|
+Mat2<4>        |temp1<0>       |  136.216|
+Mat2<4>        |temp1<1>       |  136.874|
+Mat2<4>        |temp1<2>       |  137.528|
+Mat2<4>        |temp1<3>       |  138.254|
+Mat2<4>        |temp1<4>       |  138.187|
+Mat2<4>        |temp1<5>       |  138.764|
+Mat2<4>        |temp1<6>       |  136.794|
+Mat2<4>        |temp1<7>       |  137.241|
+Mat2<5>        |out_pixel<0>   |  115.361|
+Mat2<5>        |out_pixel<1>   |  115.457|
+Mat2<5>        |out_pixel<2>   |  116.008|
+Mat2<5>        |out_pixel<3>   |  116.430|
+Mat2<5>        |out_pixel<4>   |  116.710|
+Mat2<5>        |out_pixel<5>   |  115.829|
+Mat2<5>        |out_pixel<6>   |  116.237|
+Mat2<5>        |out_pixel<7>   |  117.220|
+Mat2<5>        |temp1<0>       |  135.065|
+Mat2<5>        |temp1<1>       |  135.723|
+Mat2<5>        |temp1<2>       |  136.377|
+Mat2<5>        |temp1<3>       |  137.103|
+Mat2<5>        |temp1<4>       |  137.036|
+Mat2<5>        |temp1<5>       |  137.613|
+Mat2<5>        |temp1<6>       |  135.643|
+Mat2<5>        |temp1<7>       |  136.090|
+Mat2<6>        |out_pixel<0>   |  115.213|
+Mat2<6>        |out_pixel<1>   |  115.309|
+Mat2<6>        |out_pixel<2>   |  115.860|
+Mat2<6>        |out_pixel<3>   |  116.282|
+Mat2<6>        |out_pixel<4>   |  116.562|
+Mat2<6>        |out_pixel<5>   |  115.681|
+Mat2<6>        |out_pixel<6>   |  116.089|
+Mat2<6>        |out_pixel<7>   |  117.072|
+Mat2<6>        |temp1<0>       |  134.917|
+Mat2<6>        |temp1<1>       |  135.575|
+Mat2<6>        |temp1<2>       |  136.229|
+Mat2<6>        |temp1<3>       |  136.955|
+Mat2<6>        |temp1<4>       |  136.888|
+Mat2<6>        |temp1<5>       |  137.465|
+Mat2<6>        |temp1<6>       |  135.495|
+Mat2<6>        |temp1<7>       |  135.942|
+Mat2<7>        |out_pixel<0>   |  116.164|
+Mat2<7>        |out_pixel<1>   |  116.260|
+Mat2<7>        |out_pixel<2>   |  116.811|
+Mat2<7>        |out_pixel<3>   |  117.233|
+Mat2<7>        |out_pixel<4>   |  117.513|
+Mat2<7>        |out_pixel<5>   |  116.632|
+Mat2<7>        |out_pixel<6>   |  117.040|
+Mat2<7>        |out_pixel<7>   |  118.023|
+Mat2<7>        |temp1<0>       |  135.868|
+Mat2<7>        |temp1<1>       |  136.526|
+Mat2<7>        |temp1<2>       |  137.180|
+Mat2<7>        |temp1<3>       |  137.906|
+Mat2<7>        |temp1<4>       |  137.839|
+Mat2<7>        |temp1<5>       |  138.416|
+Mat2<7>        |temp1<6>       |  136.446|
+Mat2<7>        |temp1<7>       |  136.893|
+Mat3<0>        |out_pixel<0>   |  111.232|
+Mat3<0>        |out_pixel<1>   |  111.328|
+Mat3<0>        |out_pixel<2>   |  111.879|
+Mat3<0>        |out_pixel<3>   |  112.301|
+Mat3<0>        |out_pixel<4>   |  112.581|
+Mat3<0>        |out_pixel<5>   |  111.700|
+Mat3<0>        |out_pixel<6>   |  112.108|
+Mat3<0>        |out_pixel<7>   |  113.091|
+Mat3<0>        |temp1<0>       |  130.936|
+Mat3<0>        |temp1<1>       |  131.594|
+Mat3<0>        |temp1<2>       |  132.248|
+Mat3<0>        |temp1<3>       |  132.974|
+Mat3<0>        |temp1<4>       |  132.907|
+Mat3<0>        |temp1<5>       |  133.484|
+Mat3<0>        |temp1<6>       |  131.514|
+Mat3<0>        |temp1<7>       |  131.961|
+Mat3<1>        |out_pixel<0>   |  112.068|
+Mat3<1>        |out_pixel<1>   |  112.164|
+Mat3<1>        |out_pixel<2>   |  112.715|
+Mat3<1>        |out_pixel<3>   |  113.137|
+Mat3<1>        |out_pixel<4>   |  113.417|
+Mat3<1>        |out_pixel<5>   |  112.536|
+Mat3<1>        |out_pixel<6>   |  112.944|
+Mat3<1>        |out_pixel<7>   |  113.927|
+Mat3<1>        |temp1<0>       |  131.772|
+Mat3<1>        |temp1<1>       |  132.430|
+Mat3<1>        |temp1<2>       |  133.084|
+Mat3<1>        |temp1<3>       |  133.810|
+Mat3<1>        |temp1<4>       |  133.743|
+Mat3<1>        |temp1<5>       |  134.320|
+Mat3<1>        |temp1<6>       |  132.350|
+Mat3<1>        |temp1<7>       |  132.797|
+Mat3<2>        |out_pixel<0>   |  110.909|
+Mat3<2>        |out_pixel<1>   |  111.005|
+Mat3<2>        |out_pixel<2>   |  111.556|
+Mat3<2>        |out_pixel<3>   |  111.978|
+Mat3<2>        |out_pixel<4>   |  112.258|
+Mat3<2>        |out_pixel<5>   |  111.377|
+Mat3<2>        |out_pixel<6>   |  111.785|
+Mat3<2>        |out_pixel<7>   |  112.768|
+Mat3<2>        |temp1<0>       |  130.613|
+Mat3<2>        |temp1<1>       |  131.271|
+Mat3<2>        |temp1<2>       |  131.925|
+Mat3<2>        |temp1<3>       |  132.651|
+Mat3<2>        |temp1<4>       |  132.584|
+Mat3<2>        |temp1<5>       |  133.161|
+Mat3<2>        |temp1<6>       |  131.191|
+Mat3<2>        |temp1<7>       |  131.638|
+Mat3<3>        |out_pixel<0>   |  110.719|
+Mat3<3>        |out_pixel<1>   |  110.815|
+Mat3<3>        |out_pixel<2>   |  111.366|
+Mat3<3>        |out_pixel<3>   |  111.788|
+Mat3<3>        |out_pixel<4>   |  112.068|
+Mat3<3>        |out_pixel<5>   |  111.187|
+Mat3<3>        |out_pixel<6>   |  111.595|
+Mat3<3>        |out_pixel<7>   |  112.578|
+Mat3<3>        |temp1<0>       |  130.423|
+Mat3<3>        |temp1<1>       |  131.081|
+Mat3<3>        |temp1<2>       |  131.735|
+Mat3<3>        |temp1<3>       |  132.461|
+Mat3<3>        |temp1<4>       |  132.394|
+Mat3<3>        |temp1<5>       |  132.971|
+Mat3<3>        |temp1<6>       |  131.001|
+Mat3<3>        |temp1<7>       |  131.448|
+Mat3<4>        |out_pixel<0>   |  110.031|
+Mat3<4>        |out_pixel<1>   |  110.127|
+Mat3<4>        |out_pixel<2>   |  110.678|
+Mat3<4>        |out_pixel<3>   |  111.100|
+Mat3<4>        |out_pixel<4>   |  111.380|
+Mat3<4>        |out_pixel<5>   |  110.499|
+Mat3<4>        |out_pixel<6>   |  110.907|
+Mat3<4>        |out_pixel<7>   |  111.890|
+Mat3<4>        |temp1<0>       |  129.735|
+Mat3<4>        |temp1<1>       |  130.393|
+Mat3<4>        |temp1<2>       |  131.047|
+Mat3<4>        |temp1<3>       |  131.773|
+Mat3<4>        |temp1<4>       |  131.706|
+Mat3<4>        |temp1<5>       |  132.283|
+Mat3<4>        |temp1<6>       |  130.313|
+Mat3<4>        |temp1<7>       |  130.760|
+Mat3<5>        |out_pixel<0>   |  110.073|
+Mat3<5>        |out_pixel<1>   |  110.169|
+Mat3<5>        |out_pixel<2>   |  110.720|
+Mat3<5>        |out_pixel<3>   |  111.142|
+Mat3<5>        |out_pixel<4>   |  111.422|
+Mat3<5>        |out_pixel<5>   |  110.541|
+Mat3<5>        |out_pixel<6>   |  110.949|
+Mat3<5>        |out_pixel<7>   |  111.932|
+Mat3<5>        |temp1<0>       |  129.777|
+Mat3<5>        |temp1<1>       |  130.435|
+Mat3<5>        |temp1<2>       |  131.089|
+Mat3<5>        |temp1<3>       |  131.815|
+Mat3<5>        |temp1<4>       |  131.748|
+Mat3<5>        |temp1<5>       |  132.325|
+Mat3<5>        |temp1<6>       |  130.355|
+Mat3<5>        |temp1<7>       |  130.802|
+Mat3<6>        |out_pixel<0>   |  111.250|
+Mat3<6>        |out_pixel<1>   |  111.346|
+Mat3<6>        |out_pixel<2>   |  111.897|
+Mat3<6>        |out_pixel<3>   |  112.319|
+Mat3<6>        |out_pixel<4>   |  112.599|
+Mat3<6>        |out_pixel<5>   |  111.718|
+Mat3<6>        |out_pixel<6>   |  112.126|
+Mat3<6>        |out_pixel<7>   |  113.109|
+Mat3<6>        |temp1<0>       |  130.954|
+Mat3<6>        |temp1<1>       |  131.612|
+Mat3<6>        |temp1<2>       |  132.266|
+Mat3<6>        |temp1<3>       |  132.992|
+Mat3<6>        |temp1<4>       |  132.925|
+Mat3<6>        |temp1<5>       |  133.502|
+Mat3<6>        |temp1<6>       |  131.532|
+Mat3<6>        |temp1<7>       |  131.979|
+Mat3<7>        |out_pixel<0>   |  111.137|
+Mat3<7>        |out_pixel<1>   |  111.233|
+Mat3<7>        |out_pixel<2>   |  111.784|
+Mat3<7>        |out_pixel<3>   |  112.206|
+Mat3<7>        |out_pixel<4>   |  112.486|
+Mat3<7>        |out_pixel<5>   |  111.605|
+Mat3<7>        |out_pixel<6>   |  112.013|
+Mat3<7>        |out_pixel<7>   |  112.996|
+Mat3<7>        |temp1<0>       |  130.841|
+Mat3<7>        |temp1<1>       |  131.499|
+Mat3<7>        |temp1<2>       |  132.153|
+Mat3<7>        |temp1<3>       |  132.879|
+Mat3<7>        |temp1<4>       |  132.812|
+Mat3<7>        |temp1<5>       |  133.389|
+Mat3<7>        |temp1<6>       |  131.419|
+Mat3<7>        |temp1<7>       |  131.866|
+Mat4<0>        |out_pixel<0>   |  105.290|
+Mat4<0>        |out_pixel<1>   |  105.386|
+Mat4<0>        |out_pixel<2>   |  105.937|
+Mat4<0>        |out_pixel<3>   |  106.359|
+Mat4<0>        |out_pixel<4>   |  106.639|
+Mat4<0>        |out_pixel<5>   |  105.758|
+Mat4<0>        |out_pixel<6>   |  106.166|
+Mat4<0>        |out_pixel<7>   |  107.149|
+Mat4<0>        |temp1<0>       |  124.994|
+Mat4<0>        |temp1<1>       |  125.652|
+Mat4<0>        |temp1<2>       |  126.306|
+Mat4<0>        |temp1<3>       |  127.032|
+Mat4<0>        |temp1<4>       |  126.965|
+Mat4<0>        |temp1<5>       |  127.542|
+Mat4<0>        |temp1<6>       |  125.572|
+Mat4<0>        |temp1<7>       |  126.019|
+Mat4<1>        |out_pixel<0>   |  106.334|
+Mat4<1>        |out_pixel<1>   |  106.430|
+Mat4<1>        |out_pixel<2>   |  106.981|
+Mat4<1>        |out_pixel<3>   |  107.403|
+Mat4<1>        |out_pixel<4>   |  107.683|
+Mat4<1>        |out_pixel<5>   |  106.802|
+Mat4<1>        |out_pixel<6>   |  107.210|
+Mat4<1>        |out_pixel<7>   |  108.193|
+Mat4<1>        |temp1<0>       |  126.038|
+Mat4<1>        |temp1<1>       |  126.696|
+Mat4<1>        |temp1<2>       |  127.350|
+Mat4<1>        |temp1<3>       |  128.076|
+Mat4<1>        |temp1<4>       |  128.009|
+Mat4<1>        |temp1<5>       |  128.586|
+Mat4<1>        |temp1<6>       |  126.616|
+Mat4<1>        |temp1<7>       |  127.063|
+Mat4<2>        |out_pixel<0>   |  106.565|
+Mat4<2>        |out_pixel<1>   |  106.661|
+Mat4<2>        |out_pixel<2>   |  107.212|
+Mat4<2>        |out_pixel<3>   |  107.634|
+Mat4<2>        |out_pixel<4>   |  107.914|
+Mat4<2>        |out_pixel<5>   |  107.033|
+Mat4<2>        |out_pixel<6>   |  107.441|
+Mat4<2>        |out_pixel<7>   |  108.424|
+Mat4<2>        |temp1<0>       |  126.269|
+Mat4<2>        |temp1<1>       |  126.927|
+Mat4<2>        |temp1<2>       |  127.581|
+Mat4<2>        |temp1<3>       |  128.307|
+Mat4<2>        |temp1<4>       |  128.240|
+Mat4<2>        |temp1<5>       |  128.817|
+Mat4<2>        |temp1<6>       |  126.847|
+Mat4<2>        |temp1<7>       |  127.294|
+Mat4<3>        |out_pixel<0>   |  106.333|
+Mat4<3>        |out_pixel<1>   |  106.429|
+Mat4<3>        |out_pixel<2>   |  106.980|
+Mat4<3>        |out_pixel<3>   |  107.402|
+Mat4<3>        |out_pixel<4>   |  107.682|
+Mat4<3>        |out_pixel<5>   |  106.801|
+Mat4<3>        |out_pixel<6>   |  107.209|
+Mat4<3>        |out_pixel<7>   |  108.192|
+Mat4<3>        |temp1<0>       |  126.037|
+Mat4<3>        |temp1<1>       |  126.695|
+Mat4<3>        |temp1<2>       |  127.349|
+Mat4<3>        |temp1<3>       |  128.075|
+Mat4<3>        |temp1<4>       |  128.008|
+Mat4<3>        |temp1<5>       |  128.585|
+Mat4<3>        |temp1<6>       |  126.615|
+Mat4<3>        |temp1<7>       |  127.062|
+Mat4<4>        |out_pixel<0>   |  105.254|
+Mat4<4>        |out_pixel<1>   |  105.350|
+Mat4<4>        |out_pixel<2>   |  105.901|
+Mat4<4>        |out_pixel<3>   |  106.323|
+Mat4<4>        |out_pixel<4>   |  106.603|
+Mat4<4>        |out_pixel<5>   |  105.722|
+Mat4<4>        |out_pixel<6>   |  106.130|
+Mat4<4>        |out_pixel<7>   |  107.113|
+Mat4<4>        |temp1<0>       |  124.958|
+Mat4<4>        |temp1<1>       |  125.616|
+Mat4<4>        |temp1<2>       |  126.270|
+Mat4<4>        |temp1<3>       |  126.996|
+Mat4<4>        |temp1<4>       |  126.929|
+Mat4<4>        |temp1<5>       |  127.506|
+Mat4<4>        |temp1<6>       |  125.536|
+Mat4<4>        |temp1<7>       |  125.983|
+Mat4<5>        |out_pixel<0>   |  105.732|
+Mat4<5>        |out_pixel<1>   |  105.828|
+Mat4<5>        |out_pixel<2>   |  106.379|
+Mat4<5>        |out_pixel<3>   |  106.801|
+Mat4<5>        |out_pixel<4>   |  107.081|
+Mat4<5>        |out_pixel<5>   |  106.200|
+Mat4<5>        |out_pixel<6>   |  106.608|
+Mat4<5>        |out_pixel<7>   |  107.591|
+Mat4<5>        |temp1<0>       |  125.436|
+Mat4<5>        |temp1<1>       |  126.094|
+Mat4<5>        |temp1<2>       |  126.748|
+Mat4<5>        |temp1<3>       |  127.474|
+Mat4<5>        |temp1<4>       |  127.407|
+Mat4<5>        |temp1<5>       |  127.984|
+Mat4<5>        |temp1<6>       |  126.014|
+Mat4<5>        |temp1<7>       |  126.461|
+Mat4<6>        |out_pixel<0>   |  105.498|
+Mat4<6>        |out_pixel<1>   |  105.594|
+Mat4<6>        |out_pixel<2>   |  106.145|
+Mat4<6>        |out_pixel<3>   |  106.567|
+Mat4<6>        |out_pixel<4>   |  106.847|
+Mat4<6>        |out_pixel<5>   |  105.966|
+Mat4<6>        |out_pixel<6>   |  106.374|
+Mat4<6>        |out_pixel<7>   |  107.357|
+Mat4<6>        |temp1<0>       |  125.202|
+Mat4<6>        |temp1<1>       |  125.860|
+Mat4<6>        |temp1<2>       |  126.514|
+Mat4<6>        |temp1<3>       |  127.240|
+Mat4<6>        |temp1<4>       |  127.173|
+Mat4<6>        |temp1<5>       |  127.750|
+Mat4<6>        |temp1<6>       |  125.780|
+Mat4<6>        |temp1<7>       |  126.227|
+Mat4<7>        |out_pixel<0>   |  105.043|
+Mat4<7>        |out_pixel<1>   |  105.139|
+Mat4<7>        |out_pixel<2>   |  105.690|
+Mat4<7>        |out_pixel<3>   |  106.112|
+Mat4<7>        |out_pixel<4>   |  106.392|
+Mat4<7>        |out_pixel<5>   |  105.511|
+Mat4<7>        |out_pixel<6>   |  105.919|
+Mat4<7>        |out_pixel<7>   |  106.902|
+Mat4<7>        |temp1<0>       |  124.747|
+Mat4<7>        |temp1<1>       |  125.405|
+Mat4<7>        |temp1<2>       |  126.059|
+Mat4<7>        |temp1<3>       |  126.785|
+Mat4<7>        |temp1<4>       |  126.718|
+Mat4<7>        |temp1<5>       |  127.295|
+Mat4<7>        |temp1<6>       |  125.325|
+Mat4<7>        |temp1<7>       |  125.772|
+Mat5<0>        |out_pixel<0>   |  102.243|
+Mat5<0>        |out_pixel<1>   |  102.339|
+Mat5<0>        |out_pixel<2>   |  102.890|
+Mat5<0>        |out_pixel<3>   |  103.312|
+Mat5<0>        |out_pixel<4>   |  103.592|
+Mat5<0>        |out_pixel<5>   |  102.711|
+Mat5<0>        |out_pixel<6>   |  103.119|
+Mat5<0>        |out_pixel<7>   |  104.102|
+Mat5<0>        |temp1<0>       |  121.947|
+Mat5<0>        |temp1<1>       |  122.605|
+Mat5<0>        |temp1<2>       |  123.259|
+Mat5<0>        |temp1<3>       |  123.985|
+Mat5<0>        |temp1<4>       |  123.918|
+Mat5<0>        |temp1<5>       |  124.495|
+Mat5<0>        |temp1<6>       |  122.525|
+Mat5<0>        |temp1<7>       |  122.972|
+Mat5<1>        |out_pixel<0>   |  101.730|
+Mat5<1>        |out_pixel<1>   |  101.826|
+Mat5<1>        |out_pixel<2>   |  102.377|
+Mat5<1>        |out_pixel<3>   |  102.799|
+Mat5<1>        |out_pixel<4>   |  103.079|
+Mat5<1>        |out_pixel<5>   |  102.198|
+Mat5<1>        |out_pixel<6>   |  102.606|
+Mat5<1>        |out_pixel<7>   |  103.589|
+Mat5<1>        |temp1<0>       |  121.434|
+Mat5<1>        |temp1<1>       |  122.092|
+Mat5<1>        |temp1<2>       |  122.746|
+Mat5<1>        |temp1<3>       |  123.472|
+Mat5<1>        |temp1<4>       |  123.405|
+Mat5<1>        |temp1<5>       |  123.982|
+Mat5<1>        |temp1<6>       |  122.012|
+Mat5<1>        |temp1<7>       |  122.459|
+Mat5<2>        |out_pixel<0>   |  100.826|
+Mat5<2>        |out_pixel<1>   |  100.922|
+Mat5<2>        |out_pixel<2>   |  101.473|
+Mat5<2>        |out_pixel<3>   |  101.895|
+Mat5<2>        |out_pixel<4>   |  102.175|
+Mat5<2>        |out_pixel<5>   |  101.294|
+Mat5<2>        |out_pixel<6>   |  101.702|
+Mat5<2>        |out_pixel<7>   |  102.685|
+Mat5<2>        |temp1<0>       |  120.530|
+Mat5<2>        |temp1<1>       |  121.188|
+Mat5<2>        |temp1<2>       |  121.842|
+Mat5<2>        |temp1<3>       |  122.568|
+Mat5<2>        |temp1<4>       |  122.501|
+Mat5<2>        |temp1<5>       |  123.078|
+Mat5<2>        |temp1<6>       |  121.108|
+Mat5<2>        |temp1<7>       |  121.555|
+Mat5<3>        |out_pixel<0>   |  100.514|
+Mat5<3>        |out_pixel<1>   |  100.610|
+Mat5<3>        |out_pixel<2>   |  101.161|
+Mat5<3>        |out_pixel<3>   |  101.583|
+Mat5<3>        |out_pixel<4>   |  101.863|
+Mat5<3>        |out_pixel<5>   |  100.982|
+Mat5<3>        |out_pixel<6>   |  101.390|
+Mat5<3>        |out_pixel<7>   |  102.373|
+Mat5<3>        |temp1<0>       |  120.218|
+Mat5<3>        |temp1<1>       |  120.876|
+Mat5<3>        |temp1<2>       |  121.530|
+Mat5<3>        |temp1<3>       |  122.256|
+Mat5<3>        |temp1<4>       |  122.189|
+Mat5<3>        |temp1<5>       |  122.766|
+Mat5<3>        |temp1<6>       |  120.796|
+Mat5<3>        |temp1<7>       |  121.243|
+Mat5<4>        |out_pixel<0>   |  100.446|
+Mat5<4>        |out_pixel<1>   |  100.542|
+Mat5<4>        |out_pixel<2>   |  101.093|
+Mat5<4>        |out_pixel<3>   |  101.515|
+Mat5<4>        |out_pixel<4>   |  101.795|
+Mat5<4>        |out_pixel<5>   |  100.914|
+Mat5<4>        |out_pixel<6>   |  101.322|
+Mat5<4>        |out_pixel<7>   |  102.305|
+Mat5<4>        |temp1<0>       |  120.150|
+Mat5<4>        |temp1<1>       |  120.808|
+Mat5<4>        |temp1<2>       |  121.462|
+Mat5<4>        |temp1<3>       |  122.188|
+Mat5<4>        |temp1<4>       |  122.121|
+Mat5<4>        |temp1<5>       |  122.698|
+Mat5<4>        |temp1<6>       |  120.728|
+Mat5<4>        |temp1<7>       |  121.175|
+Mat5<5>        |out_pixel<0>   |  100.414|
+Mat5<5>        |out_pixel<1>   |  100.510|
+Mat5<5>        |out_pixel<2>   |  101.061|
+Mat5<5>        |out_pixel<3>   |  101.483|
+Mat5<5>        |out_pixel<4>   |  101.763|
+Mat5<5>        |out_pixel<5>   |  100.882|
+Mat5<5>        |out_pixel<6>   |  101.290|
+Mat5<5>        |out_pixel<7>   |  102.273|
+Mat5<5>        |temp1<0>       |  120.118|
+Mat5<5>        |temp1<1>       |  120.776|
+Mat5<5>        |temp1<2>       |  121.430|
+Mat5<5>        |temp1<3>       |  122.156|
+Mat5<5>        |temp1<4>       |  122.089|
+Mat5<5>        |temp1<5>       |  122.666|
+Mat5<5>        |temp1<6>       |  120.696|
+Mat5<5>        |temp1<7>       |  121.143|
+Mat5<6>        |out_pixel<0>   |  101.041|
+Mat5<6>        |out_pixel<1>   |  101.137|
+Mat5<6>        |out_pixel<2>   |  101.688|
+Mat5<6>        |out_pixel<3>   |  102.110|
+Mat5<6>        |out_pixel<4>   |  102.390|
+Mat5<6>        |out_pixel<5>   |  101.509|
+Mat5<6>        |out_pixel<6>   |  101.917|
+Mat5<6>        |out_pixel<7>   |  102.900|
+Mat5<6>        |temp1<0>       |  120.745|
+Mat5<6>        |temp1<1>       |  121.403|
+Mat5<6>        |temp1<2>       |  122.057|
+Mat5<6>        |temp1<3>       |  122.783|
+Mat5<6>        |temp1<4>       |  122.716|
+Mat5<6>        |temp1<5>       |  123.293|
+Mat5<6>        |temp1<6>       |  121.323|
+Mat5<6>        |temp1<7>       |  121.770|
+Mat5<7>        |out_pixel<0>   |  101.958|
+Mat5<7>        |out_pixel<1>   |  102.054|
+Mat5<7>        |out_pixel<2>   |  102.605|
+Mat5<7>        |out_pixel<3>   |  103.027|
+Mat5<7>        |out_pixel<4>   |  103.307|
+Mat5<7>        |out_pixel<5>   |  102.426|
+Mat5<7>        |out_pixel<6>   |  102.834|
+Mat5<7>        |out_pixel<7>   |  103.817|
+Mat5<7>        |temp1<0>       |  121.662|
+Mat5<7>        |temp1<1>       |  122.320|
+Mat5<7>        |temp1<2>       |  122.974|
+Mat5<7>        |temp1<3>       |  123.700|
+Mat5<7>        |temp1<4>       |  123.633|
+Mat5<7>        |temp1<5>       |  124.210|
+Mat5<7>        |temp1<6>       |  122.240|
+Mat5<7>        |temp1<7>       |  122.687|
+Mat6<0>        |out_pixel<0>   |   94.369|
+Mat6<0>        |out_pixel<1>   |   94.465|
+Mat6<0>        |out_pixel<2>   |   95.016|
+Mat6<0>        |out_pixel<3>   |   95.438|
+Mat6<0>        |out_pixel<4>   |   95.718|
+Mat6<0>        |out_pixel<5>   |   94.837|
+Mat6<0>        |out_pixel<6>   |   95.245|
+Mat6<0>        |out_pixel<7>   |   96.228|
+Mat6<0>        |temp1<0>       |  114.073|
+Mat6<0>        |temp1<1>       |  114.731|
+Mat6<0>        |temp1<2>       |  115.385|
+Mat6<0>        |temp1<3>       |  116.111|
+Mat6<0>        |temp1<4>       |  116.044|
+Mat6<0>        |temp1<5>       |  116.621|
+Mat6<0>        |temp1<6>       |  114.651|
+Mat6<0>        |temp1<7>       |  115.098|
+Mat6<1>        |out_pixel<0>   |   94.266|
+Mat6<1>        |out_pixel<1>   |   94.362|
+Mat6<1>        |out_pixel<2>   |   94.913|
+Mat6<1>        |out_pixel<3>   |   95.335|
+Mat6<1>        |out_pixel<4>   |   95.615|
+Mat6<1>        |out_pixel<5>   |   94.734|
+Mat6<1>        |out_pixel<6>   |   95.142|
+Mat6<1>        |out_pixel<7>   |   96.125|
+Mat6<1>        |temp1<0>       |  113.970|
+Mat6<1>        |temp1<1>       |  114.628|
+Mat6<1>        |temp1<2>       |  115.282|
+Mat6<1>        |temp1<3>       |  116.008|
+Mat6<1>        |temp1<4>       |  115.941|
+Mat6<1>        |temp1<5>       |  116.518|
+Mat6<1>        |temp1<6>       |  114.548|
+Mat6<1>        |temp1<7>       |  114.995|
+Mat6<2>        |out_pixel<0>   |   94.407|
+Mat6<2>        |out_pixel<1>   |   94.503|
+Mat6<2>        |out_pixel<2>   |   95.054|
+Mat6<2>        |out_pixel<3>   |   95.476|
+Mat6<2>        |out_pixel<4>   |   95.756|
+Mat6<2>        |out_pixel<5>   |   94.875|
+Mat6<2>        |out_pixel<6>   |   95.283|
+Mat6<2>        |out_pixel<7>   |   96.266|
+Mat6<2>        |temp1<0>       |  114.111|
+Mat6<2>        |temp1<1>       |  114.769|
+Mat6<2>        |temp1<2>       |  115.423|
+Mat6<2>        |temp1<3>       |  116.149|
+Mat6<2>        |temp1<4>       |  116.082|
+Mat6<2>        |temp1<5>       |  116.659|
+Mat6<2>        |temp1<6>       |  114.689|
+Mat6<2>        |temp1<7>       |  115.136|
+Mat6<3>        |out_pixel<0>   |   93.731|
+Mat6<3>        |out_pixel<1>   |   93.827|
+Mat6<3>        |out_pixel<2>   |   94.378|
+Mat6<3>        |out_pixel<3>   |   94.800|
+Mat6<3>        |out_pixel<4>   |   95.080|
+Mat6<3>        |out_pixel<5>   |   94.199|
+Mat6<3>        |out_pixel<6>   |   94.607|
+Mat6<3>        |out_pixel<7>   |   95.590|
+Mat6<3>        |temp1<0>       |  113.435|
+Mat6<3>        |temp1<1>       |  114.093|
+Mat6<3>        |temp1<2>       |  114.747|
+Mat6<3>        |temp1<3>       |  115.473|
+Mat6<3>        |temp1<4>       |  115.406|
+Mat6<3>        |temp1<5>       |  115.983|
+Mat6<3>        |temp1<6>       |  114.013|
+Mat6<3>        |temp1<7>       |  114.460|
+Mat6<4>        |out_pixel<0>   |   94.163|
+Mat6<4>        |out_pixel<1>   |   94.259|
+Mat6<4>        |out_pixel<2>   |   94.810|
+Mat6<4>        |out_pixel<3>   |   95.232|
+Mat6<4>        |out_pixel<4>   |   95.512|
+Mat6<4>        |out_pixel<5>   |   94.631|
+Mat6<4>        |out_pixel<6>   |   95.039|
+Mat6<4>        |out_pixel<7>   |   96.022|
+Mat6<4>        |temp1<0>       |  113.867|
+Mat6<4>        |temp1<1>       |  114.525|
+Mat6<4>        |temp1<2>       |  115.179|
+Mat6<4>        |temp1<3>       |  115.905|
+Mat6<4>        |temp1<4>       |  115.838|
+Mat6<4>        |temp1<5>       |  116.415|
+Mat6<4>        |temp1<6>       |  114.445|
+Mat6<4>        |temp1<7>       |  114.892|
+Mat6<5>        |out_pixel<0>   |   94.544|
+Mat6<5>        |out_pixel<1>   |   94.640|
+Mat6<5>        |out_pixel<2>   |   95.191|
+Mat6<5>        |out_pixel<3>   |   95.613|
+Mat6<5>        |out_pixel<4>   |   95.893|
+Mat6<5>        |out_pixel<5>   |   95.012|
+Mat6<5>        |out_pixel<6>   |   95.420|
+Mat6<5>        |out_pixel<7>   |   96.403|
+Mat6<5>        |temp1<0>       |  114.248|
+Mat6<5>        |temp1<1>       |  114.906|
+Mat6<5>        |temp1<2>       |  115.560|
+Mat6<5>        |temp1<3>       |  116.286|
+Mat6<5>        |temp1<4>       |  116.219|
+Mat6<5>        |temp1<5>       |  116.796|
+Mat6<5>        |temp1<6>       |  114.826|
+Mat6<5>        |temp1<7>       |  115.273|
+Mat6<6>        |out_pixel<0>   |   94.457|
+Mat6<6>        |out_pixel<1>   |   94.553|
+Mat6<6>        |out_pixel<2>   |   95.104|
+Mat6<6>        |out_pixel<3>   |   95.526|
+Mat6<6>        |out_pixel<4>   |   95.806|
+Mat6<6>        |out_pixel<5>   |   94.925|
+Mat6<6>        |out_pixel<6>   |   95.333|
+Mat6<6>        |out_pixel<7>   |   96.316|
+Mat6<6>        |temp1<0>       |  114.161|
+Mat6<6>        |temp1<1>       |  114.819|
+Mat6<6>        |temp1<2>       |  115.473|
+Mat6<6>        |temp1<3>       |  116.199|
+Mat6<6>        |temp1<4>       |  116.132|
+Mat6<6>        |temp1<5>       |  116.709|
+Mat6<6>        |temp1<6>       |  114.739|
+Mat6<6>        |temp1<7>       |  115.186|
+Mat6<7>        |out_pixel<0>   |   94.088|
+Mat6<7>        |out_pixel<1>   |   94.184|
+Mat6<7>        |out_pixel<2>   |   94.735|
+Mat6<7>        |out_pixel<3>   |   95.157|
+Mat6<7>        |out_pixel<4>   |   95.437|
+Mat6<7>        |out_pixel<5>   |   94.556|
+Mat6<7>        |out_pixel<6>   |   94.964|
+Mat6<7>        |out_pixel<7>   |   95.947|
+Mat6<7>        |temp1<0>       |  113.792|
+Mat6<7>        |temp1<1>       |  114.450|
+Mat6<7>        |temp1<2>       |  115.104|
+Mat6<7>        |temp1<3>       |  115.830|
+Mat6<7>        |temp1<4>       |  115.763|
+Mat6<7>        |temp1<5>       |  116.340|
+Mat6<7>        |temp1<6>       |  114.370|
+Mat6<7>        |temp1<7>       |  114.817|
+Mat7<0>        |out_pixel<0>   |   90.357|
+Mat7<0>        |out_pixel<1>   |   90.453|
+Mat7<0>        |out_pixel<2>   |   91.004|
+Mat7<0>        |out_pixel<3>   |   91.426|
+Mat7<0>        |out_pixel<4>   |   91.706|
+Mat7<0>        |out_pixel<5>   |   90.825|
+Mat7<0>        |out_pixel<6>   |   91.233|
+Mat7<0>        |out_pixel<7>   |   92.216|
+Mat7<0>        |temp1<0>       |  110.061|
+Mat7<0>        |temp1<1>       |  110.719|
+Mat7<0>        |temp1<2>       |  111.373|
+Mat7<0>        |temp1<3>       |  112.099|
+Mat7<0>        |temp1<4>       |  112.032|
+Mat7<0>        |temp1<5>       |  112.609|
+Mat7<0>        |temp1<6>       |  110.639|
+Mat7<0>        |temp1<7>       |  111.086|
+Mat7<1>        |out_pixel<0>   |   90.783|
+Mat7<1>        |out_pixel<1>   |   90.879|
+Mat7<1>        |out_pixel<2>   |   91.430|
+Mat7<1>        |out_pixel<3>   |   91.852|
+Mat7<1>        |out_pixel<4>   |   92.132|
+Mat7<1>        |out_pixel<5>   |   91.251|
+Mat7<1>        |out_pixel<6>   |   91.659|
+Mat7<1>        |out_pixel<7>   |   92.642|
+Mat7<1>        |temp1<0>       |  110.487|
+Mat7<1>        |temp1<1>       |  111.145|
+Mat7<1>        |temp1<2>       |  111.799|
+Mat7<1>        |temp1<3>       |  112.525|
+Mat7<1>        |temp1<4>       |  112.458|
+Mat7<1>        |temp1<5>       |  113.035|
+Mat7<1>        |temp1<6>       |  111.065|
+Mat7<1>        |temp1<7>       |  111.512|
+Mat7<2>        |out_pixel<0>   |   90.106|
+Mat7<2>        |out_pixel<1>   |   90.202|
+Mat7<2>        |out_pixel<2>   |   90.753|
+Mat7<2>        |out_pixel<3>   |   91.175|
+Mat7<2>        |out_pixel<4>   |   91.455|
+Mat7<2>        |out_pixel<5>   |   90.574|
+Mat7<2>        |out_pixel<6>   |   90.982|
+Mat7<2>        |out_pixel<7>   |   91.965|
+Mat7<2>        |temp1<0>       |  109.810|
+Mat7<2>        |temp1<1>       |  110.468|
+Mat7<2>        |temp1<2>       |  111.122|
+Mat7<2>        |temp1<3>       |  111.848|
+Mat7<2>        |temp1<4>       |  111.781|
+Mat7<2>        |temp1<5>       |  112.358|
+Mat7<2>        |temp1<6>       |  110.388|
+Mat7<2>        |temp1<7>       |  110.835|
+Mat7<3>        |out_pixel<0>   |   89.836|
+Mat7<3>        |out_pixel<1>   |   89.932|
+Mat7<3>        |out_pixel<2>   |   90.483|
+Mat7<3>        |out_pixel<3>   |   90.905|
+Mat7<3>        |out_pixel<4>   |   91.185|
+Mat7<3>        |out_pixel<5>   |   90.304|
+Mat7<3>        |out_pixel<6>   |   90.712|
+Mat7<3>        |out_pixel<7>   |   91.695|
+Mat7<3>        |temp1<0>       |  109.540|
+Mat7<3>        |temp1<1>       |  110.198|
+Mat7<3>        |temp1<2>       |  110.852|
+Mat7<3>        |temp1<3>       |  111.578|
+Mat7<3>        |temp1<4>       |  111.511|
+Mat7<3>        |temp1<5>       |  112.088|
+Mat7<3>        |temp1<6>       |  110.118|
+Mat7<3>        |temp1<7>       |  110.565|
+Mat7<4>        |out_pixel<0>   |   90.598|
+Mat7<4>        |out_pixel<1>   |   90.694|
+Mat7<4>        |out_pixel<2>   |   91.245|
+Mat7<4>        |out_pixel<3>   |   91.667|
+Mat7<4>        |out_pixel<4>   |   91.947|
+Mat7<4>        |out_pixel<5>   |   91.066|
+Mat7<4>        |out_pixel<6>   |   91.474|
+Mat7<4>        |out_pixel<7>   |   92.457|
+Mat7<4>        |temp1<0>       |  110.302|
+Mat7<4>        |temp1<1>       |  110.960|
+Mat7<4>        |temp1<2>       |  111.614|
+Mat7<4>        |temp1<3>       |  112.340|
+Mat7<4>        |temp1<4>       |  112.273|
+Mat7<4>        |temp1<5>       |  112.850|
+Mat7<4>        |temp1<6>       |  110.880|
+Mat7<4>        |temp1<7>       |  111.327|
+Mat7<5>        |out_pixel<0>   |   90.308|
+Mat7<5>        |out_pixel<1>   |   90.404|
+Mat7<5>        |out_pixel<2>   |   90.955|
+Mat7<5>        |out_pixel<3>   |   91.377|
+Mat7<5>        |out_pixel<4>   |   91.657|
+Mat7<5>        |out_pixel<5>   |   90.776|
+Mat7<5>        |out_pixel<6>   |   91.184|
+Mat7<5>        |out_pixel<7>   |   92.167|
+Mat7<5>        |temp1<0>       |  110.012|
+Mat7<5>        |temp1<1>       |  110.670|
+Mat7<5>        |temp1<2>       |  111.324|
+Mat7<5>        |temp1<3>       |  112.050|
+Mat7<5>        |temp1<4>       |  111.983|
+Mat7<5>        |temp1<5>       |  112.560|
+Mat7<5>        |temp1<6>       |  110.590|
+Mat7<5>        |temp1<7>       |  111.037|
+Mat7<6>        |out_pixel<0>   |   89.993|
+Mat7<6>        |out_pixel<1>   |   90.089|
+Mat7<6>        |out_pixel<2>   |   90.640|
+Mat7<6>        |out_pixel<3>   |   91.062|
+Mat7<6>        |out_pixel<4>   |   91.342|
+Mat7<6>        |out_pixel<5>   |   90.461|
+Mat7<6>        |out_pixel<6>   |   90.869|
+Mat7<6>        |out_pixel<7>   |   91.852|
+Mat7<6>        |temp1<0>       |  109.697|
+Mat7<6>        |temp1<1>       |  110.355|
+Mat7<6>        |temp1<2>       |  111.009|
+Mat7<6>        |temp1<3>       |  111.735|
+Mat7<6>        |temp1<4>       |  111.668|
+Mat7<6>        |temp1<5>       |  112.245|
+Mat7<6>        |temp1<6>       |  110.275|
+Mat7<6>        |temp1<7>       |  110.722|
+Mat7<7>        |out_pixel<0>   |   90.278|
+Mat7<7>        |out_pixel<1>   |   90.374|
+Mat7<7>        |out_pixel<2>   |   90.925|
+Mat7<7>        |out_pixel<3>   |   91.347|
+Mat7<7>        |out_pixel<4>   |   91.627|
+Mat7<7>        |out_pixel<5>   |   90.746|
+Mat7<7>        |out_pixel<6>   |   91.154|
+Mat7<7>        |out_pixel<7>   |   92.137|
+Mat7<7>        |temp1<0>       |  109.982|
+Mat7<7>        |temp1<1>       |  110.640|
+Mat7<7>        |temp1<2>       |  111.294|
+Mat7<7>        |temp1<3>       |  112.020|
+Mat7<7>        |temp1<4>       |  111.953|
+Mat7<7>        |temp1<5>       |  112.530|
+Mat7<7>        |temp1<6>       |  110.560|
+Mat7<7>        |temp1<7>       |  111.007|
+Mat8<0>        |out_pixel<0>   |   83.789|
+Mat8<0>        |out_pixel<1>   |   83.885|
+Mat8<0>        |out_pixel<2>   |   84.436|
+Mat8<0>        |out_pixel<3>   |   84.858|
+Mat8<0>        |out_pixel<4>   |   85.138|
+Mat8<0>        |out_pixel<5>   |   84.257|
+Mat8<0>        |out_pixel<6>   |   84.665|
+Mat8<0>        |out_pixel<7>   |   85.648|
+Mat8<0>        |temp1<0>       |  103.493|
+Mat8<0>        |temp1<1>       |  104.151|
+Mat8<0>        |temp1<2>       |  104.805|
+Mat8<0>        |temp1<3>       |  105.531|
+Mat8<0>        |temp1<4>       |  105.464|
+Mat8<0>        |temp1<5>       |  106.041|
+Mat8<0>        |temp1<6>       |  104.071|
+Mat8<0>        |temp1<7>       |  104.518|
+Mat8<1>        |out_pixel<0>   |   83.057|
+Mat8<1>        |out_pixel<1>   |   83.153|
+Mat8<1>        |out_pixel<2>   |   83.704|
+Mat8<1>        |out_pixel<3>   |   84.126|
+Mat8<1>        |out_pixel<4>   |   84.406|
+Mat8<1>        |out_pixel<5>   |   83.525|
+Mat8<1>        |out_pixel<6>   |   83.933|
+Mat8<1>        |out_pixel<7>   |   84.916|
+Mat8<1>        |temp1<0>       |  102.761|
+Mat8<1>        |temp1<1>       |  103.419|
+Mat8<1>        |temp1<2>       |  104.073|
+Mat8<1>        |temp1<3>       |  104.799|
+Mat8<1>        |temp1<4>       |  104.732|
+Mat8<1>        |temp1<5>       |  105.309|
+Mat8<1>        |temp1<6>       |  103.339|
+Mat8<1>        |temp1<7>       |  103.786|
+Mat8<2>        |out_pixel<0>   |   83.662|
+Mat8<2>        |out_pixel<1>   |   83.758|
+Mat8<2>        |out_pixel<2>   |   84.309|
+Mat8<2>        |out_pixel<3>   |   84.731|
+Mat8<2>        |out_pixel<4>   |   85.011|
+Mat8<2>        |out_pixel<5>   |   84.130|
+Mat8<2>        |out_pixel<6>   |   84.538|
+Mat8<2>        |out_pixel<7>   |   85.521|
+Mat8<2>        |temp1<0>       |  103.366|
+Mat8<2>        |temp1<1>       |  104.024|
+Mat8<2>        |temp1<2>       |  104.678|
+Mat8<2>        |temp1<3>       |  105.404|
+Mat8<2>        |temp1<4>       |  105.337|
+Mat8<2>        |temp1<5>       |  105.914|
+Mat8<2>        |temp1<6>       |  103.944|
+Mat8<2>        |temp1<7>       |  104.391|
+Mat8<3>        |out_pixel<0>   |   83.621|
+Mat8<3>        |out_pixel<1>   |   83.717|
+Mat8<3>        |out_pixel<2>   |   84.268|
+Mat8<3>        |out_pixel<3>   |   84.690|
+Mat8<3>        |out_pixel<4>   |   84.970|
+Mat8<3>        |out_pixel<5>   |   84.089|
+Mat8<3>        |out_pixel<6>   |   84.497|
+Mat8<3>        |out_pixel<7>   |   85.480|
+Mat8<3>        |temp1<0>       |  103.325|
+Mat8<3>        |temp1<1>       |  103.983|
+Mat8<3>        |temp1<2>       |  104.637|
+Mat8<3>        |temp1<3>       |  105.363|
+Mat8<3>        |temp1<4>       |  105.296|
+Mat8<3>        |temp1<5>       |  105.873|
+Mat8<3>        |temp1<6>       |  103.903|
+Mat8<3>        |temp1<7>       |  104.350|
+Mat8<4>        |out_pixel<0>   |   83.992|
+Mat8<4>        |out_pixel<1>   |   84.088|
+Mat8<4>        |out_pixel<2>   |   84.639|
+Mat8<4>        |out_pixel<3>   |   85.061|
+Mat8<4>        |out_pixel<4>   |   85.341|
+Mat8<4>        |out_pixel<5>   |   84.460|
+Mat8<4>        |out_pixel<6>   |   84.868|
+Mat8<4>        |out_pixel<7>   |   85.851|
+Mat8<4>        |temp1<0>       |  103.696|
+Mat8<4>        |temp1<1>       |  104.354|
+Mat8<4>        |temp1<2>       |  105.008|
+Mat8<4>        |temp1<3>       |  105.734|
+Mat8<4>        |temp1<4>       |  105.667|
+Mat8<4>        |temp1<5>       |  106.244|
+Mat8<4>        |temp1<6>       |  104.274|
+Mat8<4>        |temp1<7>       |  104.721|
+Mat8<5>        |out_pixel<0>   |   84.497|
+Mat8<5>        |out_pixel<1>   |   84.593|
+Mat8<5>        |out_pixel<2>   |   85.144|
+Mat8<5>        |out_pixel<3>   |   85.566|
+Mat8<5>        |out_pixel<4>   |   85.846|
+Mat8<5>        |out_pixel<5>   |   84.965|
+Mat8<5>        |out_pixel<6>   |   85.373|
+Mat8<5>        |out_pixel<7>   |   86.356|
+Mat8<5>        |temp1<0>       |  104.201|
+Mat8<5>        |temp1<1>       |  104.859|
+Mat8<5>        |temp1<2>       |  105.513|
+Mat8<5>        |temp1<3>       |  106.239|
+Mat8<5>        |temp1<4>       |  106.172|
+Mat8<5>        |temp1<5>       |  106.749|
+Mat8<5>        |temp1<6>       |  104.779|
+Mat8<5>        |temp1<7>       |  105.226|
+Mat8<6>        |out_pixel<0>   |   82.802|
+Mat8<6>        |out_pixel<1>   |   82.898|
+Mat8<6>        |out_pixel<2>   |   83.449|
+Mat8<6>        |out_pixel<3>   |   83.871|
+Mat8<6>        |out_pixel<4>   |   84.151|
+Mat8<6>        |out_pixel<5>   |   83.270|
+Mat8<6>        |out_pixel<6>   |   83.678|
+Mat8<6>        |out_pixel<7>   |   84.661|
+Mat8<6>        |temp1<0>       |  102.506|
+Mat8<6>        |temp1<1>       |  103.164|
+Mat8<6>        |temp1<2>       |  103.818|
+Mat8<6>        |temp1<3>       |  104.544|
+Mat8<6>        |temp1<4>       |  104.477|
+Mat8<6>        |temp1<5>       |  105.054|
+Mat8<6>        |temp1<6>       |  103.084|
+Mat8<6>        |temp1<7>       |  103.531|
+Mat8<7>        |out_pixel<0>   |   82.916|
+Mat8<7>        |out_pixel<1>   |   83.012|
+Mat8<7>        |out_pixel<2>   |   83.563|
+Mat8<7>        |out_pixel<3>   |   83.985|
+Mat8<7>        |out_pixel<4>   |   84.265|
+Mat8<7>        |out_pixel<5>   |   83.384|
+Mat8<7>        |out_pixel<6>   |   83.792|
+Mat8<7>        |out_pixel<7>   |   84.775|
+Mat8<7>        |temp1<0>       |  102.620|
+Mat8<7>        |temp1<1>       |  103.278|
+Mat8<7>        |temp1<2>       |  103.932|
+Mat8<7>        |temp1<3>       |  104.658|
+Mat8<7>        |temp1<4>       |  104.591|
+Mat8<7>        |temp1<5>       |  105.168|
+Mat8<7>        |temp1<6>       |  103.198|
+Mat8<7>        |temp1<7>       |  103.645|
+rst_n          |out_pixel<0>   |    7.567|
+rst_n          |out_pixel<1>   |    7.134|
+rst_n          |out_pixel<2>   |    7.751|
+rst_n          |out_pixel<3>   |    8.136|
+rst_n          |out_pixel<4>   |    8.018|
+rst_n          |out_pixel<5>   |    7.369|
+rst_n          |out_pixel<6>   |    7.251|
+rst_n          |out_pixel<7>   |    8.963|
+rst_n          |temp1<0>       |   10.509|
+rst_n          |temp1<1>       |   11.167|
+rst_n          |temp1<2>       |   11.946|
+rst_n          |temp1<3>       |   12.927|
+rst_n          |temp1<4>       |   12.550|
+rst_n          |temp1<5>       |   13.180|
+rst_n          |temp1<6>       |   11.467|
+rst_n          |temp1<7>       |   11.600|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Jan 28 15:36:19 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 141 MB
+
+
+

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn __projnav/bubble_sort.xst -ofn bubble_sort.syr

@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn __projnav/sort_1.xst -ofn sort_1.syr
+xst -intstyle ise -ifn __projnav/sort_1.xst -ofn sort_1.syr
+xst -ise "C:/Xilinx/median/bubblesort.ise" -intstyle ise -ifn sort_1.xst -ofn sort_1.syr
+ngdbuild -ise "C:/Xilinx/median/bubblesort.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 "sort_1.ngc" sort_1.ngd
+map -ise "C:/Xilinx/median/bubblesort.ise" -intstyle ise -p xc3s50-pq208-5 -cm area -pr b -k 4 -c 100 -o sort_1_map.ncd sort_1.ngd sort_1.pcf
+map -ise "C:/Xilinx/median/bubblesort.ise" -intstyle ise -p xc3s50-pq208-5 -cm area -pr b -k 4 -c 100 -o sort_1_map.ncd sort_1.ngd sort_1.pcf
+map -ise "C:/Xilinx/median/bubblesort.ise" -intstyle ise -p xc3s50-pq208-5 -cm area -pr b -k 4 -c 100 -o sort_1_map.ncd sort_1.ngd sort_1.pcf
+map -ise "C:/Xilinx/median/bubblesort.ise" -intstyle ise -p xc3s50-pq208-5 -cm area -pr b -k 4 -c 100 -o sort_1_map.ncd sort_1.ngd sort_1.pcf
+xst -ise "C:/Xilinx/median/bubblesort.ise" -intstyle ise -ifn sort_1.xst -ofn sort_1.syr
+ngdbuild -ise "C:/Xilinx/median/bubblesort.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "sort_1.ngc" sort_1.ngd
+map -ise "C:/Xilinx/median/bubblesort.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o sort_1_map.ncd sort_1.ngd sort_1.pcf
+par -ise "C:/Xilinx/median/bubblesort.ise" -w -intstyle ise -ol std -pl med -t 1 sort_1_map.ncd sort_1.ncd sort_1.pcf
+trce -ise "C:/Xilinx/median/bubblesort.ise" -intstyle ise -e 3 -s 5 -xml sort_1 sort_1.ncd -o sort_1.twr sort_1.pcf
+xst -ise "C:/Xilinx/median/bubblesort.ise" -intstyle ise -ifn sort_1.xst -ofn sort_1.syr
+xst -ise "C:/Xilinx/median/bubblesort.ise" -intstyle ise -ifn sort_1.xst -ofn sort_1.syr

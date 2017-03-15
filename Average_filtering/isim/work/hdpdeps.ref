@@ -1,0 +1,13 @@
+V3 7
+FL C:/Xilinx/Average_filtering/average.vhd 2013/10/12.11:51:49 J.36
+EN work/average 1399134427 FL C:/Xilinx/Average_filtering/average.vhd \
+      PB ieee/std_logic_1164 1179176983 PB ieee/NUMERIC_STD 1179176997 \
+      PB ieee/std_logic_arith 1179176985 PB ieee/STD_LOGIC_UNSIGNED 1179176991
+AR work/average/Behavioral_average 1399134428 \
+      FL C:/Xilinx/Average_filtering/average.vhd EN work/average 1399134427
+FL C:/Xilinx/Average_filtering/avg_tb.vhd 2013/10/12.11:37:05 J.36
+EN work/avg_tb 1399134429 FL C:/Xilinx/Average_filtering/avg_tb.vhd \
+      PB ieee/std_logic_1164 1179176983
+AR work/avg_tb/behavior 1399134430 \
+      FL C:/Xilinx/Average_filtering/avg_tb.vhd EN work/avg_tb 1399134429 \
+      CP average

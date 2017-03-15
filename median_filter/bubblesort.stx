@@ -1,0 +1,57 @@
+Release 6.3i - xst G.35
+Copyright (c) 1995-2004 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to .
+CPU : 0.00 / 0.97 s | Elapsed : 0.00 / 1.00 s
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file c:/xilinx/bubblesort/bubblesort.vhd in Library work.
+ERROR:HDLParsers:3010 - c:/xilinx/bubblesort/bubblesort.vhd Line 26. Entity bubble_sort does not exist.
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 28. Undefined symbol 'std_logic_vector'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 28. std_logic_vector: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 29. Undefined symbol 'matrix'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 29. matrix: Undefined symbol (last report in this block)
+ERROR:HDLParsers:842 - c:/xilinx/bubblesort/bubblesort.vhd Line 29. The type of the element in aggregate does not correspond to any array type.
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 31. Undefined symbol 'mat_temp'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 31. mat_temp: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 31. Undefined symbol 'Mat0'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 31. Mat0: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 32. Undefined symbol 'Mat1'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 32. Mat1: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 33. Undefined symbol 'Mat2'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 33. Mat2: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 34. Undefined symbol 'Mat3'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 34. Mat3: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 35. Undefined symbol 'Mat4'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 35. Mat4: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 36. Undefined symbol 'Mat5'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 36. Mat5: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 37. Undefined symbol 'Mat6'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 37. Mat6: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 38. Undefined symbol 'Mat7'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 38. Mat7: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 39. Undefined symbol 'Mat8'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 39. Mat8: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 40. Undefined symbol 'rst_n'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 40. rst_n: Undefined symbol (last report in this block)
+ERROR:HDLParsers:842 - c:/xilinx/bubblesort/bubblesort.vhd Line 41. The type of the element in aggregate does not correspond to any array type.
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 46. Undefined symbol 'temp_mat'.
+ERROR:HDLParsers:842 - c:/xilinx/bubblesort/bubblesort.vhd Line 46. The type of the element in aggregate does not correspond to any array type.
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 47. Undefined symbol 'temp'.
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 48. Undefined symbol 'out_pixel'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 50. temp_mat: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - c:/xilinx/bubblesort/bubblesort.vhd Line 53. > can not have such operands in this context.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 54. temp: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 62. Undefined symbol 'out_pixel'.
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 62. Undefined symbol 'temp_mat'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 62. temp_mat: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - c:/xilinx/bubblesort/bubblesort.vhd Line 40. No sensitivity list and no wait in the process
+CPU : 0.17 / 1.14 s | Elapsed : 0.00 / 1.00 s
+ 
+--> 
+
+Total memory usage is 85712 kilobytes
+
+

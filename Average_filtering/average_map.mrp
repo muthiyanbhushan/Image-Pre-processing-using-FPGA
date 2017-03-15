@@ -1,0 +1,211 @@
+Release 9.2i Map J.36
+Xilinx Mapping Report File for Design 'average'
+
+Design Information
+------------------
+Command Line   : C:\Xilinx92i\bin\nt\map.exe -ise
+I:/Average_filtering/Average_filtering.ise -intstyle ise -p xc3s400-pq208-5 -cm
+area -pr b -k 4 -c 100 -o average_map.ncd average.ngd average.pcf 
+Target Device  : xc3s400
+Target Package : pq208
+Target Speed   : -5
+Mapper Version : spartan3 -- $Revision: 1.36 $
+Mapped Date    : Thu May 29 14:32:41 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    5
+Logic Utilization:
+  Number of 4 input LUTs:              13 out of   7,168    1%
+Logic Distribution:
+  Number of occupied Slices:                            8 out of   3,584    1%
+    Number of Slices containing only related logic:       8 out of       8  100%
+    Number of Slices containing unrelated logic:          0 out of       8    0%
+      *See NOTES below for an explanation of the effects of unrelated logic
+Total Number of 4 input LUTs:             14 out of   7,168    1%
+  Number used as logic:                 13
+  Number used as a route-thru:           1
+  Number of bonded IOBs:               34 out of     141   24%
+    IOB Latches:                        7
+  Number of GCLKs:                     1 out of       8   12%
+
+Total equivalent gate count for design:  188
+Additional JTAG gate count for IOBs:  1,632
+Peak Memory Usage:  138 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Control Set Information
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:LIT:243 - Logical network N18 has no load.
+WARNING:LIT:395 - The above warning message base_net_load_rule is repeated 3
+   more times for the following (max. 5 shown):
+   Mat0<0>_IBUF,
+   Mat1<0>_IBUF,
+   Mat2<0>_IBUF
+   To see the details of these warning messages, please use the -detail switch.
+WARNING:PhysDesignRules:367 - The signal <Mat2<0>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mat0<0>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mat1<0>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:863 - The following Virtex BUFG(s) is/are being retargeted to
+   Virtex2 BUFGMUX(s) with input tied to I0 and Select pin tied to constant 0:
+   BUFG symbol "valid_OBUF_BUFG" (output signal=valid_OBUF)
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs in the
+   schematic.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   1 block(s) removed
+   1 block(s) optimized away
+   1 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "N18" is loadless and has been removed.
+ Loadless block "XST_VCC" (ONE) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+
+Section 6 - IOB Properties
+--------------------------
+
++------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type    | Direction | IO Standard | Drive    | Slew | Reg (s)  | Resistor | IOB   |
+|                                    |         |           |             | Strength | Rate |          |          | Delay |
++------------------------------------------------------------------------------------------------------------------------+
+| Mat0<0>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat0<1>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat0<2>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat0<3>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat0<4>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat0<5>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat0<6>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat0<7>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat1<0>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat1<1>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat1<2>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat1<3>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat1<4>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat1<5>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat1<6>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat1<7>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat2<0>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat2<1>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat2<2>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat2<3>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat2<4>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat2<5>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat2<6>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| Mat2<7>                            | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| out_pixel<0>                       | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| out_pixel<1>                       | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| out_pixel<2>                       | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| out_pixel<3>                       | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| out_pixel<4>                       | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| out_pixel<5>                       | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| out_pixel<6>                       | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| out_pixel<7>                       | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| rst_n                              | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| valid                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
++------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+
+----------------------
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Control Set Information
+------------------------------------
+No control set information for this architecture.

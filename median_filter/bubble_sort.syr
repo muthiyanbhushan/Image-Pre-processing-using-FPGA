@@ -1,0 +1,504 @@
+Release 6.3i - xst G.35
+Copyright (c) 1995-2004 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.00 / 0.17 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.17 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: bubble_sort.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+  5) Advanced HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : bubble_sort.prj
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+Verilog Include Directory          : 
+
+---- Target Parameters
+Output File Name                   : bubble_sort
+Output Format                      : NGC
+Target Device                      : xc3s50-5-pq208
+
+---- Source Options
+Top Module Name                    : bubble_sort
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Equivalent register Removal        : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+Global Optimization                : AllClockNets
+RTL Output                         : Yes
+Write Timing Constraints           : NO
+Hierarchy Separator                : _
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : bubble_sort.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+Optimize Instantiated Primitives   : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/Xilinx/bubblesort/bubblesort.vhd in Library work.
+Architecture behavioral of Entity bubble_sort is up to date.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <bubble_sort> (Architecture <behavioral>).
+Entity <bubble_sort> analyzed. Unit <bubble_sort> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <bubble_sort>.
+    Related source file is C:/Xilinx/bubblesort/bubblesort.vhd.
+WARNING:Xst:646 - Signal <temp> is assigned but never used.
+    Found 8-bit comparator greater for signal <$n0217> created at line 54.
+    Found 8-bit comparator greater for signal <$n0218> created at line 54.
+    Found 8-bit comparator greater for signal <$n0219> created at line 54.
+    Found 8-bit comparator greater for signal <$n0220> created at line 54.
+    Found 8-bit comparator greater for signal <$n0221> created at line 54.
+    Found 8-bit comparator greater for signal <$n0222> created at line 54.
+    Found 8-bit comparator greater for signal <$n0223> created at line 54.
+    Found 8-bit comparator greater for signal <$n0224> created at line 54.
+    Found 8-bit comparator greater for signal <$n0225> created at line 54.
+    Found 8-bit comparator greater for signal <$n0226> created at line 54.
+    Found 8-bit comparator greater for signal <$n0227> created at line 54.
+    Found 8-bit comparator greater for signal <$n0228> created at line 54.
+    Found 8-bit comparator greater for signal <$n0229> created at line 54.
+    Found 8-bit comparator greater for signal <$n0230> created at line 54.
+    Found 8-bit comparator greater for signal <$n0231> created at line 54.
+    Found 8-bit comparator greater for signal <$n0232> created at line 54.
+    Found 8-bit comparator greater for signal <$n0233> created at line 54.
+    Found 8-bit comparator greater for signal <$n0234> created at line 54.
+    Found 8-bit comparator greater for signal <$n0235> created at line 54.
+    Found 8-bit comparator greater for signal <$n0236> created at line 54.
+    Found 8-bit comparator greater for signal <$n0237> created at line 54.
+    Found 8-bit comparator greater for signal <$n0238> created at line 54.
+    Found 8-bit comparator greater for signal <$n0239> created at line 54.
+    Found 8-bit comparator greater for signal <$n0240> created at line 54.
+    Found 8-bit comparator greater for signal <$n0241> created at line 54.
+    Found 8-bit comparator greater for signal <$n0242> created at line 54.
+    Found 8-bit comparator greater for signal <$n0243> created at line 54.
+    Found 8-bit comparator greater for signal <$n0244> created at line 54.
+    Found 8-bit comparator greater for signal <$n0245> created at line 54.
+    Found 8-bit comparator greater for signal <$n0246> created at line 54.
+    Found 8-bit comparator greater for signal <$n0247> created at line 54.
+    Found 8-bit comparator greater for signal <$n0248> created at line 54.
+    Found 8-bit comparator greater for signal <$n0249> created at line 54.
+    Found 8-bit comparator greater for signal <$n0250> created at line 54.
+    Found 8-bit comparator greater for signal <$n0251> created at line 54.
+    Found 8-bit comparator greater for signal <$n0252> created at line 54.
+    Found 8-bit comparator greater for signal <$n0253> created at line 54.
+    Found 8-bit comparator greater for signal <$n0254> created at line 54.
+    Found 8-bit comparator greater for signal <$n0255> created at line 54.
+    Found 8-bit comparator greater for signal <$n0256> created at line 54.
+    Found 8-bit comparator greater for signal <$n0257> created at line 54.
+    Found 8-bit comparator greater for signal <$n0258> created at line 54.
+    Found 8-bit comparator greater for signal <$n0259> created at line 54.
+    Found 8-bit comparator greater for signal <$n0260> created at line 54.
+    Found 8-bit comparator greater for signal <$n0261> created at line 54.
+    Found 8-bit comparator greater for signal <$n0262> created at line 54.
+    Found 8-bit comparator greater for signal <$n0263> created at line 54.
+    Found 8-bit comparator greater for signal <$n0264> created at line 54.
+    Found 8-bit comparator greater for signal <$n0265> created at line 54.
+    Found 8-bit comparator greater for signal <$n0266> created at line 54.
+    Found 8-bit comparator greater for signal <$n0267> created at line 54.
+    Found 8-bit comparator greater for signal <$n0268> created at line 54.
+    Found 8-bit comparator greater for signal <$n0269> created at line 54.
+    Found 8-bit comparator greater for signal <$n0270> created at line 54.
+    Found 8-bit comparator greater for signal <$n0271> created at line 54.
+    Found 8-bit comparator greater for signal <$n0272> created at line 54.
+    Found 8-bit comparator greater for signal <$n0273> created at line 54.
+    Found 8-bit comparator greater for signal <$n0274> created at line 54.
+    Found 8-bit comparator greater for signal <$n0275> created at line 54.
+    Found 8-bit comparator greater for signal <$n0276> created at line 54.
+    Found 8-bit comparator greater for signal <$n0277> created at line 54.
+    Found 8-bit comparator greater for signal <$n0278> created at line 54.
+    Found 8-bit comparator greater for signal <$n0279> created at line 54.
+    Found 8-bit comparator greater for signal <$n0280> created at line 54.
+    Found 8-bit comparator greater for signal <$n0281> created at line 54.
+    Found 8-bit comparator greater for signal <$n0282> created at line 54.
+    Found 984 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred  66 Comparator(s).
+	inferred 984 Multiplexer(s).
+Unit <bubble_sort> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Comparators                      : 66
+ 8-bit comparator greater          : 66
+# Multiplexers                     : 123
+ 8-bit 2-to-1 multiplexer          : 123
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <bubble_sort> ...
+Loading device for application Xst from file '3s50.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block bubble_sort, actual ratio is 104.
+Optimizing block <bubble_sort> to meet ratio 100 (+ 5) of 768 slices :
+WARNING:Xst - Area constraint could not be met for block <bubble_sort>, final ratio is 147.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : bubble_sort.ngr
+Top Level Output File Name         : bubble_sort
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 81
+
+Macro Statistics :
+# Multiplexers                     : 123
+#      2-to-1 multiplexer          : 123
+# Comparators                      : 66
+#      8-bit comparator greater    : 66
+
+Cell Usage :
+# BELS                             : 2049
+#      LUT2                        : 8
+#      LUT3                        : 984
+#      LUT4                        : 528
+#      MUXCY                       : 528
+#      VCC                         : 1
+# IO Buffers                       : 81
+#      IBUF                        : 73
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-5 
+
+ Number of Slices:                    1132  out of    768   147% (*) 
+ Number of 4 input LUTs:              1520  out of   1536    98%  
+ Number of bonded IOBs:                 81  out of    124    65%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 85.076ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default path analysis
+Delay:               85.076ns (Levels of Logic = 200)
+  Source:            mat0<0> (PAD)
+  Destination:       out_pixel<7> (PAD)
+
+  Data Path: mat0<0> to out_pixel<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.679   0.658  mat0_0_IBUF (mat0_0_IBUF)
+     LUT2:I0->O            1   0.479   0.000  XNor_stagelut (N853)
+     MUXCY:S->O            1   0.435   0.000  XNor_stagecy (XNor_stage_cyo)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_0 (XNor_stage_cyo1)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_1 (XNor_stage_cyo2)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_2 (XNor_stage_cyo3)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_3 (XNor_stage_cyo4)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_4 (XNor_stage_cyo5)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_5 (XNor_stage_cyo6)
+     MUXCY:CI->O          32   0.265   1.321  XNor_stagecy_rn_6 (XNor_stage_cyo7)
+     LUT3:I0->O            3   0.479   0.577  Mmux__n0000_Result<0>1 (_n0295<0>)
+     MUXCY:DI->O           1   0.774   0.000  XNor_stagecy_rn_7 (XNor_stage_cyo8)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_8 (XNor_stage_cyo9)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_9 (XNor_stage_cyo10)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_10 (XNor_stage_cyo11)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_11 (XNor_stage_cyo12)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_12 (XNor_stage_cyo13)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_13 (XNor_stage_cyo14)
+     MUXCY:CI->O          24   0.265   1.278  XNor_stagecy_rn_14 (XNor_stage_cyo15)
+     LUT3:I0->O            5   0.479   0.658  Mmux__n0014_Result<0>1 (_n0312<8>)
+     LUT4:I3->O            1   0.479   0.000  XNor_stagelut16 (N905)
+     MUXCY:S->O            1   0.435   0.000  XNor_stagecy_rn_15 (XNor_stage_cyo16)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_16 (XNor_stage_cyo17)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_17 (XNor_stage_cyo18)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_18 (XNor_stage_cyo19)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_19 (XNor_stage_cyo20)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_20 (XNor_stage_cyo21)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_21 (XNor_stage_cyo22)
+     MUXCY:CI->O          32   0.265   1.321  XNor_stagecy_rn_22 (XNor_stage_cyo23)
+     LUT3:I0->O            3   0.479   0.577  Mmux__n0018_Result<0>1 (_n0311<0>)
+     MUXCY:DI->O           1   0.774   0.000  XNor_stagecy_rn_31 (XNor_stage_cyo32)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_32 (XNor_stage_cyo33)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_33 (XNor_stage_cyo34)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_34 (XNor_stage_cyo35)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_35 (XNor_stage_cyo36)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_36 (XNor_stage_cyo37)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_37 (XNor_stage_cyo38)
+     MUXCY:CI->O          24   0.265   1.278  XNor_stagecy_rn_38 (XNor_stage_cyo39)
+     LUT3:I0->O            5   0.479   0.658  Mmux__n0038_Result<0>1 (_n0328<8>)
+     LUT4:I3->O            1   0.479   0.000  XNor_stagelut48 (N1009)
+     MUXCY:S->O            1   0.435   0.000  XNor_stagecy_rn_47 (XNor_stage_cyo48)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_48 (XNor_stage_cyo49)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_49 (XNor_stage_cyo50)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_50 (XNor_stage_cyo51)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_51 (XNor_stage_cyo52)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_52 (XNor_stage_cyo53)
+     MUXCY:CI->O           1   0.055   0.000  XNor_stagecy_rn_53 (XNor_stage_cyo54)
+     MUXCY:CI->O          32   0.265   1.321  XNor_stagecy_rn_54 (XNor_stage_cyo55)
+     LUT3:I0->O            3   0.479   0.577  Mmux__n0042_Result<0>1 (_n0327<0>)
+     MUXCY:DI->O           1   0.774   0.000  XNor_stagecy_rn_71 (XNor_stage_cyo72)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_72 (XNor_stage_cyo73)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_73 (XNor_stage_cyo74)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_74 (XNor_stage_cyo75)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_75 (XNor_stage_cyo76)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_76 (XNor_stage_cyo77)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_77 (XNor_stage_cyo78)
+     MUXCY:CI->O          24   0.264   1.278  XNor_stagecy_rn_78 (XNor_stage_cyo79)
+     LUT3:I0->O            5   0.479   0.658  Mmux__n0062_Result<0>1 (_n0344<8>)
+     LUT4:I3->O            1   0.479   0.000  XNor_stagelut96 (N1165)
+     MUXCY:S->O            1   0.435   0.000  XNor_stagecy_rn_95 (XNor_stage_cyo96)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_96 (XNor_stage_cyo97)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_97 (XNor_stage_cyo98)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_98 (XNor_stage_cyo99)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_99 (XNor_stage_cyo100)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_100 (XNor_stage_cyo101)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_101 (XNor_stage_cyo102)
+     MUXCY:CI->O          32   0.264   1.321  XNor_stagecy_rn_102 (XNor_stage_cyo103)
+     LUT3:I0->O            3   0.479   0.577  Mmux__n0066_Result<0>1 (_n0343<0>)
+     MUXCY:DI->O           1   0.774   0.000  XNor_stagecy_rn_127 (XNor_stage_cyo128)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_128 (XNor_stage_cyo129)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_129 (XNor_stage_cyo130)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_130 (XNor_stage_cyo131)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_131 (XNor_stage_cyo132)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_132 (XNor_stage_cyo133)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_133 (XNor_stage_cyo134)
+     MUXCY:CI->O          24   0.264   1.278  XNor_stagecy_rn_134 (XNor_stage_cyo135)
+     LUT3:I0->O            5   0.479   0.658  Mmux__n0086_Result<0>1 (_n0360<8>)
+     LUT4:I3->O            1   0.479   0.000  XNor_stagelut160 (N1373)
+     MUXCY:S->O            1   0.435   0.000  XNor_stagecy_rn_159 (XNor_stage_cyo160)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_160 (XNor_stage_cyo161)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_161 (XNor_stage_cyo162)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_162 (XNor_stage_cyo163)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_163 (XNor_stage_cyo164)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_164 (XNor_stage_cyo165)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_165 (XNor_stage_cyo166)
+     MUXCY:CI->O          32   0.264   1.321  XNor_stagecy_rn_166 (XNor_stage_cyo167)
+     LUT3:I0->O            3   0.479   0.577  Mmux__n0090_Result<0>1 (_n0359<0>)
+     MUXCY:DI->O           1   0.774   0.000  XNor_stagecy_rn_191 (XNor_stage_cyo192)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_192 (XNor_stage_cyo193)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_193 (XNor_stage_cyo194)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_194 (XNor_stage_cyo195)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_195 (XNor_stage_cyo196)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_196 (XNor_stage_cyo197)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_197 (XNor_stage_cyo198)
+     MUXCY:CI->O          24   0.264   1.278  XNor_stagecy_rn_198 (XNor_stage_cyo199)
+     LUT3:I0->O            5   0.479   0.658  Mmux__n0110_Result<0>1 (_n0376<8>)
+     LUT4:I3->O            1   0.479   0.000  XNor_stagelut224 (N1581)
+     MUXCY:S->O            1   0.435   0.000  XNor_stagecy_rn_223 (XNor_stage_cyo224)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_224 (XNor_stage_cyo225)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_225 (XNor_stage_cyo226)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_226 (XNor_stage_cyo227)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_227 (XNor_stage_cyo228)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_228 (XNor_stage_cyo229)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_229 (XNor_stage_cyo230)
+     MUXCY:CI->O          32   0.264   1.321  XNor_stagecy_rn_230 (XNor_stage_cyo231)
+     LUT3:I0->O            3   0.479   0.577  Mmux__n0114_Result<0>1 (_n0375<0>)
+     MUXCY:DI->O           1   0.774   0.000  XNor_stagecy_rn_255 (XNor_stage_cyo256)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_256 (XNor_stage_cyo257)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_257 (XNor_stage_cyo258)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_258 (XNor_stage_cyo259)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_259 (XNor_stage_cyo260)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_260 (XNor_stage_cyo261)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_261 (XNor_stage_cyo262)
+     MUXCY:CI->O          24   0.264   1.278  XNor_stagecy_rn_262 (XNor_stage_cyo263)
+     LUT3:I0->O            5   0.479   0.658  Mmux__n0134_Result<0>1 (_n0390<8>)
+     LUT4:I3->O            1   0.479   0.000  XNor_stagelut312 (N1867)
+     MUXCY:S->O            1   0.435   0.000  XNor_stagecy_rn_311 (XNor_stage_cyo312)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_312 (XNor_stage_cyo313)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_313 (XNor_stage_cyo314)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_314 (XNor_stage_cyo315)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_315 (XNor_stage_cyo316)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_316 (XNor_stage_cyo317)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_317 (XNor_stage_cyo318)
+     MUXCY:CI->O          32   0.264   1.321  XNor_stagecy_rn_318 (XNor_stage_cyo319)
+     LUT3:I0->O            3   0.479   0.577  Mmux__n0138_Result<0>1 (_n0389<0>)
+     MUXCY:DI->O           1   0.774   0.000  XNor_stagecy_rn_343 (XNor_stage_cyo344)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_344 (XNor_stage_cyo345)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_345 (XNor_stage_cyo346)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_346 (XNor_stage_cyo347)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_347 (XNor_stage_cyo348)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_348 (XNor_stage_cyo349)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_349 (XNor_stage_cyo350)
+     MUXCY:CI->O          24   0.264   1.278  XNor_stagecy_rn_350 (XNor_stage_cyo351)
+     LUT3:I0->O            5   0.479   0.658  Mmux__n0158_Result<0>1 (_n0402<8>)
+     LUT4:I3->O            1   0.479   0.000  XNor_stagelut368 (N2049)
+     MUXCY:S->O            1   0.435   0.000  XNor_stagecy_rn_367 (XNor_stage_cyo368)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_368 (XNor_stage_cyo369)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_369 (XNor_stage_cyo370)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_370 (XNor_stage_cyo371)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_371 (XNor_stage_cyo372)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_372 (XNor_stage_cyo373)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_373 (XNor_stage_cyo374)
+     MUXCY:CI->O          32   0.264   1.321  XNor_stagecy_rn_374 (XNor_stage_cyo375)
+     LUT3:I0->O            3   0.479   0.577  Mmux__n0162_Result<0>1 (_n0401<0>)
+     MUXCY:DI->O           1   0.774   0.000  XNor_stagecy_rn_399 (XNor_stage_cyo400)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_400 (XNor_stage_cyo401)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_401 (XNor_stage_cyo402)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_402 (XNor_stage_cyo403)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_403 (XNor_stage_cyo404)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_404 (XNor_stage_cyo405)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_405 (XNor_stage_cyo406)
+     MUXCY:CI->O          24   0.264   1.278  XNor_stagecy_rn_406 (XNor_stage_cyo407)
+     LUT3:I0->O            3   0.479   0.577  Mmux__n0165_Result<0>1 (_n0403<0>)
+     MUXCY:DI->O           1   0.774   0.000  XNor_stagecy_rn_423 (XNor_stage_cyo424)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_424 (XNor_stage_cyo425)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_425 (XNor_stage_cyo426)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_426 (XNor_stage_cyo427)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_427 (XNor_stage_cyo428)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_428 (XNor_stage_cyo429)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_429 (XNor_stage_cyo430)
+     MUXCY:CI->O          24   0.264   1.278  XNor_stagecy_rn_430 (XNor_stage_cyo431)
+     LUT3:I0->O            3   0.479   0.577  Mmux__n0168_Result<0>1 (_n0405<0>)
+     MUXCY:DI->O           1   0.774   0.000  XNor_stagecy_rn_455 (XNor_stage_cyo456)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_456 (XNor_stage_cyo457)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_457 (XNor_stage_cyo458)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_458 (XNor_stage_cyo459)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_459 (XNor_stage_cyo460)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_460 (XNor_stage_cyo461)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_461 (XNor_stage_cyo462)
+     MUXCY:CI->O          24   0.264   1.278  XNor_stagecy_rn_462 (XNor_stage_cyo463)
+     LUT3:I0->O            3   0.479   0.577  Mmux__n0171_Result<0>1 (_n0407<0>)
+     MUXCY:DI->O           1   0.774   0.000  XNor_stagecy_rn_487 (XNor_stage_cyo488)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_488 (XNor_stage_cyo489)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_489 (XNor_stage_cyo490)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_490 (XNor_stage_cyo491)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_491 (XNor_stage_cyo492)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_492 (XNor_stage_cyo493)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_493 (XNor_stage_cyo494)
+     MUXCY:CI->O          24   0.264   1.278  XNor_stagecy_rn_494 (XNor_stage_cyo495)
+     LUT3:I0->O            3   0.479   0.577  Mmux__n0191_Result<0>1 (_n0410<0>)
+     LUT4:I3->O            1   0.479   0.000  XNor_stagelut504 (N2491)
+     MUXCY:S->O            1   0.435   0.000  XNor_stagecy_rn_503 (XNor_stage_cyo504)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_504 (XNor_stage_cyo505)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_505 (XNor_stage_cyo506)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_506 (XNor_stage_cyo507)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_507 (XNor_stage_cyo508)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_508 (XNor_stage_cyo509)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_509 (XNor_stage_cyo510)
+     MUXCY:CI->O          16   0.264   0.995  XNor_stagecy_rn_510 (XNor_stage_cyo511)
+     LUT3:I0->O            1   0.479   0.240  Mmux__n0195_Result<0>1 (_n0195<0>)
+     MUXCY:DI->O           1   0.774   0.000  XNor_stagecy_rn_519 (XNor_stage_cyo520)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_520 (XNor_stage_cyo521)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_521 (XNor_stage_cyo522)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_522 (XNor_stage_cyo523)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_523 (XNor_stage_cyo524)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_524 (XNor_stage_cyo525)
+     MUXCY:CI->O           1   0.056   0.000  XNor_stagecy_rn_525 (XNor_stage_cyo526)
+     MUXCY:CI->O           8   0.265   0.747  XNor_stagecy_rn_526 (XNor_stage_cyo527)
+     LUT4:I1->O            1   0.479   0.240  out_pixel<5>1 (out_pixel_5_OBUF)
+     OBUF:I->O                 4.240          out_pixel_5_OBUF (out_pixel<5>)
+    ----------------------------------------
+    Total                     85.076ns (46.039ns logic, 39.036ns route)
+                                       (54.1% logic, 45.9% route)
+
+=========================================================================
+CPU : 13.39 / 13.84 s | Elapsed : 14.00 / 14.00 s
+ 
+--> 
+
+Total memory usage is 116688 kilobytes
+
+

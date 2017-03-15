@@ -1,0 +1,787 @@
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file c:/xilinx/bubblesort/bubblesort.vhd in Library work.
+ERROR:HDLParsers:3010 - c:/xilinx/bubblesort/bubblesort.vhd Line 26. Entity bubble_sort does not exist.
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 28. Undefined symbol 'std_logic_vector'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 28. std_logic_vector: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 29. Undefined symbol 'matrix'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 29. matrix: Undefined symbol (last report in this block)
+ERROR:HDLParsers:842 - c:/xilinx/bubblesort/bubblesort.vhd Line 29. The type of the element in aggregate does not correspond to any array type.
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 31. Undefined symbol 'mat_temp'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 31. mat_temp: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 31. Undefined symbol 'Mat0'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 31. Mat0: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 32. Undefined symbol 'Mat1'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 32. Mat1: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 33. Undefined symbol 'Mat2'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 33. Mat2: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 34. Undefined symbol 'Mat3'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 34. Mat3: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 35. Undefined symbol 'Mat4'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 35. Mat4: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 36. Undefined symbol 'Mat5'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 36. Mat5: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 37. Undefined symbol 'Mat6'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 37. Mat6: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 38. Undefined symbol 'Mat7'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 38. Mat7: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 39. Undefined symbol 'Mat8'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 39. Mat8: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 40. Undefined symbol 'rst_n'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 40. rst_n: Undefined symbol (last report in this block)
+ERROR:HDLParsers:842 - c:/xilinx/bubblesort/bubblesort.vhd Line 41. The type of the element in aggregate does not correspond to any array type.
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 46. Undefined symbol 'temp_mat'.
+ERROR:HDLParsers:842 - c:/xilinx/bubblesort/bubblesort.vhd Line 46. The type of the element in aggregate does not correspond to any array type.
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 47. Undefined symbol 'temp'.
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 48. Undefined symbol 'out_pixel'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 50. temp_mat: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - c:/xilinx/bubblesort/bubblesort.vhd Line 53. > can not have such operands in this context.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 54. temp: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 62. Undefined symbol 'out_pixel'.
+ERROR:HDLParsers:3312 - c:/xilinx/bubblesort/bubblesort.vhd Line 62. Undefined symbol 'temp_mat'.
+ERROR:HDLParsers:1209 - c:/xilinx/bubblesort/bubblesort.vhd Line 62. temp_mat: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - c:/xilinx/bubblesort/bubblesort.vhd Line 40. No sensitivity list and no wait in the process
+ERROR: XST failed
+Process "Check Syntax" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file c:/xilinx/bubblesort/bubblesort.vhd in Library work.
+Entity <bubble_sort> (Architecture <Behavioral>) compiled.
+Completed process "Check Syntax".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/Xilinx/bubblesort/bubblesort.vhd in Library work.
+Architecture behavioral of Entity bubble_sort is up to date.
+Completed process "Check Syntax".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+Compiling vhdl file C:/Xilinx/bubblesort/bubblesort.vhd in Library work.
+Entity <bubble_sort> (Architecture <behavioral>) compiled.
+tdtfi(vhdl) completed successfully.
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/Xilinx/bubblesort/bubblesort.vhd in Library work.
+Architecture behavioral of Entity bubble_sort is up to date.
+Completed process "Check Syntax".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/Xilinx/bubblesort/bubblesort.vhd in Library work.
+Entity <bubble_sort> (Architecture <behavioral>) compiled.
+Completed process "Check Syntax".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/Xilinx/bubblesort/bubblesort.vhd in Library work.
+Architecture behavioral of Entity bubble_sort is up to date.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <bubble_sort> (Architecture <behavioral>).
+Entity <bubble_sort> analyzed. Unit <bubble_sort> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <bubble_sort>.
+    Related source file is C:/Xilinx/bubblesort/bubblesort.vhd.
+WARNING:Xst:646 - Signal <temp> is assigned but never used.
+    Found 8-bit comparator greater for signal <$n0217> created at line 54.
+    Found 8-bit comparator greater for signal <$n0218> created at line 54.
+    Found 8-bit comparator greater for signal <$n0219> created at line 54.
+    Found 8-bit comparator greater for signal <$n0220> created at line 54.
+    Found 8-bit comparator greater for signal <$n0221> created at line 54.
+    Found 8-bit comparator greater for signal <$n0222> created at line 54.
+    Found 8-bit comparator greater for signal <$n0223> created at line 54.
+    Found 8-bit comparator greater for signal <$n0224> created at line 54.
+    Found 8-bit comparator greater for signal <$n0225> created at line 54.
+    Found 8-bit comparator greater for signal <$n0226> created at line 54.
+    Found 8-bit comparator greater for signal <$n0227> created at line 54.
+    Found 8-bit comparator greater for signal <$n0228> created at line 54.
+    Found 8-bit comparator greater for signal <$n0229> created at line 54.
+    Found 8-bit comparator greater for signal <$n0230> created at line 54.
+    Found 8-bit comparator greater for signal <$n0231> created at line 54.
+    Found 8-bit comparator greater for signal <$n0232> created at line 54.
+    Found 8-bit comparator greater for signal <$n0233> created at line 54.
+    Found 8-bit comparator greater for signal <$n0234> created at line 54.
+    Found 8-bit comparator greater for signal <$n0235> created at line 54.
+    Found 8-bit comparator greater for signal <$n0236> created at line 54.
+    Found 8-bit comparator greater for signal <$n0237> created at line 54.
+    Found 8-bit comparator greater for signal <$n0238> created at line 54.
+    Found 8-bit comparator greater for signal <$n0239> created at line 54.
+    Found 8-bit comparator greater for signal <$n0240> created at line 54.
+    Found 8-bit comparator greater for signal <$n0241> created at line 54.
+    Found 8-bit comparator greater for signal <$n0242> created at line 54.
+    Found 8-bit comparator greater for signal <$n0243> created at line 54.
+    Found 8-bit comparator greater for signal <$n0244> created at line 54.
+    Found 8-bit comparator greater for signal <$n0245> created at line 54.
+    Found 8-bit comparator greater for signal <$n0246> created at line 54.
+    Found 8-bit comparator greater for signal <$n0247> created at line 54.
+    Found 8-bit comparator greater for signal <$n0248> created at line 54.
+    Found 8-bit comparator greater for signal <$n0249> created at line 54.
+    Found 8-bit comparator greater for signal <$n0250> created at line 54.
+    Found 8-bit comparator greater for signal <$n0251> created at line 54.
+    Found 8-bit comparator greater for signal <$n0252> created at line 54.
+    Found 8-bit comparator greater for signal <$n0253> created at line 54.
+    Found 8-bit comparator greater for signal <$n0254> created at line 54.
+    Found 8-bit comparator greater for signal <$n0255> created at line 54.
+    Found 8-bit comparator greater for signal <$n0256> created at line 54.
+    Found 8-bit comparator greater for signal <$n0257> created at line 54.
+    Found 8-bit comparator greater for signal <$n0258> created at line 54.
+    Found 8-bit comparator greater for signal <$n0259> created at line 54.
+    Found 8-bit comparator greater for signal <$n0260> created at line 54.
+    Found 8-bit comparator greater for signal <$n0261> created at line 54.
+    Found 8-bit comparator greater for signal <$n0262> created at line 54.
+    Found 8-bit comparator greater for signal <$n0263> created at line 54.
+    Found 8-bit comparator greater for signal <$n0264> created at line 54.
+    Found 8-bit comparator greater for signal <$n0265> created at line 54.
+    Found 8-bit comparator greater for signal <$n0266> created at line 54.
+    Found 8-bit comparator greater for signal <$n0267> created at line 54.
+    Found 8-bit comparator greater for signal <$n0268> created at line 54.
+    Found 8-bit comparator greater for signal <$n0269> created at line 54.
+    Found 8-bit comparator greater for signal <$n0270> created at line 54.
+    Found 8-bit comparator greater for signal <$n0271> created at line 54.
+    Found 8-bit comparator greater for signal <$n0272> created at line 54.
+    Found 8-bit comparator greater for signal <$n0273> created at line 54.
+    Found 8-bit comparator greater for signal <$n0274> created at line 54.
+    Found 8-bit comparator greater for signal <$n0275> created at line 54.
+    Found 8-bit comparator greater for signal <$n0276> created at line 54.
+    Found 8-bit comparator greater for signal <$n0277> created at line 54.
+    Found 8-bit comparator greater for signal <$n0278> created at line 54.
+    Found 8-bit comparator greater for signal <$n0279> created at line 54.
+    Found 8-bit comparator greater for signal <$n0280> created at line 54.
+    Found 8-bit comparator greater for signal <$n0281> created at line 54.
+    Found 8-bit comparator greater for signal <$n0282> created at line 54.
+    Found 984 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred  66 Comparator(s).
+	inferred 984 Multiplexer(s).
+Unit <bubble_sort> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Comparators                      : 66
+ 8-bit comparator greater          : 66
+# Multiplexers                     : 123
+ 8-bit 2-to-1 multiplexer          : 123
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <bubble_sort> ...
+Loading device for application Xst from file '3s50.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block bubble_sort, actual ratio is 104.
+Optimizing block <bubble_sort> to meet ratio 100 (+ 5) of 768 slices :
+WARNING:Xst - Area constraint could not be met for block <bubble_sort>, final ratio is 147.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-5 
+
+ Number of Slices:                    1132  out of    768   147% (*) 
+ Number of 4 input LUTs:              1520  out of   1536    98%  
+ Number of bonded IOBs:                 81  out of    124    65%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 85.076ns
+
+=========================================================================
+Completed process "Synthesize".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/Xilinx/bubblesort/bubblesort.vhd in Library work.
+ERROR:HDLParsers:3312 - C:/Xilinx/bubblesort/bubblesort.vhd Line 49. Undefined symbol 'valid'.
+ERROR:HDLParsers:164 - C:/Xilinx/bubblesort/bubblesort.vhd Line 69. parse error, unexpected IF, expecting PROCESS
+ERROR: XST failed
+Process "Check Syntax" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/Xilinx/bubblesort/bubblesort.vhd in Library work.
+ERROR:HDLParsers:164 - C:/Xilinx/bubblesort/bubblesort.vhd Line 68. parse error, unexpected IF, expecting PROCESS
+ERROR: XST failed
+Process "Check Syntax" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/Xilinx/bubblesort/bubblesort.vhd in Library work.
+Entity <sort_1> (Architecture <behavioural>) compiled.
+Completed process "Check Syntax".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/Xilinx/bubblesort/bubblesort.vhd in Library work.
+Architecture behavioural of Entity sort_1 is up to date.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <sort_1> (Architecture <behavioural>).
+Entity <sort_1> analyzed. Unit <sort_1> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <sort_1>.
+    Related source file is C:/Xilinx/bubblesort/bubblesort.vhd.
+WARNING:Xst:737 - Found 8-bit latch for signal <temp>.
+    Found 8-bit comparator greater for signal <$n0217> created at line 53.
+    Found 8-bit comparator greater for signal <$n0222> created at line 53.
+    Found 8-bit comparator greater for signal <$n0223> created at line 53.
+    Found 8-bit comparator greater for signal <$n0224> created at line 53.
+    Found 8-bit comparator greater for signal <$n0225> created at line 53.
+    Found 8-bit comparator greater for signal <$n0226> created at line 53.
+    Found 8-bit comparator greater for signal <$n0227> created at line 53.
+    Found 8-bit comparator greater for signal <$n0228> created at line 53.
+    Found 8-bit comparator greater for signal <$n0229> created at line 53.
+    Found 8-bit comparator greater for signal <$n0230> created at line 53.
+    Found 8-bit comparator greater for signal <$n0231> created at line 53.
+    Found 8-bit comparator greater for signal <$n0232> created at line 53.
+    Found 8-bit comparator greater for signal <$n0233> created at line 53.
+    Found 8-bit comparator greater for signal <$n0234> created at line 53.
+    Found 8-bit comparator greater for signal <$n0235> created at line 53.
+    Found 8-bit comparator greater for signal <$n0236> created at line 53.
+    Found 8-bit comparator greater for signal <$n0237> created at line 53.
+    Found 8-bit comparator greater for signal <$n0238> created at line 53.
+    Found 8-bit comparator greater for signal <$n0239> created at line 53.
+    Found 8-bit comparator greater for signal <$n0240> created at line 53.
+    Found 8-bit comparator greater for signal <$n0241> created at line 53.
+    Found 8-bit comparator greater for signal <$n0242> created at line 53.
+    Found 8-bit comparator greater for signal <$n0243> created at line 53.
+    Found 8-bit comparator greater for signal <$n0244> created at line 53.
+    Found 8-bit comparator greater for signal <$n0245> created at line 53.
+    Found 8-bit comparator greater for signal <$n0246> created at line 53.
+    Found 8-bit comparator greater for signal <$n0247> created at line 53.
+    Found 8-bit comparator greater for signal <$n0248> created at line 53.
+    Found 8-bit comparator greater for signal <$n0249> created at line 53.
+    Found 8-bit comparator greater for signal <$n0250> created at line 53.
+    Found 8-bit comparator greater for signal <$n0251> created at line 53.
+    Found 8-bit comparator greater for signal <$n0252> created at line 53.
+    Found 8-bit comparator greater for signal <$n0253> created at line 53.
+    Found 8-bit comparator greater for signal <$n0254> created at line 53.
+    Found 8-bit comparator greater for signal <$n0255> created at line 53.
+    Found 8-bit comparator greater for signal <$n0256> created at line 53.
+    Found 8-bit comparator greater for signal <$n0257> created at line 53.
+    Found 8-bit comparator greater for signal <$n0258> created at line 53.
+    Found 8-bit comparator greater for signal <$n0259> created at line 53.
+    Found 8-bit comparator greater for signal <$n0260> created at line 53.
+    Found 8-bit comparator greater for signal <$n0261> created at line 53.
+    Found 8-bit comparator greater for signal <$n0262> created at line 53.
+    Found 8-bit comparator greater for signal <$n0263> created at line 53.
+    Found 8-bit comparator greater for signal <$n0264> created at line 53.
+    Found 8-bit comparator greater for signal <$n0265> created at line 53.
+    Found 8-bit comparator greater for signal <$n0266> created at line 53.
+    Found 8-bit comparator greater for signal <$n0267> created at line 53.
+    Found 8-bit comparator greater for signal <$n0268> created at line 53.
+    Found 8-bit comparator greater for signal <$n0269> created at line 53.
+    Found 8-bit comparator greater for signal <$n0270> created at line 53.
+    Found 8-bit comparator greater for signal <$n0271> created at line 53.
+    Found 8-bit comparator greater for signal <$n0272> created at line 53.
+    Found 8-bit comparator greater for signal <$n0273> created at line 53.
+    Found 8-bit comparator greater for signal <$n0274> created at line 53.
+    Found 8-bit comparator greater for signal <$n0275> created at line 53.
+    Found 8-bit comparator greater for signal <$n0276> created at line 53.
+    Found 8-bit comparator greater for signal <$n0277> created at line 53.
+    Found 8-bit comparator greater for signal <$n0278> created at line 53.
+    Found 8-bit comparator greater for signal <$n0279> created at line 53.
+    Found 8-bit comparator greater for signal <$n0280> created at line 53.
+    Found 8-bit comparator greater for signal <$n0281> created at line 53.
+    Found 8-bit comparator greater for signal <$n0282> created at line 53.
+    Found 8-bit comparator greater for signal <$n0283> created at line 53.
+    Found 8-bit comparator greater for signal <$n0284> created at line 53.
+    Found 8-bit comparator greater for signal <$n0285> created at line 53.
+    Found 8-bit comparator greater for signal <$n0286> created at line 53.
+    Found 8-bit comparator greater for signal <$n0287> created at line 53.
+    Found 8-bit comparator greater for signal <$n0288> created at line 53.
+    Found 8-bit comparator greater for signal <$n0289> created at line 53.
+    Found 8-bit comparator greater for signal <$n0290> created at line 53.
+    Found 8-bit comparator greater for signal <$n0291> created at line 53.
+    Found 8-bit comparator greater for signal <$n0296> created at line 53.
+    Found 1080 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred  72 Comparator(s).
+	inferred 1080 Multiplexer(s).
+Unit <sort_1> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                          : 1
+ 8-bit latch                       : 1
+# Comparators                      : 72
+ 8-bit comparator greater          : 72
+# Multiplexers                     : 135
+ 8-bit 2-to-1 multiplexer          : 135
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <sort_1> ...
+Loading device for application Xst from file '3s50.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block sort_1, actual ratio is 200.
+Optimizing block <sort_1> to meet ratio 100 (+ 5) of 768 slices :
+WARNING:Xst - Area constraint could not be met for block <sort_1>, final ratio is 220.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-5 
+
+ Number of Slices:                    1690  out of    768   220% (*) 
+ Number of Slice Flip Flops:             8  out of   1536     0%  
+ Number of 4 input LUTs:              2781  out of   1536   181% (*) 
+ Number of bonded IOBs:                 89  out of    124    71%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+XNor_stage_cyo7(XNor_stagecy_rn_6:O)| NONE(*)(temp_4)        | 8     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 103.013ns
+   Maximum output required time after clock: 36.981ns
+   Maximum combinational path delay: 102.584ns
+
+=========================================================================
+Completed process "Synthesize".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/Xilinx/bubblesort/bubblesort.vhd in Library work.
+Entity <sort_1> (Architecture <behavioural>) compiled.
+Completed process "Check Syntax".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/Xilinx/bubblesort/bubblesort.vhd in Library work.
+Architecture behavioural of Entity sort_1 is up to date.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <sort_1> (Architecture <behavioural>).
+Entity <sort_1> analyzed. Unit <sort_1> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <sort_1>.
+    Related source file is C:/Xilinx/bubblesort/bubblesort.vhd.
+WARNING:Xst:737 - Found 8-bit latch for signal <temp>.
+    Found 8-bit comparator greater for signal <$n0217> created at line 53.
+    Found 8-bit comparator greater for signal <$n0222> created at line 53.
+    Found 8-bit comparator greater for signal <$n0223> created at line 53.
+    Found 8-bit comparator greater for signal <$n0224> created at line 53.
+    Found 8-bit comparator greater for signal <$n0225> created at line 53.
+    Found 8-bit comparator greater for signal <$n0226> created at line 53.
+    Found 8-bit comparator greater for signal <$n0227> created at line 53.
+    Found 8-bit comparator greater for signal <$n0228> created at line 53.
+    Found 8-bit comparator greater for signal <$n0229> created at line 53.
+    Found 8-bit comparator greater for signal <$n0230> created at line 53.
+    Found 8-bit comparator greater for signal <$n0231> created at line 53.
+    Found 8-bit comparator greater for signal <$n0232> created at line 53.
+    Found 8-bit comparator greater for signal <$n0233> created at line 53.
+    Found 8-bit comparator greater for signal <$n0234> created at line 53.
+    Found 8-bit comparator greater for signal <$n0235> created at line 53.
+    Found 8-bit comparator greater for signal <$n0236> created at line 53.
+    Found 8-bit comparator greater for signal <$n0237> created at line 53.
+    Found 8-bit comparator greater for signal <$n0238> created at line 53.
+    Found 8-bit comparator greater for signal <$n0239> created at line 53.
+    Found 8-bit comparator greater for signal <$n0240> created at line 53.
+    Found 8-bit comparator greater for signal <$n0241> created at line 53.
+    Found 8-bit comparator greater for signal <$n0242> created at line 53.
+    Found 8-bit comparator greater for signal <$n0243> created at line 53.
+    Found 8-bit comparator greater for signal <$n0244> created at line 53.
+    Found 8-bit comparator greater for signal <$n0245> created at line 53.
+    Found 8-bit comparator greater for signal <$n0246> created at line 53.
+    Found 8-bit comparator greater for signal <$n0247> created at line 53.
+    Found 8-bit comparator greater for signal <$n0248> created at line 53.
+    Found 8-bit comparator greater for signal <$n0249> created at line 53.
+    Found 8-bit comparator greater for signal <$n0250> created at line 53.
+    Found 8-bit comparator greater for signal <$n0251> created at line 53.
+    Found 8-bit comparator greater for signal <$n0252> created at line 53.
+    Found 8-bit comparator greater for signal <$n0253> created at line 53.
+    Found 8-bit comparator greater for signal <$n0254> created at line 53.
+    Found 8-bit comparator greater for signal <$n0255> created at line 53.
+    Found 8-bit comparator greater for signal <$n0256> created at line 53.
+    Found 8-bit comparator greater for signal <$n0257> created at line 53.
+    Found 8-bit comparator greater for signal <$n0258> created at line 53.
+    Found 8-bit comparator greater for signal <$n0259> created at line 53.
+    Found 8-bit comparator greater for signal <$n0260> created at line 53.
+    Found 8-bit comparator greater for signal <$n0261> created at line 53.
+    Found 8-bit comparator greater for signal <$n0262> created at line 53.
+    Found 8-bit comparator greater for signal <$n0263> created at line 53.
+    Found 8-bit comparator greater for signal <$n0264> created at line 53.
+    Found 8-bit comparator greater for signal <$n0265> created at line 53.
+    Found 8-bit comparator greater for signal <$n0266> created at line 53.
+    Found 8-bit comparator greater for signal <$n0267> created at line 53.
+    Found 8-bit comparator greater for signal <$n0268> created at line 53.
+    Found 8-bit comparator greater for signal <$n0269> created at line 53.
+    Found 8-bit comparator greater for signal <$n0270> created at line 53.
+    Found 8-bit comparator greater for signal <$n0271> created at line 53.
+    Found 8-bit comparator greater for signal <$n0272> created at line 53.
+    Found 8-bit comparator greater for signal <$n0273> created at line 53.
+    Found 8-bit comparator greater for signal <$n0274> created at line 53.
+    Found 8-bit comparator greater for signal <$n0275> created at line 53.
+    Found 8-bit comparator greater for signal <$n0276> created at line 53.
+    Found 8-bit comparator greater for signal <$n0277> created at line 53.
+    Found 8-bit comparator greater for signal <$n0278> created at line 53.
+    Found 8-bit comparator greater for signal <$n0279> created at line 53.
+    Found 8-bit comparator greater for signal <$n0280> created at line 53.
+    Found 8-bit comparator greater for signal <$n0281> created at line 53.
+    Found 8-bit comparator greater for signal <$n0282> created at line 53.
+    Found 8-bit comparator greater for signal <$n0283> created at line 53.
+    Found 8-bit comparator greater for signal <$n0284> created at line 53.
+    Found 8-bit comparator greater for signal <$n0285> created at line 53.
+    Found 8-bit comparator greater for signal <$n0286> created at line 53.
+    Found 8-bit comparator greater for signal <$n0287> created at line 53.
+    Found 8-bit comparator greater for signal <$n0288> created at line 53.
+    Found 8-bit comparator greater for signal <$n0289> created at line 53.
+    Found 8-bit comparator greater for signal <$n0290> created at line 53.
+    Found 8-bit comparator greater for signal <$n0291> created at line 53.
+    Found 8-bit comparator greater for signal <$n0296> created at line 53.
+    Found 1080 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred  72 Comparator(s).
+	inferred 1080 Multiplexer(s).
+Unit <sort_1> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                          : 1
+ 8-bit latch                       : 1
+# Comparators                      : 72
+ 8-bit comparator greater          : 72
+# Multiplexers                     : 135
+ 8-bit 2-to-1 multiplexer          : 135
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <sort_1> ...
+Loading device for application Xst from file '3s50.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block sort_1, actual ratio is 200.
+Optimizing block <sort_1> to meet ratio 100 (+ 5) of 768 slices :
+WARNING:Xst - Area constraint could not be met for block <sort_1>, final ratio is 220.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-5 
+
+ Number of Slices:                    1690  out of    768   220% (*) 
+ Number of Slice Flip Flops:             8  out of   1536     0%  
+ Number of 4 input LUTs:              2781  out of   1536   181% (*) 
+ Number of bonded IOBs:                 89  out of    124    71%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+XNor_stage_cyo7(XNor_stagecy_rn_6:O)| NONE(*)(temp_1)        | 8     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 103.013ns
+   Maximum output required time after clock: 36.981ns
+   Maximum combinational path delay: 102.584ns
+
+=========================================================================
+Completed process "Synthesize".
+
+

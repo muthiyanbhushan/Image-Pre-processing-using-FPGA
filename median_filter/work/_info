@@ -1,0 +1,80 @@
+m255
+cModel Technology
+dc:\xilinx\bubblesort
+Ebubble_sort
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1380779392
+dC:\Xilinx\bubblesort
+Fbubblesort.vhd
+l0
+L11
+V03f:eka5z21T5R81^LX922
+OX;C;5.8c;15
+31
+o-93 -explicit -O0
+tExplicit T
+Abehavioral
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work bubble_sort 03f:eka5z21T5R81^LX922
+l31
+L27
+VSWn0DMTE=CN7`JVlY@^7]1
+OX;C;5.8c;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-93 -explicit -O0
+tExplicit T
+Ebubble_sort_bubblesortt_vhd_tb
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1380189411
+dC:\Xilinx\bubblesort
+Fbubblesortt.vhd
+l0
+L15
+Vb^zbK]I:IGf1MAOd5SF]32
+OX;C;5.8c;15
+31
+o-explicit -93 -O0
+tExplicit T
+Esort_1
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee math_real @4BP1zW29?_<4od;]f@jI2
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1381300732
+dC:\Xilinx\bubblesort
+Fbubblesort.vhd
+l0
+L7
+Vh1Y:@bL]ZJaDZL7AQ[M4o2
+OX;C;5.8c;15
+31
+o-explicit -93 -O0
+tExplicit T
+Abehavioural
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee math_real @4BP1zW29?_<4od;]f@jI2
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work sort_1 h1Y:@bL]ZJaDZL7AQ[M4o2
+l26
+L22
+VeD1hXAgWRU;`adXLa5Sf@3
+OX;C;5.8c;15
+31
+M5 ieee std_logic_1164
+M4 ieee std_logic_arith
+M3 ieee std_logic_unsigned
+M2 ieee math_real
+M1 ieee numeric_std
+o-explicit -93 -O0
+tExplicit T

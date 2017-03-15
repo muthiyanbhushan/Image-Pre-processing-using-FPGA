@@ -1,0 +1,63 @@
+m255
+cModel Technology
+dc:\average_filtering
+Eaverage
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1381557862
+Faverage.vhd
+l0
+L36
+V301J2K>NN4i08ZnIQ3bdZ2
+OX;C;5.8c;15
+31
+o-93 -explicit -O0
+tExplicit T
+Abehavioral_average
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work average 301J2K>NN4i08ZnIQ3bdZ2
+l61
+L56
+VoNLH3ncF8o4gVJOI@GKCe1
+OX;C;5.8c;15
+31
+M4 ieee std_logic_1164
+M3 ieee numeric_std
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-93 -explicit -O0
+tExplicit T
+Eavg_tb
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1381558025
+Favg_tb.vhd
+l0
+L35
+Vn<DCVTTj^XBkgE`ehFD8`3
+OX;C;5.8c;15
+31
+o-93 -explicit -O0
+tExplicit T
+Abehavior
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DE work average 301J2K>NN4i08ZnIQ3bdZ2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work avg_tb n<DCVTTj^XBkgE`ehFD8`3
+l79
+L38
+VN19O;MTSd?z<VHK;>h7Ta3
+OX;C;5.8c;15
+31
+M4 ieee std_logic_1164
+M3 ieee numeric_std
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-93 -explicit -O0
+tExplicit T

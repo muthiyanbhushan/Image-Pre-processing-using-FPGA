@@ -1,0 +1,5 @@
+# begin LFP file I:\Average_filtering\average.lfp
+designfile average.vhd
+parttype xc3s400-5-pq208
+bus_delimiter 0;
+set_busdelim_onsave 1;
