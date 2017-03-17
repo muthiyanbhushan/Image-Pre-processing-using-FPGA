@@ -1,0 +1,6 @@
+V3 3
+FL C:/Xilinx/kit/trans.vhd 2014/03/24.02:17:01 J.36
+EN work/trans 1395607924 FL C:/Xilinx/kit/trans.vhd PB ieee/std_logic_1164 1179176983 \
+      PB ieee/std_logic_arith 1179176985 PB ieee/STD_LOGIC_UNSIGNED 1179176991
+AR work/trans/Behavioral 1395607925 \
+      FL C:/Xilinx/kit/trans.vhd EN work/trans 1395607924

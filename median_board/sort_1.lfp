@@ -1,0 +1,5 @@
+# begin LFP file F:\college\be\project\Final_tested\xlinx_Files\median_board\sort_1.lfp
+designfile median.vhd
+parttype xc3s400-5-pq208
+bus_delimiter 8;
+set_busdelim_onsave 1;

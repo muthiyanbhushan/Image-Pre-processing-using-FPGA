@@ -1,0 +1,31 @@
+m255
+cModel Technology
+dC:\Xilinx\kit
+Etrans
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1395607621
+Ftrans.vhd
+l0
+L31
+VMcUIabmf9@dVm^;6c1:AC3
+OX;C;5.8c;15
+31
+o-explicit -93 -O0
+tExplicit T
+Abehavioral
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work trans McUIabmf9@dVm^;6c1:AC3
+l66
+L41
+VEl4:[30WcZC9K2FWg<hJg0
+OX;C;5.8c;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-explicit -93 -O0
+tExplicit T

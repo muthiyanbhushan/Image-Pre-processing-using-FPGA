@@ -1,0 +1,73 @@
+xst -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+xst -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+xst -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+xst -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+xst -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+xst -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+ngdbuild -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "trans.ngc" trans.ngd
+map -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o trans_map.ncd trans.ngd trans.pcf
+par -ise "C:/Xilinx/kit/kit.ise" -w -intstyle ise -ol std -t 1 trans_map.ncd trans.ncd trans.pcf
+trce -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -e 3 -s 5 -xml trans trans.ncd -o trans.twr trans.pcf
+ngdbuild -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -dd _ngo -nt timestamp -a -u -i -p xc3s400-pq208-5 "trans.ngc" trans.ngd
+map -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o trans_map.ncd trans.ngd trans.pcf
+par -ise "C:/Xilinx/kit/kit.ise" -w -intstyle ise -ol std -t 1 trans_map.ncd trans.ncd trans.pcf
+trce -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -e 3 -s 5 -xml trans trans.ncd -o trans.twr trans.pcf
+xst -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+xst -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+xst -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+xst -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+xst -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+ngdbuild -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -dd _ngo -nt timestamp -a -u -i -p xc3s400-pq208-5 "trans.ngc" trans.ngd
+map -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o trans_map.ncd trans.ngd trans.pcf
+par -ise "C:/Xilinx/kit/kit.ise" -w -intstyle ise -ol std -t 1 trans_map.ncd trans.ncd trans.pcf
+trce -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -e 3 -s 5 -xml trans trans.ncd -o trans.twr trans.pcf
+ngdbuild -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "trans.ngc" trans.ngd
+map -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o trans_map.ncd trans.ngd trans.pcf
+par -ise "C:/Xilinx/kit/kit.ise" -w -intstyle ise -ol std -t 1 trans_map.ncd trans.ncd trans.pcf
+trce -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -e 3 -s 5 -xml trans trans.ncd -o trans.twr trans.pcf
+xst -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+xst -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+ngdbuild -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "trans.ngc" trans.ngd
+map -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o trans_map.ncd trans.ngd trans.pcf
+par -ise "C:/Xilinx/kit/kit.ise" -w -intstyle ise -ol std -t 1 trans_map.ncd trans.ncd trans.pcf
+trce -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -e 3 -s 5 -xml trans trans.ncd -o trans.twr trans.pcf
+xst -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+ngdbuild -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "trans.ngc" trans.ngd
+map -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o trans_map.ncd trans.ngd trans.pcf
+par -ise "C:/Xilinx/kit/kit.ise" -w -intstyle ise -ol std -t 1 trans_map.ncd trans.ncd trans.pcf
+trce -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -e 3 -s 5 -xml trans trans.ncd -o trans.twr trans.pcf
+xst -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+ngdbuild -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "trans.ngc" trans.ngd
+map -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o trans_map.ncd trans.ngd trans.pcf
+par -ise "C:/Xilinx/kit/kit.ise" -w -intstyle ise -ol std -t 1 trans_map.ncd trans.ncd trans.pcf
+trce -ise "C:/Xilinx/kit/kit.ise" -intstyle ise -e 3 -s 5 -xml trans trans.ncd -o trans.twr trans.pcf
+xst -ise "C:/Xilinx/kit_trans/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+xst -ise "C:/Xilinx/kit_trans/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+xst -ise "C:/Xilinx/kit_trans/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+ngdbuild -ise "C:/Xilinx/kit_trans/kit.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "trans.ngc" trans.ngd
+map -ise "C:/Xilinx/kit_trans/kit.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o trans_map.ncd trans.ngd trans.pcf
+par -ise "C:/Xilinx/kit_trans/kit.ise" -w -intstyle ise -ol std -t 1 trans_map.ncd trans.ncd trans.pcf
+trce -ise "C:/Xilinx/kit_trans/kit.ise" -intstyle ise -e 3 -s 5 -xml trans trans.ncd -o trans.twr trans.pcf
+xst -ise "C:/Xilinx/kit_trans/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+ngdbuild -ise "C:/Xilinx/kit_trans/kit.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "trans.ngc" trans.ngd
+map -ise "C:/Xilinx/kit_trans/kit.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o trans_map.ncd trans.ngd trans.pcf
+par -ise "C:/Xilinx/kit_trans/kit.ise" -w -intstyle ise -ol std -t 1 trans_map.ncd trans.ncd trans.pcf
+trce -ise "C:/Xilinx/kit_trans/kit.ise" -intstyle ise -e 3 -s 5 -xml trans trans.ncd -o trans.twr trans.pcf
+xst -ise "I:/kit_trans/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+ngdbuild -ise "I:/kit_trans/kit.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "trans.ngc" trans.ngd
+map -ise "I:/kit_trans/kit.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o trans_map.ncd trans.ngd trans.pcf
+par -ise "I:/kit_trans/kit.ise" -w -intstyle ise -ol std -t 1 trans_map.ncd trans.ncd trans.pcf
+trce -ise "I:/kit_trans/kit.ise" -intstyle ise -e 3 -s 5 -xml trans trans.ncd -o trans.twr trans.pcf
+bitgen -ise "I:/kit_trans/kit.ise" -intstyle ise -f trans.ut trans.ncd
+xst -ise "I:/kit_trans/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+ngdbuild -ise "I:/kit_trans/kit.ise" -intstyle ise -dd _ngo -nt timestamp -uc "trans.ucf" -p xc3s400-pq208-5 "trans.ngc" trans.ngd
+map -ise "I:/kit_trans/kit.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o trans_map.ncd trans.ngd trans.pcf
+par -ise "I:/kit_trans/kit.ise" -w -intstyle ise -ol std -t 1 trans_map.ncd trans.ncd trans.pcf
+trce -ise "I:/kit_trans/kit.ise" -intstyle ise -e 3 -s 5 -xml trans trans.ncd -o trans.twr trans.pcf -ucf trans.ucf
+bitgen -ise "I:/kit_trans/kit.ise" -intstyle ise -f trans.ut trans.ncd
+xst -ise "I:/kit_trans/kit.ise" -intstyle ise -ifn trans.xst -ofn trans.syr
+ngdbuild -ise "I:/kit_trans/kit.ise" -intstyle ise -dd _ngo -nt timestamp -uc "trans.ucf" -p xc3s400-pq208-5 "trans.ngc" trans.ngd
+map -ise "I:/kit_trans/kit.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o trans_map.ncd trans.ngd trans.pcf
+par -ise "I:/kit_trans/kit.ise" -w -intstyle ise -ol std -t 1 trans_map.ncd trans.ncd trans.pcf
+trce -ise "I:/kit_trans/kit.ise" -intstyle ise -e 3 -s 5 -xml trans trans.ncd -o trans.twr trans.pcf -ucf trans.ucf
+bitgen -ise "I:/kit_trans/kit.ise" -intstyle ise -f trans.ut trans.ncd

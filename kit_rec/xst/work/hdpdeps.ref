@@ -1,0 +1,11 @@
+V3 5
+FL C:/Xilinx/kit_rec/Receiver.vhd 2014/03/24.03:12:23 J.36
+FL $XILINX/kit_rec/Receiver.vhd 2014/04/02.17:13:54 J.36
+FL F:/college/be/project/Final_tested/xlinx_Files/kit_rec/Receiver.vhd 2014/05/30.02:53:03 J.36
+EN work/Receiver 1401398601 \
+      FL F:/college/be/project/Final_tested/xlinx_Files/kit_rec/Receiver.vhd \
+      PB ieee/std_logic_1164 1177545575 PB ieee/std_logic_arith 1177545576 \
+      PB ieee/STD_LOGIC_UNSIGNED 1177545583
+AR work/Receiver/Behavioral 1401398602 \
+      FL F:/college/be/project/Final_tested/xlinx_Files/kit_rec/Receiver.vhd \
+      EN work/Receiver 1401398601

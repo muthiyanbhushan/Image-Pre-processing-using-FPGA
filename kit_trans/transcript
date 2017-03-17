@@ -1,0 +1,19 @@
+# Reading C:/Modeltech_xe/tcl/vsim/pref.tcl 
+# do {trans.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim XE II vcom 5.8c Compiler 2004.03 Mar 26 2004
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity trans
+# -- Compiling architecture behavioral of trans
+# vsim -lib work -t 1ps trans 
+# Loading C:\Modeltech_xe\win32xoem/../std.standard
+# Loading C:\Modeltech_xe\win32xoem/../ieee.std_logic_1164(body)
+# Loading C:\Modeltech_xe\win32xoem/../ieee.std_logic_arith(body)
+# Loading C:\Modeltech_xe\win32xoem/../ieee.std_logic_unsigned(body)
+# Loading work.trans(behavioral)
+# .wave
+# .structure
+# .signals

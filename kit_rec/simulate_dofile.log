@@ -1,0 +1,4 @@
+run 1000 ns
+isimshow driver /Receiver/dbin
+isimrun all
+exit

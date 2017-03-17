@@ -1,0 +1,443 @@
+Release 9.2i - xst J.36
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.51 s | Elapsed : 0.00 / 1.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.51 s | Elapsed : 0.00 / 1.00 s
+ 
+--> Reading design: trans.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "trans.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "trans"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-pq208
+
+---- Source Options
+Top Module Name                    : trans
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : trans.lso
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : Inpad_to_Outpad
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "I:/kit_trans/trans.vhd" in Library work.
+Architecture behavioral of Entity trans is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <trans> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <trans> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <tClkRST> in unit <trans> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <trans> analyzed. Unit <trans> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <trans>.
+    Related source file is "I:/kit_trans/trans.vhd".
+    Found finite state machine <FSM_0> for signal <sttCur>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | tClk (rising_edge)                             |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | sttidle                                        |
+    | Power Up State     | sttidle                                        |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 11-bit register for signal <frame>.
+    Found 9-bit up counter for signal <clkDiv>.
+    Found 32-bit up counter for signal <count>.
+    Found 32-bit comparator greatequal for signal <count$cmp_ge0000> created at line 127.
+    Found 1-bit xor8 for signal <par$xor0000> created at line 68.
+    Found 1-bit register for signal <tClk>.
+    Found 4-bit up counter for signal <tfCtr>.
+    Found 11-bit register for signal <tfSReg>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   3 Counter(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Xor(s).
+Unit <trans> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 13
+ 1-bit register                                        : 12
+ 11-bit register                                       : 1
+# Comparators                                          : 1
+ 32-bit comparator greatequal                          : 1
+# Xors                                                 : 1
+ 1-bit xor8                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <sttCur> on signal <sttCur[1:2]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ sttidle     | 00
+ stttransfer | 01
+ sttshift    | 11
+-------------------------
+Loading device for application Rf_Device from file '3s400.nph' in environment C:\Xilinx92i.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 3
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 25
+ Flip-Flops                                            : 25
+# Comparators                                          : 1
+ 32-bit comparator greatequal                          : 1
+# Xors                                                 : 1
+ 1-bit xor8                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <trans> ...
+WARNING:Xst:1293 - FF/Latch  <tfSReg_10> has a constant value of 1 in block <trans>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block trans, actual ratio is 1.
+FlipFlop tfSReg_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 70
+ Flip-Flops                                            : 70
+
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : trans.ngr
+Top Level Output File Name         : trans
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 23
+
+Cell Usage :
+# BELS                             : 196
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 40
+#      LUT2                        : 5
+#      LUT3                        : 16
+#      LUT4                        : 30
+#      MUXCY                       : 57
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 39
+# FlipFlops/Latches                : 70
+#      FD                          : 3
+#      FDE                         : 55
+#      FDR                         : 12
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 22
+#      IBUF                        : 10
+#      OBUF                        : 12
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-5 
+
+ Number of Slices:                      54  out of   3584     1%  
+ Number of Slice Flip Flops:            58  out of   7168     0%  
+ Number of 4 input LUTs:                97  out of   7168     1%  
+ Number of IOs:                         23
+ Number of bonded IOBs:                 23  out of    141    16%  
+    IOB Flip Flops:                     12
+ Number of GCLKs:                        2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 10    |
+tClk1                              | BUFG                   | 60    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 8.077ns (Maximum Frequency: 123.805MHz)
+   Minimum input arrival time before clock: 3.865ns
+   Maximum output required time after clock: 6.216ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.220ns (frequency: 191.564MHz)
+  Total number of paths / destination ports: 136 / 20
+-------------------------------------------------------------------------
+Delay:               5.220ns (Levels of Logic = 2)
+  Source:            clkDiv_6 (FF)
+  Destination:       clkDiv_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: clkDiv_6 to clkDiv_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.626   1.040  clkDiv_6 (clkDiv_6)
+     LUT3:I0->O            1   0.479   0.740  clkDiv_cmp_eq00009 (clkDiv_cmp_eq0000_map5)
+     LUT4:I2->O           10   0.479   0.964  clkDiv_cmp_eq000021 (clkDiv_cmp_eq0000)
+     FDR:R                     0.892          clkDiv_0
+    ----------------------------------------
+    Total                      5.220ns (2.476ns logic, 2.744ns route)
+                                       (47.4% logic, 52.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'tClk1'
+  Clock period: 8.077ns (frequency: 123.805MHz)
+  Total number of paths / destination ports: 2375 / 114
+-------------------------------------------------------------------------
+Delay:               8.077ns (Levels of Logic = 15)
+  Source:            count_0 (FF)
+  Destination:       frame_10 (FF)
+  Source Clock:      tClk1 rising
+  Destination Clock: tClk1 rising
+
+  Data Path: count_0 to frame_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             13   0.626   1.289  count_0 (count_0)
+     LUT2:I0->O            1   0.479   0.000  Mcompar_count_cmp_ge0000_lut<0> (N7)
+     MUXCY:S->O            1   0.435   0.000  Mcompar_count_cmp_ge0000_cy<0> (Mcompar_count_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_count_cmp_ge0000_cy<1> (Mcompar_count_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_count_cmp_ge0000_cy<2> (Mcompar_count_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_count_cmp_ge0000_cy<3> (Mcompar_count_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_count_cmp_ge0000_cy<4> (Mcompar_count_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_count_cmp_ge0000_cy<5> (Mcompar_count_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_count_cmp_ge0000_cy<6> (Mcompar_count_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_count_cmp_ge0000_cy<7> (Mcompar_count_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_count_cmp_ge0000_cy<8> (Mcompar_count_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_count_cmp_ge0000_cy<9> (Mcompar_count_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           3   0.265   0.941  Mcompar_count_cmp_ge0000_cy<10> (count_cmp_ge0000)
+     LUT4:I1->O            1   0.479   0.000  frame_10_not0001111 (N97)
+     MUXF5:I1->O           3   0.314   1.066  frame_10_not000111_f5 (N21)
+     LUT3:I0->O            1   0.479   0.681  frame_9_not00011 (frame_9_not0001)
+     FDE:CE                    0.524          frame_9
+    ----------------------------------------
+    Total                      8.077ns (4.100ns logic, 3.977ns route)
+                                       (50.8% logic, 49.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'tClk1'
+  Total number of paths / destination ports: 19 / 12
+-------------------------------------------------------------------------
+Offset:              3.865ns (Levels of Logic = 3)
+  Source:            DBIN<0> (PAD)
+  Destination:       tfSReg_9 (FF)
+  Destination Clock: tClk1 rising
+
+  Data Path: DBIN<0> to tfSReg_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.715   1.040  DBIN_0_IBUF (DBIN_0_IBUF)
+     LUT4:I0->O            1   0.479   0.976  tfSReg_mux0000<9>111 (tfSReg_mux0000<9>1_map5)
+     LUT3:I0->O            1   0.479   0.000  tfSReg_mux0000<9>137 (tfSReg_mux0000<9>)
+     FDE:D                     0.176          tfSReg_9
+    ----------------------------------------
+    Total                      3.865ns (1.849ns logic, 2.016ns route)
+                                       (47.8% logic, 52.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'tClk1'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              6.216ns (Levels of Logic = 1)
+  Source:            tfSReg_0_1 (FF)
+  Destination:       TXD (PAD)
+  Source Clock:      tClk1 rising
+
+  Data Path: tfSReg_0_1 to TXD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.626   0.681  tfSReg_0_1 (tfSReg_0_1)
+     OBUF:I->O                 4.909          TXD_OBUF (TXD)
+    ----------------------------------------
+    Total                      6.216ns (5.535ns logic, 0.681ns route)
+                                       (89.0% logic, 11.0% route)
+
+=========================================================================
+CPU : 11.25 / 11.78 s | Elapsed : 11.00 / 12.00 s
+ 
+--> 
+
+Total memory usage is 143884 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

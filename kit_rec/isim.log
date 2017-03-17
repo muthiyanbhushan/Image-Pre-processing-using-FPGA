@@ -1,0 +1,36 @@
+ command line:
+   ./Receiver_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  1084
+
+Thu May 29 23:10:59 2014
+
+Total Line Count : 130
+
+ Elaboration time : 0.0156 sec.
+
+ Estimate current memory usage : 157.233 Meg. 
+
+ Total Signals          : 27
+ Total Nets             : 76
+ Total Signal Drivers   : 23
+ Total Blocks           : 4
+ Total Primitive Blocks : 1
+ Total Processes        : 11
+ Total Traceable Variables  : 0
+ Total Scalar Nets and Variables : 76
+ntrace select -o on -m / -l this 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+isimshow driver /Receiver/dbin 
+isimrun all 
+
+ Simulation time 0.1404 sec.
+
+ Estimate current memory usage : 166.408 Meg. 
+
+Thu May 29 23:25:21 2014
+

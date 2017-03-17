@@ -1,0 +1,102 @@
+xst -ise "C:/Xilinx/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+ngdbuild -ise "C:/Xilinx/kit_rec/kit_rec.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "Receiver.ngc" Receiver.ngd
+map -ise "C:/Xilinx/kit_rec/kit_rec.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o Receiver_map.ncd Receiver.ngd Receiver.pcf
+par -ise "C:/Xilinx/kit_rec/kit_rec.ise" -w -intstyle ise -ol std -t 1 Receiver_map.ncd Receiver.ncd Receiver.pcf
+trce -ise "C:/Xilinx/kit_rec/kit_rec.ise" -intstyle ise -e 3 -s 5 -xml Receiver Receiver.ncd -o Receiver.twr Receiver.pcf
+xst -ise "C:/Xilinx/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+ngdbuild -ise "C:/Xilinx/kit_rec/kit_rec.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "Receiver.ngc" Receiver.ngd
+map -ise "C:/Xilinx/kit_rec/kit_rec.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o Receiver_map.ncd Receiver.ngd Receiver.pcf
+par -ise "C:/Xilinx/kit_rec/kit_rec.ise" -w -intstyle ise -ol std -t 1 Receiver_map.ncd Receiver.ncd Receiver.pcf
+trce -ise "C:/Xilinx/kit_rec/kit_rec.ise" -intstyle ise -e 3 -s 5 -xml Receiver Receiver.ncd -o Receiver.twr Receiver.pcf
+xst -ise "C:/Xilinx/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+ngdbuild -ise "C:/Xilinx/kit_rec/kit_rec.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "Receiver.ngc" Receiver.ngd
+map -ise "C:/Xilinx/kit_rec/kit_rec.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o Receiver_map.ncd Receiver.ngd Receiver.pcf
+par -ise "C:/Xilinx/kit_rec/kit_rec.ise" -w -intstyle ise -ol std -t 1 Receiver_map.ncd Receiver.ncd Receiver.pcf
+trce -ise "C:/Xilinx/kit_rec/kit_rec.ise" -intstyle ise -e 3 -s 5 -xml Receiver Receiver.ncd -o Receiver.twr Receiver.pcf
+xst -ise "C:/Xilinx/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+ngdbuild -ise "C:/Xilinx/kit_rec/kit_rec.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "Receiver.ngc" Receiver.ngd
+map -ise "C:/Xilinx/kit_rec/kit_rec.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o Receiver_map.ncd Receiver.ngd Receiver.pcf
+par -ise "C:/Xilinx/kit_rec/kit_rec.ise" -w -intstyle ise -ol std -t 1 Receiver_map.ncd Receiver.ncd Receiver.pcf
+trce -ise "C:/Xilinx/kit_rec/kit_rec.ise" -intstyle ise -e 3 -s 5 -xml Receiver Receiver.ncd -o Receiver.twr Receiver.pcf
+xst -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+ngdbuild -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -dd _ngo -nt timestamp -uc "receiver.ucf" -p xc3s400-pq208-5 "Receiver.ngc" Receiver.ngd
+map -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o Receiver_map.ncd Receiver.ngd Receiver.pcf
+par -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -w -intstyle ise -ol std -t 1 Receiver_map.ncd Receiver.ncd Receiver.pcf
+trce -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -e 3 -s 5 -xml Receiver Receiver.ncd -o Receiver.twr Receiver.pcf -ucf receiver.ucf
+bitgen -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -f Receiver.ut Receiver.ncd
+xst -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+ngdbuild -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -dd _ngo -nt timestamp -uc "receiver.ucf" -p xc3s400-pq208-5 "Receiver.ngc" Receiver.ngd
+map -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o Receiver_map.ncd Receiver.ngd Receiver.pcf
+par -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -w -intstyle ise -ol std -t 1 Receiver_map.ncd Receiver.ncd Receiver.pcf
+trce -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -e 3 -s 5 -xml Receiver Receiver.ncd -o Receiver.twr Receiver.pcf -ucf receiver.ucf
+bitgen -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -f Receiver.ut Receiver.ncd
+xst -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+ngdbuild -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -dd _ngo -nt timestamp -uc "receiver.ucf" -p xc3s400-pq208-5 "Receiver.ngc" Receiver.ngd
+map -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o Receiver_map.ncd Receiver.ngd Receiver.pcf
+par -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -w -intstyle ise -ol std -t 1 Receiver_map.ncd Receiver.ncd Receiver.pcf
+trce -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -e 3 -s 5 -xml Receiver Receiver.ncd -o Receiver.twr Receiver.pcf -ucf receiver.ucf
+bitgen -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -f Receiver.ut Receiver.ncd
+xst -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+xst -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+ngdbuild -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -dd _ngo -nt timestamp -uc "receiver.ucf" -p xc3s400-pq208-5 "Receiver.ngc" Receiver.ngd
+map -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o Receiver_map.ncd Receiver.ngd Receiver.pcf
+par -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -w -intstyle ise -ol std -t 1 Receiver_map.ncd Receiver.ncd Receiver.pcf
+trce -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -e 3 -s 5 -xml Receiver Receiver.ncd -o Receiver.twr Receiver.pcf -ucf receiver.ucf
+bitgen -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -f Receiver.ut Receiver.ncd
+xst -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+xst -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+xst -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+ngdbuild -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -dd _ngo -nt timestamp -uc "receiver.ucf" -p xc3s400-pq208-5 "Receiver.ngc" Receiver.ngd
+map -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o Receiver_map.ncd Receiver.ngd Receiver.pcf
+par -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -w -intstyle ise -ol std -t 1 Receiver_map.ncd Receiver.ncd Receiver.pcf
+trce -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -e 3 -s 5 -xml Receiver Receiver.ncd -o Receiver.twr Receiver.pcf -ucf receiver.ucf
+bitgen -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -f Receiver.ut Receiver.ncd
+xst -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+ngdbuild -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -dd _ngo -nt timestamp -uc "receiver.ucf" -p xc3s400-pq208-5 "Receiver.ngc" Receiver.ngd
+map -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o Receiver_map.ncd Receiver.ngd Receiver.pcf
+par -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -w -intstyle ise -ol std -t 1 Receiver_map.ncd Receiver.ncd Receiver.pcf
+trce -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -e 3 -s 5 -xml Receiver Receiver.ncd -o Receiver.twr Receiver.pcf -ucf receiver.ucf
+bitgen -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -f Receiver.ut Receiver.ncd
+ngdbuild -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -dd _ngo -nt timestamp -uc "receiver.ucf" -p xc3s400-pq208-5 "Receiver.ngc" Receiver.ngd
+map -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o Receiver_map.ncd Receiver.ngd Receiver.pcf
+par -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -w -intstyle ise -ol std -t 1 Receiver_map.ncd Receiver.ncd Receiver.pcf
+trce -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -e 3 -s 5 -xml Receiver Receiver.ncd -o Receiver.twr Receiver.pcf -ucf receiver.ucf
+bitgen -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -f Receiver.ut Receiver.ncd
+xst -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+ngdbuild -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -dd _ngo -nt timestamp -uc "receiver.ucf" -p xc3s400-pq208-5 "Receiver.ngc" Receiver.ngd
+map -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o Receiver_map.ncd Receiver.ngd Receiver.pcf
+par -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -w -intstyle ise -ol std -t 1 Receiver_map.ncd Receiver.ncd Receiver.pcf
+trce -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -e 3 -s 5 -xml Receiver Receiver.ncd -o Receiver.twr Receiver.pcf -ucf receiver.ucf
+bitgen -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -f Receiver.ut Receiver.ncd
+xst -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+ngdbuild -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -dd _ngo -nt timestamp -uc "receiver.ucf" -p xc3s400-pq208-5 "Receiver.ngc" Receiver.ngd
+map -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o Receiver_map.ncd Receiver.ngd Receiver.pcf
+par -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -w -intstyle ise -ol std -t 1 Receiver_map.ncd Receiver.ncd Receiver.pcf
+trce -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -e 3 -s 5 -xml Receiver Receiver.ncd -o Receiver.twr Receiver.pcf -ucf receiver.ucf
+bitgen -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -f Receiver.ut Receiver.ncd
+xst -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+ngdbuild -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -dd _ngo -nt timestamp -uc "receiver.ucf" -p xc3s400-pq208-5 "Receiver.ngc" Receiver.ngd
+map -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o Receiver_map.ncd Receiver.ngd Receiver.pcf
+par -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -w -intstyle ise -ol std -t 1 Receiver_map.ncd Receiver.ncd Receiver.pcf
+trce -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -e 3 -s 5 -xml Receiver Receiver.ncd -o Receiver.twr Receiver.pcf -ucf receiver.ucf
+bitgen -ise "C:/Xilinx92i/kit_rec/kit_rec.ise" -intstyle ise -f Receiver.ut Receiver.ncd
+xst -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+xst -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+ngdbuild -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -intstyle ise -dd _ngo -nt timestamp -uc "receiver.ucf" -p xc3s400-pq208-5 "Receiver.ngc" Receiver.ngd
+map -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o Receiver_map.ncd Receiver.ngd Receiver.pcf
+par -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -w -intstyle ise -ol std -t 1 Receiver_map.ncd Receiver.ncd Receiver.pcf
+trce -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -intstyle ise -e 3 -s 5 -xml Receiver Receiver.ncd -o Receiver.twr Receiver.pcf -ucf receiver.ucf
+bitgen -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -intstyle ise -f Receiver.ut Receiver.ncd
+xst -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+ngdbuild -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -intstyle ise -dd _ngo -nt timestamp -uc "receiver.ucf" -p xc3s400-pq208-5 "Receiver.ngc" Receiver.ngd
+map -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o Receiver_map.ncd Receiver.ngd Receiver.pcf
+par -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -w -intstyle ise -ol std -t 1 Receiver_map.ncd Receiver.ncd Receiver.pcf
+trce -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -intstyle ise -e 3 -s 5 -xml Receiver Receiver.ncd -o Receiver.twr Receiver.pcf -ucf receiver.ucf
+bitgen -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -intstyle ise -f Receiver.ut Receiver.ncd
+xst -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+xst -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -intstyle ise -ifn Receiver.xst -ofn Receiver.syr
+ngdbuild -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -intstyle ise -dd _ngo -nt timestamp -uc "receiver.ucf" -p xc3s400-pq208-5 "Receiver.ngc" Receiver.ngd
+map -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o Receiver_map.ncd Receiver.ngd Receiver.pcf
+par -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -w -intstyle ise -ol std -t 1 Receiver_map.ncd Receiver.ncd Receiver.pcf
+trce -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -intstyle ise -e 3 -s 5 -xml Receiver Receiver.ncd -o Receiver.twr Receiver.pcf -ucf receiver.ucf
+bitgen -ise "F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise" -intstyle ise -f Receiver.ut Receiver.ncd

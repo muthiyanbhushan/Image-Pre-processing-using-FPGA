@@ -1,0 +1,33 @@
+Release 9.2i ngdbuild J.36
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx92i\bin\nt\ngdbuild.exe -ise
+F:/college/be/project/Final_tested/xlinx_Files/kit_rec/kit_rec.ise -intstyle ise
+-dd _ngo -nt timestamp -uc receiver.ucf -p xc3s400-pq208-5 Receiver.ngc
+Receiver.ngd
+
+Reading NGO file
+"F:/college/be/project/Final_tested/xlinx_Files/kit_rec/Receiver.ngc" ...
+
+Applying constraints in "receiver.ucf" to the design...
+
+Checking timing specifications ...
+Checking Partitions ...
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 109508 kilobytes
+
+Writing NGD file "Receiver.ngd" ...
+
+Writing NGDBUILD log file "Receiver.bld"...
