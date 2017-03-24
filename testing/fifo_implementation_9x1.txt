@@ -1,0 +1,192 @@
+fifo code:
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+--  Uncomment the following lines to use the declarations that are
+--  provided for instantiating Xilinx primitive components.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity fifo is
+    Port ( rst : in std_logic;
+           wr : in std_logic;
+           rd : in std_logic;
+           clk : in std_logic;
+           empty : out std_logic;
+           full : out std_logic;
+           D : in std_logic_vector(7 downto 0);
+           Q : out std_logic_vector(7 downto 0));
+end fifo;
+
+architecture fifo_arc of fifo is
+subtype wrdtype is std_logic_vector(7 downto 0);
+type regtype is array(0 to 15) of wrdtype;
+
+
+signal RCNTR,WCNTR:std_logic_vector(3 downto 0);
+signal RW:std_logic_vector(1 downto 0);
+signal emptyy,fulll:std_logic;
+signal Reg:regtype;
+
+begin
+RW <= Rd & Wr;
+process(rst,clk)
+
+begin
+	if(rst='1')then
+		RCNTR<=(RCNTR'range => '0');
+		WCNTR<=(WCNTR'range => '0');
+		emptyy<='1';
+		fulll<='0';
+		for j in 0 to 7 loop
+			Reg(j)<=(Reg(j)'range =>'0');
+		end loop;
+	elsif(clk'event and clk='1')then
+		case RW is
+			when "00" => --read and write simultaneously
+			if(RCNTR="1000")then
+				RCNTR<="0000";
+			else
+				RCNTR<=RCNTR+1;
+			end if;
+			if(WCNTR="1000")then
+				WCNTR<="0000";
+			else
+				WCNTR<=WCNTR+1;
+			end if;
+			--WCNTR<=WCNTR+1;
+			Reg(conv_integer(WCNTR))<=D;
+			Q<=reg(conv_integer(RCNTR));
+			when "01" => 			--only read
+			if(emptyy='0')then		--not empty
+				if (RCNTR+1)=WCNTR then
+					emptyy<='1';
+				end if;
+				if(RCNTR="1000")then
+				    RCNTR<="0000";
+			   else
+				    RCNTR<=RCNTR+1;
+			end if;
+				Q<=reg(conv_integer(RCNTR));
+			end if;
+			fulll<='0';
+			when "10" =>		--only write
+			emptyy<='0';
+			if(fulll='0')then
+				Reg(conv_integer(WCNTR))<=D;
+				if (WCNTR+1)=RCNTR then
+					fulll<='1';
+				end if;
+				if(WCNTR="1000")then
+					WCNTR<="0000";
+				else
+					WCNTR<=WCNTR+1;
+				end if;
+			end if;
+			when others => null;
+		end case;
+		else
+		null;
+	end if;
+end process;
+full<=fulll;
+empty<=emptyy;
+end fifo_arc;
+
+test bench:
+
+--------------------------------------------------------------------------------
+-- Company: 
+-- Engineer:
+--
+--------------------------------------------------------------------------------
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.ALL;
+ 
+ENTITY test_fifo IS
+END test_fifo;
+ 
+ARCHITECTURE behavior OF test_fifo IS 
+ 
+    -- Component Declaration for the Unit Under Test (UUT)
+ 
+    COMPONENT fifo
+    PORT(
+         rst : IN  std_logic;
+         wr : IN  std_logic;
+         rd : IN  std_logic;
+         clk : IN  std_logic;
+         empty : OUT  std_logic;
+         full : OUT  std_logic;
+         D : IN  std_logic_vector(7 downto 0);
+         Q : OUT  std_logic_vector(7 downto 0)
+        );
+    END COMPONENT;
+    
+
+   --Inputs
+   signal rst : std_logic := '0';
+   signal wr : std_logic := '0';
+   signal rd : std_logic := '0';
+   signal clk : std_logic := '0';
+   signal D : std_logic_vector(7 downto 0) := (others => '0');
+
+ 	--Outputs
+   signal empty : std_logic:='1';
+   signal full : std_logic:='0';
+   signal Q : std_logic_vector(7 downto 0):=(others => '0');
+
+   -- Clock period definitions
+   constant clk_period : time := 4 ns;
+	constant delay: time := 10 ns;
+BEGIN
+ 
+	-- Instantiate the Unit Under Test (UUT)
+   uut: fifo PORT MAP (
+          rst => rst,
+          wr => wr,
+          rd => rd,
+          clk => clk,
+          empty => empty,
+          full => full,
+          D => D,
+          Q => Q
+        );
+
+   -- Clock process definitions
+   clk_process :process
+   begin
+		clk <= '0';
+		wait for clk_period/2;
+		clk <= '1';
+		wait for clk_period/2;
+   end process;
+ 
+	rst<='1', '0' after 4*clk_period;
+   -- Stimulus process
+process
+	variable v:std_logic_vector(7 downto 0) :="00000000";
+	variable cnt:integer := 0;
+   begin		
+     D<=V after delay;
+	  if (cnt>10) and (cnt<20) then
+		Rd <= '1'  after delay; 
+		Wr <= '0' after delay;
+		elsif (cnt>20) and (cnt<30) then
+		Rd <= '0' after delay;
+		Wr <= '1' after delay;
+		else 
+		Rd <= V(2) after delay;
+		Wr <= V(6) after delay;
+		end if;
+		wait until clk'event and clk='1';
+		v:= V(6 downto 0) & (V(7) xor (not (v(2))));
+		cnt:= cnt+1;
+		
+   end process;
+END;
+
